@@ -6,4 +6,6 @@ ColdFusion (CFML) is an interpreted and dynamic language that compiles to Java B
 
 ## Working with ColdFusion
 
-[CommandBox](https://www.ortussolutions.com/products/commandbox) is a standalone, native tool for Windows, Mac, and Linux that will provide you with a Command Line Interface (CLI) for developer productivity, tool interaction, package management, embedded CFML server, application scaffolding, and some sweet ASCII art. It seamlessly integrates to work with any of our *Box products but it is also open for extensibility for any ColdFusion (CFML) project as it is also written in ColdFusion (CFML) using our concepts of CommandBox Commands.  It tightly integrates with our contribution community; ForgeBox, so developers can share modules world-wide.
+[CommandBox](https://www.ortussolutions.com/products/commandbox) is a standalone, native tool for Windows, Mac, and Linux that will provide you with a Command Line Interface (CLI) for developer productivity, tool interaction, package management, embedded CFML server, application scaffolding, and some sweet ASCII art. 
+
+It seamlessly integrates to work with any of our *Box products but it is also open for extensibility for any ColdFusion (CFML) project as it is also written in ColdFusion (CFML) using our concepts of CommandBox Commands.  It tightly integrates with our contribution community; ForgeBox, so developers can share modules world-wide.
