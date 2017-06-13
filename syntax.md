@@ -2,7 +2,7 @@
 
 There are two ways to write CFML code: in tags or in script syntax.  Modern CFML will dictate that your view or presentation layers will utilize the tag syntax and the model or business layers will be all done in script syntax.
 
-CFML includes a set of instructions you use in pages. You will write one or more instructions in a file then run the file through a CFML engine or Command Line Interpreter like CommandBox. Three CFML instructions we will use in this tutorial are `CFSET`, `CFOUTPUT`, and `CFDUMP`. `CFSET` is used to create a variable and assign it a value. Also `CFSET` is used to call methods. `CFOUTPUT` displays a variable's value. `CFDUMP` is used to display the contents of simple and complex variables, objects, components, user-defined functions, and other elements.
+CFML includes a set of instructions you use in pages. You will write one or more instructions in a file then run the file through a CFML engine or Command Line Interpreter like CommandBox. Three CFML instructions we will use in this tutorial are `cfset`, `cfoutput`, and `cfdump`. `cfset` is used to create a variable and assign it a value. Also `cfset` is used to call methods. `CFOUTPUT` displays a variable's value. `CFDUMP` is used to display the contents of simple and complex variables, objects, components, user-defined functions, and other elements.
 
 We might have a file named _myprogram.cfm_ and _Sample.cfc_ like this:
 
