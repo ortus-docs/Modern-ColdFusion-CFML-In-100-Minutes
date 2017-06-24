@@ -1,4 +1,4 @@
-ColdFusion is an **interpreted** programming language which means it can’t run on your processor directly, it has to be fed into a middleman called the Java Virtual Machine in the form of Java Bytecode. It is also a **dynamic language**, meaning you do not have the **typed** restrictions a compile-time language like Java has.  This means you have greater flexibility as the engine actually infers the types for you (Lucee) and it allows you to do runtime manipulations like method injections, removals, etc that a typical typed language would not allow.
+ColdFusion is an **interpreted** programming language which means it can’t run on your processor directly, it has to be fed into a middleman called the Java Virtual Machine in the form of Java Bytecode. It is also a **dynamic language**, meaning you do not have the **typed** restrictions a compile-time language like Java has.  This means you have greater flexibility as the engine actually infers the types for you (Lucee) and it allows you to do runtime manipulations like method injections, removals, metadata programming etc that a typical typed language would not allow.
 
 ## Spidey Rules
 
