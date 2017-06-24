@@ -19,6 +19,11 @@ concepts from NPM, Grunt/Gulp, Maven, Bower, and Node. Features include:
 -   Ability to execute workflows and tasks
 -   Built-in Help system
 
+## Installation
+
+CommandBox is a Java-based executable that will run on most recent desktop operating systems (Linux, Mac OS X, Windows). Since it is a command line tool that uses a shell interface, it does not even require an operating system using a GUI. 
+
+
 ## Getting Started
 
 We have created a small [getting started guide](https://commandbox.ortusbooks.com/content/getting_started_guide.html) that will give you enough skills to move forward with any CommandBox development.  You can find it here: https://commandbox.ortusbooks.com/content/getting_started_guide.html
