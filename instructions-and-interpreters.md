@@ -42,4 +42,8 @@ For now, let's type the equivalent in Script syntax:
 writeOutput( "Hello from CFML Land!" )
 ```
 
+<img src="assets/repl-hello.png" alt="CommandBox" />
+
+
+
 
