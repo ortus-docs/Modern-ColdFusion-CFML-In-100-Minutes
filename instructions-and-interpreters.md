@@ -28,4 +28,7 @@ Hello from CFML Land!
 
 ## CommandBox REPL
 
-CommandBox sports a ColdFusion Read Eval Print Loop interface or most commonly know as REPL.  The REPL is like a programming calculator, input in output out.  It will execute ColdFusion instructions and give you feedback on syntax and results.
+CommandBox sports a ColdFusion Read Eval Print Loop interface or most commonly know as REPL.  The REPL is like a programming calculator, input in output out.  It will execute ColdFusion instructions and give you feedback on syntax and results.  To start a REPL we must go into the CommandBox shell by typing just `box` or opening the `box` binary.
+
+Once in the CommandBox prompt type `repl` and you will be placed in REPL mode:
+
