@@ -15,15 +15,13 @@ This is the durable way to write ColdFusion code because you save your instructi
 We might create a file named `hello.cfm` like this:
 
 ```js
+<cfoutput>Hello from CFML Land!</cfoutput>
+```
 
-class Sample
-  def hello
-    puts "Hello, World!"
-  end
-end
+Then we could run the program like this `box hello.cfm` and get the following result:
 
-s = Sample.new
-s.hello
-Then we could run the program like this:
+```
+Hello from CFML Land!
+```
 
 > When you run `box hello.cfm` you’re actually loading the CFML instruction set engine (Lucee) and executing the code.
