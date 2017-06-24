@@ -32,3 +32,6 @@ CommandBox sports a ColdFusion Read Eval Print Loop interface or most commonly k
 
 Once in the CommandBox prompt type `repl` and you will be placed in REPL mode:
 
+<img src="images/CommandBoxLogo.png" alt="CommandBox" />
+
+
