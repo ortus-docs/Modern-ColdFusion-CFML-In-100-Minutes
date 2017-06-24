@@ -65,7 +65,20 @@ component{
 }
 ```
 
-For the script example, _myprogram.cfm_ would have beginning/closing `<cfscript>` tags around the instructions, however, the script-based _Sample.cfc_ does not require `<cfscript>` tags around the instructions.
+Please note that the script syntax is leveraging the dynamic nature of ColdFusion.  No types and not even any visibility scopes you might be used to.  However, please note that you can fully leverage types if you like:
+
+```js
+component{
+    
+    public string function hello(){
+       return( "Hello, World!" );
+    }
+    
+}
+```
+
+
+
 
 ### PHP Syntax
 
