@@ -4,6 +4,8 @@ The ColdFusion engine will convert your markup into byte code and feed it into t
 
 You can run any ColdFusion script in any Adobe or Lucee server or in the command line with CommandBox.
 
+> Running via CommandBox in the command line will leverage the Lucee CFML engine.
+
 ## Running ColdFusion from the Command Line
 
 This is the durable way to write ColdFusion code because you save your instructions into a file. That file can then be backed up, transferred, added to source control, etc.
