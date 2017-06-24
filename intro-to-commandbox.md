@@ -23,6 +23,13 @@ concepts from NPM, Grunt/Gulp, Maven, Bower, and Node. Features include:
 
 CommandBox is a Java-based executable that will run on most recent desktop operating systems (Linux, Mac OS X, Windows). Since it is a command line tool that uses a shell interface, it does not even require an operating system using a GUI. 
 
+### Requirements
+
+* 256MB+ RAM
+* 250MB+ free hard drive space
+* Multi-core CPU recommended
+* JRE/JDK 8+
+
 
 ## Getting Started
 
