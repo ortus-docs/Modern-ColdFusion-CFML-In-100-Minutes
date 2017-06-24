@@ -2,6 +2,8 @@
 
 There are two ways to write ColdFusion (CFML) code: in **tags** or in **script** syntax.  Modern CFML will dictate that your view or presentation layers will utilize the **tag** syntax and the model or business layers will be all done in **script** syntax. (MVC comes later)
 
+* CFScript Syntax Guide - https://cfdocs.org/script
+
 ## Syntax Files
 CFML includes a set of instructions you use in pages. You will write one or more instructions in a file (`.cfm,.cfc`) then run the file through a CFML engine or Command Line Interpreter like CommandBox.
 
