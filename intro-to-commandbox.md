@@ -86,6 +86,20 @@ echo "deb http://downloads.ortussolutions.com/debs/noarch /" | sudo tee -a /etc/
 sudo apt-get update && sudo apt-get install commandbox
 ```
 
+#### Linux yum
+
+Add the following to: `/etc/yum.repos.d/commandbox.repo`
+
+```
+[CommandBox]
+name=CommandBox $releasever - $basearch
+failovermethod=priority
+baseurl=http://downloads.ortussolutions.com/RPMS/noarch
+enabled=1
+metadata_expire=7d
+gpgcheck=0
+```
+
 
 
 
