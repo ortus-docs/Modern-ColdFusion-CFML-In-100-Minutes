@@ -1,6 +1,6 @@
 # Overview
 
-<img src="images/CommandBoxLogo.png" alt="CommandBox" />
+<img src="assets/CommandBoxLogo.png" alt="CommandBox" />
 
 CommandBox is an amalgamation of many different tools and borrows
 concepts from NPM, Grunt/Gulp, Maven, Bower, and Node. Features include:
