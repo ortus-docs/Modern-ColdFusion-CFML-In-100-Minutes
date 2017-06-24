@@ -46,6 +46,7 @@ writeOutput( "Hello from CFML Land!" )
 
 <img src="assets/repl-hello.png" alt="CommandBox" />
 
+Boom!  We get a magical hello from the CommandBox REPL.
 
 
 
