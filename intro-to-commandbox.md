@@ -71,21 +71,14 @@ Versions will be installed in `/usr/local/Cellar/commandbox`.  To switch between
 
 #### Manual Linux/Mac
 
-Unzip the binary **box** and just double click on it to open the shell terminal.
-When you are finished running commands, you can just close the window,
-or type `exit`.
+Unzip the binary **box** and just double click on it to open the shell terminal. When you are finished running commands, you can just close the window, or type `exit`.
 
->**Hint** You can place the binary in your `/usr/bin` directory so it can
-be available system-wide via the `box` command in any terminal
-window.
+>**Hint** You can place the binary in your `/usr/bin` or `/usr/local/bin` directory so it can be available system-wide via the `box` command in any terminal window.
 
-
-
-## Linux apt-get
+#### Linux apt-get
 
 Run the following series of commands to add the Ortus signing key, register our Debian repo, and install CommandBox.
 
-### Stable
 ```bash
 gpg --keyserver keys.gnupg.net --recv-key 6DA70622
 gpg -a --export 6DA70622 | sudo apt-key add -
