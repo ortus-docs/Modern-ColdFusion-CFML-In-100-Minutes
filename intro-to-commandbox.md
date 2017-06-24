@@ -28,13 +28,13 @@ CommandBox is a Java-based executable that will run on most recent desktop opera
 * 256MB+ RAM
 * 250MB+ free hard drive space
 * Multi-core CPU recommended
-* JRE/JDK 8+
+* JRE/JDK 7+
 
 ### Download
 
 If you already have a Java JRE installed level 1.7 or higher (and set in
 your environment variables) you can [download](http://www.ortussolutions.com/products/commandbox#download) the non-JRE version for
-your Operating System. If you don't have a JRE installed or aren't sure, we would recommend you [download](http://www.ortussolutions.com/products/commandbox#download) the version with a JRE included.  Below you will find the way to get the latest stable and bleeding edge releases.  Please also note that in our [installation](installation.md) page you will find much more detail information on how to install CommandBox with modern Operating System package managers as well.
+your Operating System. If you don't have a JRE installed or aren't sure, we would recommend you [download](http://www.ortussolutions.com/products/commandbox#download) the version with a JRE included.
 
 
 
