@@ -38,6 +38,41 @@ Regardless of where you place the **box** binary, the first time you execute it,
 
 <img src="images/commandbox-terminal.png" alt="CommandBox" />
 
+#### <i class="fa fa-windows"></i> Windows
+
+Unzip the executable **box.exe** and just double click on it to open the
+shell. When you are finished running commands, you can just close the
+window, or type `exit`.
+
+>**Hint** You can make the `box.exe` available in any Windows
+terminal by adding its location to the `PATH` system environment
+variable. See http://www.computerhope.com/issues/ch000549.htm
+
+
+## <i class="fa fa-apple" /> Mac/ <i class="fa fa-linux" /> \*Unix
+
+### Homebrew (Mac)
+
+[Homebrew](http://brew.sh) is a great Mac package manager, it can easily install and keep
+your CommandBox installation up to date (even binary releases), just run the following for stable releases:
+
+```bash
+brew install commandbox
+```
+
+To stay with current bleeding edge releases use the following:
+
+```bash
+brew tap ortus-solutions/boxtap
+brew tap-pin ortus-solutions/boxtap
+brew install --devel commandbox
+```
+
+Then run the `box` binary to begin the one-time unpacking process.
+
+Versions will be installed in `/usr/local/Cellar/commandbox`.  To switch between versions, simply use `brew switch commandbox [version number]`
+
+
 
 
 
