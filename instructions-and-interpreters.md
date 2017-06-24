@@ -34,6 +34,12 @@ Once in the CommandBox prompt type `repl` and you will be placed in REPL mode:
 
 <img src="images/repl.png" alt="CommandBox" />
 
-Here we can type the same thing as what we wrote in the `hello.cfm` page:
+Please note that the REPL in CommandBox opens in script mode and not in tag mode.  This means that we must type in instructions that adhere to the ColdFusion scripting or ECMA script like syntax instead of the tag based syntax.  We will discover more about syntax in the next chapter.
+
+For now, let's type the equivalent in Script syntax:
+
+```js
+writeOutput( "Hello from CFML Land!" )
+```
 
 
