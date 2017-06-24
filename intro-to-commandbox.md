@@ -102,11 +102,6 @@ gpgcheck=0
 
 Then run a `sudo yum install commandbox` and be up and running
 
-
-
-
-
-
 ## Getting Started
 
 We have created a small [getting started guide](https://commandbox.ortusbooks.com/content/getting_started_guide.html) that will give you enough skills to move forward with any CommandBox development.  You can find it here: https://commandbox.ortusbooks.com/content/getting_started_guide.html
