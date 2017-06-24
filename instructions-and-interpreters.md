@@ -25,3 +25,7 @@ Hello from CFML Land!
 ```
 
 > When you run `box hello.cfm` you’re actually loading the CFML instruction set engine (Lucee) and executing the code.
+
+## CommandBox REPL
+
+CommandBox sports a ColdFusion Read Eval Print Loop interface or most commonly know as REPL.  The REPL is like a programming calculator, input in output out.  It will execute ColdFusion instructions and give you feedback on syntax and results.
