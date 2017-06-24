@@ -1,4 +1,4 @@
-![](/assets/repl-hello.png)ColdFusion is an **interpreted** programming language which means it can’t run on your processor directly, it has to be fed into a middleman called the Java Virtual Machine in the form of Java Bytecode. 
+ColdFusion is an **interpreted** programming language which means it can’t run on your processor directly, it has to be fed into a middleman called the Java Virtual Machine in the form of Java Bytecode. 
 
 The ColdFusion engine will convert your markup into byte code and feed it into the Virtual Machine (VM) to execute it.  The benefit to this approach is that you can write ColdFusion code once and, typically, execute it on many different operating systems and hardware platforms.
 
@@ -32,7 +32,7 @@ CommandBox sports a ColdFusion Read Eval Print Loop interface or most commonly k
 
 Once in the CommandBox prompt type `repl` and you will be placed in REPL mode:
 
-<img src="images/repl.png" alt="CommandBox" />
+<img src="assets/repl.png" alt="CommandBox" />
 
 Please note that the REPL in CommandBox opens in script mode and not in tag mode.  This means that we must type in instructions that adhere to the ColdFusion scripting or ECMA script like syntax instead of the tag based syntax.  We will discover more about syntax in the next chapter.
 
