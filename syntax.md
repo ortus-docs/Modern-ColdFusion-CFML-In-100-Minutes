@@ -35,8 +35,8 @@ We might have a file named _myprogram.cfm_ and _Sample.cfc_ like this:
 **Sample.cfc**
 
 ```cfm
-<cfcomponent>
-    <cffunction name = "hello">
+<cfcomponent output="false">
+    <cffunction name = "hello" output="false">
         <cfreturn "Hello, World!" />
     </cffunction>
 </cfcomponent>
@@ -56,10 +56,12 @@ We might have a file named _myprogram.cfm_ and _Sample.cfc_ like this:
 **Sample.cfc**
 
 ```javascript
-component {
-    public string function hello() {
+component{
+    
+    function hello() {
        return( "Hello, World!" );
     }
+    
 }
 ```
 
