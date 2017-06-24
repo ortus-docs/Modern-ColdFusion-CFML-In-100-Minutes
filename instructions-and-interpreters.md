@@ -34,4 +34,6 @@ Once in the CommandBox prompt type `repl` and you will be placed in REPL mode:
 
 <img src="images/repl.png" alt="CommandBox" />
 
+Here we can type the same thing as what we wrote in the `hello.cfm` page:
+
 
