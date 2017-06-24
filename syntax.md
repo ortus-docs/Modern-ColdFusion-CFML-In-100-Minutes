@@ -27,14 +27,14 @@ We might have a file named _myprogram.cfm_ and _Sample.cfc_ like this:
 
 **myprogram.cfm**
 
-```cfm
+```xml
 <cfset s = new Sample() />
 <cfoutput>#s.hello()#</cfoutput>
 ```
 
 **Sample.cfc**
 
-```cfm
+```xml
 <cfcomponent output="false">
     <cffunction name = "hello" output="false">
         <cfreturn "Hello, World!" />
@@ -46,7 +46,7 @@ We might have a file named _myprogram.cfm_ and _Sample.cfc_ like this:
 
 **myprogram.cfm**
 
-```cfm
+```js
 <cfscript>
     s = New Sample();
     writeOutput(s.hello());
@@ -55,7 +55,7 @@ We might have a file named _myprogram.cfm_ and _Sample.cfc_ like this:
 
 **Sample.cfc**
 
-```javascript
+```js
 component{
     
     function hello(){
