@@ -36,6 +36,8 @@ If you already have a Java JRE installed level 1.7 or higher (and set in your en
 
 Regardless of where you place the **box** binary, the first time you execute it, a `.CommandBox` folder will be created in your user's home directory and CommandBox will be extracted into that location. If you delete this directory, it will be replaced the next time the CommandBox executable is run. 
 
+<img src="images/commandbox-terminal.png" alt="CommandBox" />
+
 
 
 
