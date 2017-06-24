@@ -16,3 +16,14 @@ All examples shown in this book will be done leveraging CommandBox as the de-fac
 ## ColdFusion Docs Reference
 
 The best way for discovering the methods, tags and functionality of the ColdFusion language is to leverage [cfdocs.org](https://cfdocs.org/).  Make sure you open it and bookmark it.
+
+## IDE
+
+There are many flavors of IDE's but here are our recommendations.
+
+* [Sublime 3](https://www.sublimetext.com/3) - Our recommended option due to extensions and plugins.
+* [Adobe ColdFusion Builder](http://www.adobe.com/products/coldfusion-builder.html)
+* [Vistual Studio Code](https://code.visualstudio.com/)
+* [IntelliJ](https://www.jetbrains.com/idea/)
+
+> Tip: Install the CFML, ColdBox and CommandBox plugins for Sublime 3
