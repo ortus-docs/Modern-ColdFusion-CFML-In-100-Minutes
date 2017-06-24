@@ -5,4 +5,5 @@
 * [Intro to CommandBox](intro-to-commandbox.md)
 * [Instructions & Interpreters](instructions-and-interpreters.md)
 * [Syntax](syntax.md)
+* [Variables](variables.md)
 
