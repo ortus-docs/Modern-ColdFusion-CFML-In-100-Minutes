@@ -36,6 +36,12 @@ If you already have a Java JRE installed level 1.7 or higher (and set in
 your environment variables) you can [download](http://www.ortussolutions.com/products/commandbox#download) the non-JRE version for
 your Operating System. If you don't have a JRE installed or aren't sure, we would recommend you [download](http://www.ortussolutions.com/products/commandbox#download) the version with a JRE included.
 
+Regardless of where you place the **box** binary, the first time you execute
+it, a `.CommandBox` folder will be created in your user's home
+directory and CommandBox will be extracted into that location. If you
+delete this directory, it will be replaced the next time the CommandBox
+executable is run. 
+
 
 
 
