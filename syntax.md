@@ -1,11 +1,18 @@
 # Syntax
 
-There are two ways to write ColdFusion (CFML) code: in **tags** or in **script** syntax.  Modern CFML will dictate that your view or presentation layers will utilize the **tag** syntax and the model or business layers will be all done in **script** syntax.
+There are two ways to write ColdFusion (CFML) code: in **tags** or in **script** syntax.  Modern CFML will dictate that your view or presentation layers will utilize the **tag** syntax and the model or business layers will be all done in **script** syntax. (MVC comes later)
 
+## Syntax Files
 CFML includes a set of instructions you use in pages. You will write one or more instructions in a file (`.cfm,.cfc`) then run the file through a CFML engine or Command Line Interpreter like CommandBox.
 
  * `cfm` - ColdFusion markup file, tag syntax is the default
  * `cfc` - ColdFusion Component file (Class), script syntax is the default. 
+ 
+## Inherited Behavior
+CFML also gives you a pre-set of defined [tags](https://cfdocs.org/tags) and [functions](https://cfdocs.org/functions) available to you in any type of file you write your code in.  These tags and functions allows you to extend your programming language into further defined constructs.
+
+
+## Exploring Behavior
 
 Three CFML instructions we will use in this tutorial are `cfset`, `cfoutput`, and `cfdump`. `cfset` is used to create a variable and assign it a value. Also `cfset` is used to call methods. `cfoutput` displays a variable's value. `cfdump` is used to display the contents of simple and complex variables, objects, components, user-defined functions, and other elements.
 
