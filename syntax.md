@@ -8,7 +8,8 @@ CFML includes a set of instructions you use in pages. You will write one or more
  * `cfm` - ColdFusion markup file, tag syntax is the default
  * `cfc` - ColdFusion Component file (Class), script syntax is the default. 
  
-## Inherited Behavior
+## Implicit Behavior
+
 CFML also gives you a pre-set of defined [tags](https://cfdocs.org/tags) and [functions](https://cfdocs.org/functions) available to you in any type of file you write your code in.  These tags and functions allows you to extend your programming language into further defined constructs.
 
 
