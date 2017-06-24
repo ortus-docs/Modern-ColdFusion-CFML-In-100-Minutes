@@ -100,6 +100,8 @@ metadata_expire=7d
 gpgcheck=0
 ```
 
+Then run a `sudo yum install commandbox` and be up and running
+
 
 
 
