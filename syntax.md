@@ -77,6 +77,7 @@ component{
 }
 ```
 
+By default the return type of every function and/or argument is `any`.
 
 
 
