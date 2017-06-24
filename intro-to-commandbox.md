@@ -30,6 +30,8 @@ CommandBox is a Java-based executable that will run on most recent desktop opera
 * Multi-core CPU recommended
 * JRE/JDK 8+
 
+### Download
+
 
 ## Getting Started
 
