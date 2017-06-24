@@ -1,6 +1,6 @@
 # Syntax
 
-There are two ways to write ColdFusion (CFML) code: in **tags** or in **script** syntax.  Modern CFML will dictate that your view or presentation layers will utilize the **tag** syntax and the model or business layers will be all done in **script** syntax. (MVC comes later)
+There are two ways to write ColdFusion (CFML) code: in **tags** or in **script** syntax.  Modern CFML will dictate that your view or presentation layers will utilize the **tag** syntax in `cfm` files and the model or business layers will be all done in **script** syntax in `cfc` files. (MVC comes later)
 
 * CFScript Syntax Guide - https://cfdocs.org/script
 
