@@ -4,10 +4,14 @@ ColdFusion Markup Language (CFML) is a dynamic web programming language, which i
 
 ## Going Deep
 
+<img src="assets/lucee.png" alt="Lucee Server" />
+
+
+
 ColdFusion (CFML) is an interpreted and [dynamic ECMA Script like language](https://en.wikipedia.org/wiki/Dynamic_programming_language) that compiles to [Java Bytecode](https://en.wikipedia.org/wiki/Java_bytecode) directly, thus running in the Java Virtual Machine (JVM) and in almost every operating system.  Implementations of the language are mostly done by two parties: [Adobe ColdFusion](http://www.adobe.com/products/coldfusion-family.html) (Commercial) and [Lucee Server](http://lucee.org/) (Free & Open Source) and saw its beginnings in 1995.  It is a mature and modern language and development platform. You can discover all the versions here: https://cfdocs.org/coldfusion-versions
 
 <img src="assets/acf.png" alt="Adobe ColdFusion" />
-<img src="assets/lucee.png" alt="Lucee Server" />
+
 
 ## Developing with ColdFusion
 
