@@ -58,7 +58,7 @@ We might have a file named _myprogram.cfm_ and _Sample.cfc_ like this:
 ```javascript
 component{
     
-    function hello() {
+    function hello(){
        return( "Hello, World!" );
     }
     
