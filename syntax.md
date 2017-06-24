@@ -25,14 +25,14 @@ We might have a file named _myprogram.cfm_ and _Sample.cfc_ like this:
 
 ### Tag Syntax
 
-#### myprogram.cfm
+**myprogram.cfm**
 
 ```cfm
-<cfset s = New Sample() />
+<cfset s = new Sample() />
 <cfoutput>#s.hello()#</cfoutput>
 ```
 
-#### Sample.cfc
+**Sample.cfc**
 
 ```cfm
 <cfcomponent>
@@ -44,7 +44,7 @@ We might have a file named _myprogram.cfm_ and _Sample.cfc_ like this:
 
 ### Script Syntax
 
-#### myprogram.cfm
+**myprogram.cfm**
 
 ```cfm
 <cfscript>
@@ -53,7 +53,7 @@ We might have a file named _myprogram.cfm_ and _Sample.cfc_ like this:
 </cfscript>
 ```
 
-#### Sample.cfc
+**Sample.cfc**
 
 ```javascript
 component {
