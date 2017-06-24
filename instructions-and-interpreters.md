@@ -26,7 +26,7 @@ Then we could run the program like this `box hello.cfm` and get the following re
 Hello from CFML Land!
 ```
 
-> When you run `box hello.cfm` you’re actually loading the CFML instruction set engine (Lucee) and executing the code.
+> When you run `box hello.cfm` you’re actually loading the CFML instruction set engine (Lucee) and executing the code.  Please note, there is NO web server here. It is a pure command line execution.
 
 ## CommandBox REPL
 
