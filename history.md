@@ -30,6 +30,7 @@ There are many flavors of IDE's but here are our recommendations.
 
 * [Sublime 3](https://www.sublimetext.com/3) - Our recommended option due to extensions and plugins.
 * [Adobe ColdFusion Builder](http://www.adobe.com/products/coldfusion-builder.html)
+* [Atom Editor](https://atom.io/)
 * [Vistual Studio Code](https://code.visualstudio.com/)
 * [IntelliJ](https://www.jetbrains.com/idea/)
 
