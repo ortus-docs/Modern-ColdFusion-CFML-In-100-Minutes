@@ -35,6 +35,5 @@ a = "Hola Luis"
 writeoutput( "Welcome to CFML: #a#" )
 ```
 
-Please note that this evaluation can also be written directly as `b = a` and it will be the same.
 
 
