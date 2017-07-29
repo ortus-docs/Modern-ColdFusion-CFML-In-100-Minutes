@@ -19,6 +19,16 @@ a = "Hola Luis"
 writeOutput( A )
 ```
 
+## Naming Variables
+
+Most CFML variables have a few requirements imposed by the VM
+
+* Must begin with a letter, underscore, or Unicode currency symbol.
+* Can contain any number of letters, numbers, underscore characters, and Unicode currency symbols.
+* NO SPACES!
+* Not case-sensitive
+
+
 ## Flexible Typing
 
 You can also create a variable with one type and then switch it to another dynamically:
@@ -60,14 +70,6 @@ param myVariable = "luis"
 
 > **Hint** You can even assign types to param variables and much more. Check out the docs for it: [https://cfdocs.org/cfparam](https://cfdocs.org/cfparam)
 
-## Naming Variables
-
-Most CFML variables have a few requirements imposed by the VM
-
-* Must begin with a letter, underscore, or Unicode currency symbol.
-* Can contain any number of letters, numbers, underscore characters, and Unicode currency symbols.
-* NO SPACES!
-* Not case-sensitive
 
 
 
