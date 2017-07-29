@@ -8,7 +8,15 @@ Open up the CommandBox Shell and go into **REPL** mode by typing `repl`.  Every 
 
 ![](/assets/variables.png)
 
-In this second example, we assume the first example is present so don't create a new file but continue using script_variables.cfm.
+As you can see, we can create strings, numerics, arrays, structs and so much more.  No need for types or special assignments.
+
+## Flexible Typing
+
+You can also create a variable with one type and then switch it to another dynamically:
+
+![](/assets/flexible-typing.png)
+
+As you can see, the last equality wins! In this case, `a` is now an array.
 
 #### Tag Syntax
 
