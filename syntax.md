@@ -8,7 +8,7 @@ There are two ways to write ColdFusion (CFML) code: in **tags** or in **script**
 CFML includes a set of instructions you use in pages (`.cfm`) or components (classes -`cfc`). You will write one or more instructions in a file (`.cfm,.cfc`) then run the file through a CFML engine or Command Line Interpreter like CommandBox.
 
  * `cfm` - ColdFusion markup file, tag syntax is the default
- * `cfc` - ColdFusion Component file (Class), script syntax is the default. 
+ * `cfc` - ColdFusion Component file (Class or Object), script syntax is the default. 
  
 ## Implicit Behavior
 
