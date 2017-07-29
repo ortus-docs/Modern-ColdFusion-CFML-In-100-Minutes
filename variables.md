@@ -18,3 +18,13 @@ You can also create a variable with one type and then switch it to another dynam
 
 As you can see, the last equality wins! In this case, `a` is now an array.
 
+## Concatenation
+
+You can easily do string concatenation by using the `&` operator.
+
+```js
+a = "hola" & "luis"
+```
+
+
+
