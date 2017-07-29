@@ -19,7 +19,7 @@ CFML also gives you a pre-set of defined [tags](https://cfdocs.org/tags) and [fu
 
 ## Exploring Behavior
 
-Three CFML instructions we will use in this tutorial are `cfset`, `cfoutput`, and `cfdump`. `cfset` is used to create a variable and assign it a value. Also `cfset` is used to call methods. `cfoutput` displays a variable's value. `cfdump` is used to display the contents of simple and complex variables, objects, components, user-defined functions, and other elements.
+Three CFML instructions we will use in this section are `cfset`, `cfoutput`, and `cfdump`. `cfset` is used to create a variable and assign it a value. Also `cfset` is used to call methods. `cfoutput` displays a variable's value. `cfdump` is used to display the contents of simple and complex variables, objects, components, user-defined functions, and other elements.
 
 We might have a file named _myprogram.cfm_ and _Sample.cfc_ like this:
 
