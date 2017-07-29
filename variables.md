@@ -107,6 +107,10 @@ Can be used in any context, used for persisting variables for a period of time.
 * attributes - Incoming tag attributes
 * variables - The default scope for variable assignments
 
+### Thread Scopes
+* attributes - Passed variables via a thread
+* thread - A thread specific scope that can be used for storage and retrieval
+* local - Variables local to the thread context
 
 ## Naming Coding Standards
 
