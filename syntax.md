@@ -61,7 +61,7 @@ Please note that no types and not even any visibility scopes you might be used t
 component{
     
     public string function hello(){
-       return( "Hello, World!" );
+       return "Hello, World!";
     }
     
 }
