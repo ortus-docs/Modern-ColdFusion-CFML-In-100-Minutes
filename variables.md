@@ -35,6 +35,20 @@ a = "Hola Luis"
 writeoutput( "Welcome to CFML: #a#" )
 ```
 
+## Paraming Variables
+
+CFML allows you to set default values for variables in case you use a variable and it doesn't exist.  You can use the `<cfparam>` tag or the `param` construct:
+
+```xml
+<cfparam name="myVariable" default="luis">
+```
+
+or 
+
+```
+param myVariable = "luis"
+```
+
 ## Naming Variables
 
 Most CFML variables have a few requirements imposed by the VM
