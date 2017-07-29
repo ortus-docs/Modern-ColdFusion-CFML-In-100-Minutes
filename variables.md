@@ -10,6 +10,15 @@ Open up the CommandBox Shell and go into **REPL** mode by typing `repl`.  Every 
 
 As you can see, we can create strings, numerics, arrays, structs and so much more.  No need for types or special assignments.
 
+## Case Insensitive
+
+CFML is a case-insensitive language.  Meaning if you create a variable `a` and reference it as `A` they are the same.  This can be a very big gotcha for developers coming from languages like Java or JavaScript.  However, as best practice, we would recommend to **ALWAYS** use the same case as when you define the variable:
+
+```js
+a = "Hola Luis"
+writeOutput( A )
+```
+
 ## Flexible Typing
 
 You can also create a variable with one type and then switch it to another dynamically:
