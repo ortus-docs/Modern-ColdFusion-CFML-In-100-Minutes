@@ -49,7 +49,7 @@ We might have a file named _myprogram.cfm_ and _Sample.cfc_ like this:
 component{
     
     function hello(){
-       return( "Hello, World!" );
+       return "Hello, World!";
     }
     
 }
