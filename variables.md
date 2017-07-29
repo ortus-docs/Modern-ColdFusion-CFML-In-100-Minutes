@@ -49,6 +49,8 @@ or
 param myVariable = "luis"
 ```
 
+> **Hint** You can even assign types to param variables and much more. Check out the docs for it: https://cfdocs.org/cfparam
+
 ## Naming Variables
 
 Most CFML variables have a few requirements imposed by the VM
