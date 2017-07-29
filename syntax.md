@@ -27,8 +27,8 @@ We might have a file named _myprogram.cfm_ and _Sample.cfc_ like this:
 
 **myprogram.cfm**
 
-```xml
-<cfset s = new Sample() />
+```html
+<cfset s = new Sample()>
 <cfoutput>#s.hello()#</cfoutput>
 ```
 ### Script Syntax
