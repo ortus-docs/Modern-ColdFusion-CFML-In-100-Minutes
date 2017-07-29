@@ -55,7 +55,7 @@ component{
 }
 ```
 
-Please note that the script syntax is leveraging the dynamic nature of ColdFusion.  No types and not even any visibility scopes you might be used to. ColdFusion can infer variable types (Lucee).  However, please note that you can fully leverage types if you like:
+Please note that no types and not even any visibility scopes you might be used to are present. ColdFusion can infer variable types (Lucee) as well.  However, please note that you can fully leverage types if you like:
 
 ```js
 component{
