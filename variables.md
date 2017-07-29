@@ -26,5 +26,15 @@ You can easily do string concatenation by using the `&` operator.
 a = "hola" & "luis"
 ```
 
+## Outputting Variables
+
+You can also output or evaluate variables by using the `#` operators and using the variable name:
+
+```js
+a = "Hola Luis"
+writeoutput( "Welcome to CFML: #a#" )
+```
+
+Please note that this evaluation can also be written directly as `b = a` and it will be the same.
 
 
