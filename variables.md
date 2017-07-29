@@ -4,7 +4,7 @@ In CFML, variables are just pointers to a piece of data.  They can hold **any** 
 
 Please note that assignments are evaluated from right to left instead of traditional reading which is from left to right.
 
-Open up the CommandBox Shell and go into **REPL** mode by typing `repl`.  Every time you assign a value to a variable, the CommandBox REPL will output or echo the variable for you.
+Open up the CommandBox Shell and go into **REPL** mode by typing `repl`.  Every time you assign a value to a variable, the CommandBox REPL will output or echo the variable for you. Please note that in REPL mode the termination for a line of code is omitted.  A line terminator in ColdFusion is the `;`.
 
 ![](/assets/variables.png)
 
