@@ -86,7 +86,6 @@ Can be used in any context, used for persisting variables for a period of time.
 * request - stored in RAM for a specific user request ONLY
 * cgi - read only scope provided by the servlet container and CFML
 
-
 ### Template Scopes
 
 * variables - The default scope where all variables are assigned to.
