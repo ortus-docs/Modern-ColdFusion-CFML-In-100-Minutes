@@ -87,12 +87,13 @@ Can be used in any context, used for persisting variables for a period of time.
 * cgi - read only scope provided by the servlet container and CFML
 
 
-### Page Scopes
+### Template Scopes
+
 * variables - The default scope where all variables are assigned to.
 
 ### Component Scopes
 
-* variables - Private scope, visible internally
+* variables - Private scope, visible internally to the CFC
 * this - Public scope, visible from the outside world
 * static - 
 
