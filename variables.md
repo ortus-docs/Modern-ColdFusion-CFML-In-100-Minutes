@@ -45,7 +45,7 @@ CFML allows you to set default values for variables in case you use a variable a
 
 or 
 
-```
+```js
 param myVariable = "luis"
 ```
 
