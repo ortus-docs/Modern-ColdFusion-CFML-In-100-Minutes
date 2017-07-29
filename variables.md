@@ -1,6 +1,6 @@
 # Variables
 
-Everything needs a name so we can refer to it. A variable, like in math, is just a name for a piece of data. In CFML, variables are very flexible and can be changed at any time. Variables are assigned using a single equals sign ```=``` where the **right** side of the equals sign is evaluated first, then the value is assigned to the variable named on the **left** side of the equals.
+A variable, like in math, is just a name for a piece of data. In CFML, variables are very flexible and can be changed at any time. Variables are assigned using a single equals sign ```=``` where the **right** side of the equals sign is evaluated first, then the value is assigned to the variable named on the **left** side of the equals.
 
 Create a new CFML file called script_variables.cfm, enter in these example instructions, and observe the output that CFML gives you back:
 
