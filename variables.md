@@ -55,9 +55,10 @@ param myVariable = "luis"
 
 Most CFML variables have a few requirements imposed by the VM
 
-* always start with a lowercase letter
-* have no spaces
-* do not contain most special characters like @, and &
+* Must begin with a letter, underscore, or Unicode currency symbol.
+* Can contain any number of letters, numbers, underscore characters, and Unicode currency symbols.
+* NO SPACES!
+* Not case-sensitive
 
 
 
