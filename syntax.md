@@ -31,17 +31,6 @@ We might have a file named _myprogram.cfm_ and _Sample.cfc_ like this:
 <cfset s = new Sample() />
 <cfoutput>#s.hello()#</cfoutput>
 ```
-
-**Sample.cfc**
-
-```xml
-<cfcomponent output="false">
-    <cffunction name = "hello" output="false">
-        <cfreturn "Hello, World!" />
-    </cffunction>
-</cfcomponent>
-```
-
 ### Script Syntax
 
 **myprogram.cfm**
@@ -52,6 +41,8 @@ We might have a file named _myprogram.cfm_ and _Sample.cfc_ like this:
     writeOutput(s.hello());
 </cfscript>
 ```
+
+
 
 **Sample.cfc**
 
