@@ -72,7 +72,7 @@ param myVariable = "luis"
 
 ## Variable Scopes
 
-In the CFML language, there are many persistence and visibility scopes that exist for variables to be placed in.  These are differentiated by context: in a CFC, in a function, tag, thread or in a template.  We will study these scopes further, but here are the major scopes delineated by context:
+In the CFML language, there are many persistence and visibility scopes that exist for variables to be placed in.  These are differentiated by context: in a CFC, in a function, tag, thread or in a template.  All CFML scopes are implemented as structures of key-value name pairs.  We will study these scopes further, but here are the major scopes delineated by context:
 
 ### Persistence Scopes
 
