@@ -72,17 +72,20 @@ param myVariable = "luis"
 
 ## Variable Scopes
 
-In the CFML language, there are many persistence and visibility scopes that exist for variables to be placed in.  These are differentiated by context: in a CFC, in a function, or in a template.  We will study these scopes further, but here are the major scopes delineated by context:
+In the CFML language, there are many persistence and visibility scopes that exist for variables to be placed in.  These are differentiated by context: in a CFC, in a function, tag, thread or in a template.  We will study these scopes further, but here are the major scopes delineated by context:
 
 ### Persistence Scopes
 
-Can be used in any context:
+Can be used in any context, used for persisting variables for a period of time.
 
 * session - stored in server RAM or external storages tracked by unique web visitor
 * client - stored in cookies, databases, or external storages (simple values only)
 * application - stored in server RAM or external storage tracked by the running ColdFusion application
 * cookie - stored in a visitor's browser
 * server - stored in server RAM for ANY application for that CFML instance
+* request - stored in RAM for a specific user request ONLY
+* cgi - read only scope provided by the servlet container and CFML
+
 
 ### Page Scopes
 * variables - The default scope where all variables are assigned to.
