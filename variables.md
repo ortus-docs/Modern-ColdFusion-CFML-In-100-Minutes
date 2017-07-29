@@ -95,7 +95,7 @@ Can be used in any context, used for persisting variables for a period of time.
 
 * variables - Private scope, visible internally to the CFC
 * this - Public scope, visible from the outside world
-* static - 
+* static - No need for a CFC instance, available as a CFC representation
 
 ### Function Scopes
 * variables - Has access to private variables within a Component or Page
