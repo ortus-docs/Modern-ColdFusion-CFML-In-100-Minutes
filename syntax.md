@@ -37,7 +37,7 @@ We might have a file named _myprogram.cfm_ and _Sample.cfc_ like this:
 
 ```js
 <cfscript>
-    s = New Sample();
+    s = new Sample();
     writeOutput(s.hello());
 </cfscript>
 ```
