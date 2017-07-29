@@ -35,5 +35,15 @@ a = "Hola Luis"
 writeoutput( "Welcome to CFML: #a#" )
 ```
 
+## Naming Variables
+
+Most CFML variables have a few requirements imposed by the VM
+
+* always start with a lowercase letter
+* have no spaces
+* do not contain most special characters like @, and &
+
+
+
 
 
