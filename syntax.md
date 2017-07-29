@@ -77,7 +77,7 @@ component{
 }
 ```
 
-> **Hint** By default the return type of every function and/or argument is `any`.
+> **Hint** By default the return type of every function and/or argument is `any`. Thus, it can be determined at runtime as a dynamic variable.
 
 
 
