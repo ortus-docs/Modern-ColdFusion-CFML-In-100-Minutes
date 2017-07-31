@@ -1,6 +1,6 @@
 # Variables
 
-In CFML, variables are just pointers to a piece of data.  They can hold **any** value you like and even change it's value or type at runtime.  In some languages, you need to specify the type of data you want your variable to hold.  In CFML, you do not need to assign one as everything is dynamic.  The Lucee server even goes further and infers types according to the initial value you assign your variable.
+In CFML, variables are just pointers to a piece of data.  They can hold **any** value you like and even change it's value or type at runtime.  In some languages, you need to specify the type of data you want your variable to hold.  In CFML, you do not need to assign one as everything is dynamic.  The Lucee server even goes further and infers types according to the initial value you assign to your variable.
 
 Please note that assignments are evaluated from right to left instead of traditional reading which is from left to right.
 
