@@ -70,6 +70,9 @@ component{
 > **Hint** By default the return type of every function and/or argument is `any`. Thus, it can be determined at runtime as a dynamic variable.
 
 
+### Semi-Colons
+
+Please note that semi-colons are used to demarcate line endings in CFML `;`.  However, the Lucee Server engine can treat semi-colons as optional, while Adobe ColdFusion does not.  Be worrisome about it, we would recommend you **always** use them to remain compatible between engines.
 
 ### PHP Syntax
 
