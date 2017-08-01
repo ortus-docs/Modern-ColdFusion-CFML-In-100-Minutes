@@ -18,7 +18,7 @@ Open up the CommandBox Shell and go into **REPL** mode by typing `repl`.  Every 
 
 As you can see, we can create strings, numerics, arrays, structs and so much more.  No need for types or special assignments.
 
-> **Hint** The CommandBox REPL is based on a Lucee 4.5 server, that is why semi-colons are optional.
+> **Hint** The CommandBox REPL is based on a Lucee 4.5 server, that is why semi-colons are optional and the default syntax is script and not tags.
 
 ## Case Insensitive
 
