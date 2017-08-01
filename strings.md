@@ -13,6 +13,8 @@ name = "luis";
 writeoutput( name[1] ) => will produce l
 ```
 
+## Common String Methods
+
 ### Len
 * Call `Len` on a string to get back the number of characters in the string. For instance `Len("Hello ")` would give you back **6** (notice the trailing space is counted).
 
