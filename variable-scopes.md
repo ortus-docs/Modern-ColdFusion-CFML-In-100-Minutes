@@ -20,7 +20,7 @@ Can be used in any context, used for persisting variables for a period of time.
 * `application` - stored in server RAM or external storage tracked by the running ColdFusion application
 * `cookie` - stored in a visitor's browser
 * `server` - stored in server RAM for ANY application for that CFML instance
-* `request' - stored in RAM for a specific user request ONLY
+* `request` - stored in RAM for a specific user request ONLY
 * `cgi` - read only scope provided by the servlet container and CFML
 * `form` - Variables submitted via HTTP posts
 * `URL` - Variables incoming via HTTP GET operations or the incoming URL
