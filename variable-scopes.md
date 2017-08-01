@@ -27,7 +27,7 @@ Can be used in any context, used for persisting variables for a period of time.
 
 ## Template Scopes
 
-* variables - The default scope where all variables are assigned to.
+* `variables` - The default scope where all variables are assigned to.
 
 ## Component Scopes
 
