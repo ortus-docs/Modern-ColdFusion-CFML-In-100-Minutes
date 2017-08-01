@@ -42,8 +42,10 @@ Can be used in any context, used for persisting variables for a period of time.
 * arguments - Incoming variables to a function
 
 ## Tag Scopes
-* attributes - Incoming tag attributes
-* variables - The default scope for variable assignments
+* `attributes` - Incoming tag attributes
+* `variables` - The default scope for variable assignments
+* `caller` - Used within a custom tag to set or read variables within the template that called it.
+
 
 ## Thread Scopes
 * attributes - Passed variables via a thread
