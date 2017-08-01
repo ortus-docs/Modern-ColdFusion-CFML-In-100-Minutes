@@ -15,7 +15,7 @@ writeoutput( name[1] ) => will produce l
 
 ## Common String Functions
 
-You can find all the available string functions here: https://cfdocs.org/string-functions.  Below are some of the most common ones.
+You can find all the available string functions here: https://cfdocs.org/string-functions.
 
 ### Len
 * Call `Len` on a string to get back the number of characters in the string. For instance `Len("Hello ")` would give you back **6** (notice the trailing space is counted).
@@ -35,22 +35,7 @@ You can find all the available string functions here: https://cfdocs.org/string-
 
 Experiment with the following samples in a CFML file.
 
-#### Tag Syntax
 
-```cfm
-<cfset tester = "Good Morning Everyone!" />
-
-<cfoutput>#len(tester)#<br /></cfoutput>
-<cfoutput>#Replace (tester, "o", "e", "All")#<br /></cfoutput>
-<cfoutput>#RemoveChars (tester, 2, 5)#<br /></cfoutput>
-
-<cfset t2 = "sample,data,from,a,CSV" />
-<cfset t3 = Mid(t2,8,len(t2)) />
-
-<cfoutput>#t3#<br /></cfoutput>
-```
-
-#### Script Syntax
 
 `<cfscript>`
 ```javascript
@@ -69,16 +54,6 @@ writeOutput (t3 & "<br/>");
 
 Often a string may store a list like the *t2* variable in the last example. A string for storing a list isn't the best for performance and usage. Using an array for a list is so much better. We can convert a list into an *array* using *ListToArray*. We'll discuss arrays in an upcoming section. Try out these next examples in the CFML file assuming we have the code from the last example:
 
-#### Tag Syntax
-
-```cfm
-<cfset t4 = ListToArray(t3) />
-<cfoutput>
-#t4[2]#
-</cfoutput>
-```
-
-#### Script Syntax
 
 `<cfscript>`
 ```javascript
@@ -99,31 +74,19 @@ When we put that into the CFML file, it just spits back the same string. If we w
 
 What we need to do is combine a variable with the string. There are two ways to do that. The first approach is called *string concatenation* which is basically just adding strings together:
 
-#### Tag Syntax
-
-```cfm
-<cfset today = "Saturday" />
-<cfset message = "Happy " & today & "!" />
-
-<cfoutput>
-#message#
-</cfoutput>
-```
-
-#### Script Syntax
 
 `<cfscript>`
-```javascript
+```js
 today   = "Saturday";
 message = "Happy " & today & "!";
 
-writeOutput(message);
+writeOutput( message );
 ```
 `</cfscript>`
 
 In the first line we setup a variable to hold the day of the week. Then we printed the string *Happy* combined with the value of the variable "today" and the string *!*. You might be thinking, "What was the point of that since we still wrote *Saturday* in the first line?" Ok, well, if you were writing a real program you'd use CFMLs built-in date instructions like this:
 
-```javascript
+```js
 today = DayOfWeek(Now());
 ```
 
