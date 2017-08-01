@@ -6,7 +6,7 @@ Please note that the underlying type for a string in CFML is the Java String, wh
 
 ## Character Extractions
 
-In Lucee server you can actually reference characters in a string stream via their position in the string.  Please note that string and array positions in CFML start at 1 and not 0.
+In Lucee server you can actually reference characters in a string stream via their position in the string using array syntax: `varname[ position ]`.  Please note that string and array positions in CFML start at 1 and not 0.
 
 ```js
 name = "luis";
