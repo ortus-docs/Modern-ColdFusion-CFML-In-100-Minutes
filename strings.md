@@ -1,6 +1,6 @@
 # Strings
 
-In CFML strings are a type of variables that are used to store collections of letters and numbers.  Usually defined within single or double quotes ( **'** or **"** ).  Some simple strings would be **hello** or **This sentence is a string!**. Strings can be anything from "", the empty string, to really long sets of text. This whole tutorial, for instance, is stored in a string. Strings have a few important instructions that we'll use.
+In CFML strings are a type of variables that are used to store collections of letters and numbers.  Usually defined within single or double quotes ( `'` or `"` ).  Some simple strings would be **hello** or **This sentence is a string!**. Strings can be anything from "", the empty string, to really long sets of text. This whole tutorial, for instance, is stored in a string. Strings have a few important instructions that we'll use.
 
 ### Len
 * Call `Len` on a string to get back the number of characters in the string. For instance `Len("Hello ")` would give you back **6** (notice the trailing space is counted).
