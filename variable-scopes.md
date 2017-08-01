@@ -15,13 +15,13 @@ We will study these scopes further, but here are the major scopes delineated by 
 
 Can be used in any context, used for persisting variables for a period of time.
 
-* session - stored in server RAM or external storages tracked by unique web visitor
-* client - stored in cookies, databases, or external storages (simple values only)
-* application - stored in server RAM or external storage tracked by the running ColdFusion application
-* cookie - stored in a visitor's browser
-* server - stored in server RAM for ANY application for that CFML instance
-* request - stored in RAM for a specific user request ONLY
-* cgi - read only scope provided by the servlet container and CFML
+* `session` - stored in server RAM or external storages tracked by unique web visitor
+* `client` - stored in cookies, databases, or external storages (simple values only)
+* `application` - stored in server RAM or external storage tracked by the running ColdFusion application
+* `cookie` - stored in a visitor's browser
+* `server` - stored in server RAM for ANY application for that CFML instance
+* `request' - stored in RAM for a specific user request ONLY
+* `cgi` - read only scope provided by the servlet container and CFML
 
 ## Template Scopes
 
