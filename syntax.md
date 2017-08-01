@@ -80,12 +80,10 @@ Please note that semi-colons are used to demarcate line endings in CFML `;`.  Ho
 Both Lucee and Adobe ColdFusion 11+ will allow you to write your CFML tags in script syntax.  You basically eliminate the starting `<` and ending `>` enclosures and create context by using the `{` and `}` mustaches.
 
 ```js
-cfform (name='myForm', acton='')
-{
-     cfgrid (name="myGrid", query='empQuery')
-    {
-         cfgridcolumn (name='firstName', id='firstName', type='string');
-         cfgridcolumn (name='lastName', id='LastName', type='string');
+cfform( name='myForm', acton='' ){
+    cfgrid( name="myGrid", query='empQuery' ){
+         cfgridcolumn( name='firstName', id='firstName', type='string' );
+         cfgridcolumn( name='lastName',  id='LastName',  type='string' );
     }  
 }
 ```
