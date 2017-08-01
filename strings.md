@@ -4,6 +4,15 @@ In CFML strings are a type of variables that are used to store collections of le
 
 Please note that the underlying type for a string in CFML is the Java String, which is immutable; meaning it can never change.  Thus, when concatenating strings together, a new string object is always created. This is a warning that if you will be doing many string concatenations, you will have to use a Java data type to accelerate the concatenations.  You have been warned.
 
+## Character Extractions
+
+In Lucee server you can actually reference characters in a string stream via their position in the string.  Please note that string and array positions in CFML start at 1 and not 0.
+
+```js
+name = "luis";
+writeoutput( name[1] ) => will produce l
+```
+
 ### Len
 * Call `Len` on a string to get back the number of characters in the string. For instance `Len("Hello ")` would give you back **6** (notice the trailing space is counted).
 
