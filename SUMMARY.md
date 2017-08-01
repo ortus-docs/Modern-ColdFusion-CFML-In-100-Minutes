@@ -6,5 +6,5 @@
 * [Instructions & Interpreters](instructions-and-interpreters.md)
 * [Syntax](syntax.md)
 * [Variables](variables.md)
-* Variable Scopes
+* [Variable Scopes](variable-scopes.md)
 
