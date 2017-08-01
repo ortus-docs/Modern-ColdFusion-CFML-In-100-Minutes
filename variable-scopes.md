@@ -46,7 +46,7 @@ Can be used in any context, used for persisting variables for a period of time.
 
 
 ## Thread Scopes
-* attributes - Passed variables via a thread
-* thread - A thread specific scope that can be used for storage and retrieval
-* local - Variables local to the thread context
+* `attributes` - Passed variables via a thread
+* `thread` - A thread specific scope that can be used for storage and retrieval
+* `local` - Variables local to the thread context
 
