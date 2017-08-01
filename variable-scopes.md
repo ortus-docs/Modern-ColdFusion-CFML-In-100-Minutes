@@ -22,6 +22,8 @@ Can be used in any context, used for persisting variables for a period of time.
 * `server` - stored in server RAM for ANY application for that CFML instance
 * `request' - stored in RAM for a specific user request ONLY
 * `cgi` - read only scope provided by the servlet container and CFML
+* `form` - Variables submitted via HTTP posts
+* `URL` - Variables incoming via HTTP GET operations or the incoming URL
 
 ## Template Scopes
 
