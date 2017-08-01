@@ -56,6 +56,23 @@ a = "Hola Luis";
 writeoutput( "Welcome to CFML: #a#" );
 ```
 
+Also note that using the `#` hashes for output on assignments can be reduntant:
+
+**Dont' do this**
+```js
+a = "hello luis";
+b = #a#;
+or 
+b = "#a#";
+```
+
+**Do this**
+```js
+a = "hello luis";
+b = a;
+```
+
+
 ## Paraming Variables
 
 CFML allows you to set default values for variables in case you use a variable and it doesn't exist.  You can use the `<cfparam>` tag or the `param` construct:
