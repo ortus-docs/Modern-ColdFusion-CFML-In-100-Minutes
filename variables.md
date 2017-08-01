@@ -52,8 +52,8 @@ As you can see, the last equality wins! In this case, `a` is now an array.
 You can also output or evaluate variables by using the `#` operators and using the variable name:
 
 ```js
-a = "Hola Luis"
-writeoutput( "Welcome to CFML: #a#" )
+a = "Hola Luis";
+writeoutput( "Welcome to CFML: #a#" );
 ```
 
 ## Paraming Variables
