@@ -29,7 +29,7 @@ a = "Hola Luis";
 writeOutput( A );
 ```
 
-## Naming Variables
+## Naming Requirements
 
 Most CFML variables have a few requirements imposed by the VM
 
