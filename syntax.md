@@ -74,6 +74,23 @@ component{
 
 Please note that semi-colons are used to demarcate line endings in CFML `;`.  However, the Lucee Server engine can treat semi-colons as optional, while Adobe ColdFusion does not.  Be worrisome about it, we would recommend you **always** use them to remain compatible between engines.
 
+
+### Tags In Script
+
+Both Lucee and Adobe ColdFusion 11+ will allow you to write your CFML tags in script syntax.  You basically eliminate the starting `<` and ending `>` enclosures and create context by using the `{` and `}` mustaches.
+
+```js
+cfform (name='myForm', acton='')
+{
+     cfgrid (name="myGrid", query='empQuery')
+    {
+         cfgridcolumn (name='firstName', id='firstName', type='string');
+         cfgridcolumn (name='lastName', id='LastName', type='string');
+    }  
+}
+```
+
+
 ### PHP Syntax
 
 #### myprogram.php
