@@ -89,6 +89,38 @@ param myVariable = "luis"
 
 > **Hint** You can even assign types to param variables and much more. Check out the docs for it: [https://cfdocs.org/cfparam](https://cfdocs.org/cfparam)
 
+## Checking For Existence
+
+You can verify if variables exist in many different ways.  The next section showcases how variables are stored in visibility and persistence scopes which are all structures or hash maps in Java terms.  Meaning you can leverage structure operations for checking for existence and much more.  Below are several ways to verify variable existence:
+
+* `isDefined()` - Evaluates a string value to determine whether the variable
+named in it exists.  
+* `isNull()` - Returns `true` if the specified object is null, else `false`.
+* `structKeyExists( key, value )` - Verifies if the specified key variable exists in a structure.
+
+
+```js
+// Notice the variable name is in quotes
+if( isDefined( "myVariable" ){
+    writeOutput( myVariable );
+} else {
+    writeOutput( "Not Defined!" );
+}
+
+// Notice that the variable is NOT in quotes
+if( isNull( myVariable ){
+    writeOutput( myVariable );
+} else {
+    writeOutput( "Not Defined!" );
+}
+
+// What is this variables scopes???
+if( structKeyExists( variables, "myVariable" ){
+    writeOutput( myVariable );
+} else {
+    writeOutput( "Not Defined!" );
+}
+```
 
 ## Naming Coding Standards
 
