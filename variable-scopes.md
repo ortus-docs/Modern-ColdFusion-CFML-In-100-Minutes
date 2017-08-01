@@ -29,15 +29,15 @@ Can be used in any context, used for persisting variables for a period of time.
 
 ## Component Scopes
 
-* variables - Private scope, visible internally to the CFC
-* this - Public scope, visible from the outside world
-* static - No need for a CFC instance, available as a CFC representation
+* `variables` - Private scope, visible internally to the CFC only
+* `this` - Public scope, visible from the outside world
+* `static` - No need for a CFC instance, available as a CFC representation (Lucee only)
 
 ## Function Scopes
-* variables - Has access to private variables within a Component or Page
-* this - Has access to public variables within a Component or Page
-* local - Function scoped variables, only exist within the function execution. Referred to as `var` scoping
-* arguments - Incoming variables to a function
+* `variables` - Has access to private variables within a Component or Page
+* `this` - Has access to public variables within a Component or Page
+* `local` - Function scoped variables, only exist within the function execution. Referred to as `var` scoping
+* `arguments` - Incoming variables to a function
 
 ## Tag Scopes
 * `attributes` - Incoming tag attributes
