@@ -18,10 +18,15 @@ writeoutput( name[1] ) => will produce l
 You can find all the available string functions here: https://cfdocs.org/string-functions.  Below are some common ones that are handy to memorize:
 
 ### Len
-* Call `Len` on a string to get back the number of characters in the string. For instance `Len("Hello ")` would give you back **6** (notice the trailing space is counted).
+
+* Call `len()` on a string to get back the number of characters in the string. For instance `Len( "Hello ")` would give you back **6** (notice the trailing space is counted). You can also use member functions: `a.len()`.
 
 ### Trim
-* The`Trim` instruction removes leading and trailing spaces and control characters from a string. For instance `Trim("Hello ")` would give you back **Hello** (notice the trailing space is removed). Combine this with `Len` for example `Len(Trim("Hello "))` and you would get back **5**.
+* The`Trim` instruction removes leading and trailing spaces and control characters from a string. For instance `Trim("Hello ")` would give you back `Hello` (notice the trailing space is removed). Combine this with `Len` for example `Len( Trim( "Hello ") )` and you would get back `5`.  You can also use member functions:
+
+```js
+a.trim().len()
+```
 
 ### Replace
 * The `Replace` instruction replaces occurrences of **substring1** in a string with **substring2**, in a specified scope. The search is case sensitive and the scope default is one. For instance, `Replace("Hello", "e", "")` would give you back **Hllo** after replacing the _first occurrence of e_, or `Replace("Good Morning!", "o", "e", "All")` would give you **Geed Merning!** 
