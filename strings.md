@@ -49,9 +49,13 @@ myArray = a.listToArray();
 
 ### Combining Strings and Variables
 
+Combining and interpolating strings is part of any programming language and an integral part.  We can do both by building upon some language operators.
+
+#### Combining strings 
+
 It is extremely common that we want to combine the value of a variable with other strings. For instance, lets start with this example string:
 
-**Happy Saturday!**
+**Happy ColdBoxing!**
 
 When we put that into the CFML file, it just spits back the same string. If we were writing a proper program we might want it to greet the user when they start the program by saying **Happy** then the day of the week. So we can't just put a string like **Happy Saturday!** or it'd be saying Saturday even on Tuesday.
 
