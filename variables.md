@@ -158,6 +158,18 @@ myjavaList.append( "newProduct" ); // CF API
 myjavaList.sort( "ASC" );
 ```
 
+#### Member functions for the following data types are supported:
+
+* Array
+* String
+* List
+* Struct
+* Date
+* Spreadsheet
+* XML
+* Query
+* Image
+
 ## Naming Coding Standards
 
 At [Ortus Solutions](https://www.ortussolutions.com) we have developed a set of development standards for many languages. You can find our [ColdFusion standards](https://github.com/Ortus-Solutions/coding-standards/blob/master/coldfusion.md) here: https://github.com/Ortus-Solutions/coding-standards/blob/master/coldfusion.md
