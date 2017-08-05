@@ -124,7 +124,7 @@ if( structKeyExists( variables, "myVariable" ){
 
 ## Java Integration
 
-As we have discussed, CFML is a dynamic language built on-top of Java.  Thus each variable internally is represented by a native Java data type: String, Int, Float, Array, Vector, HashMap, etc.  This is important because each variable you create has member methods available to you that delegate or reflect back to its native Java class.
+As we have discussed, CFML is a dynamic language built on-top of Java.  Thus each variable internally is represented by a native Java data type: `String, Int, Float, Array, Vector, HashMap, etc`.  This is important because each variable you create has member methods available to you that delegate or reflect back to its native Java class.
 
 ```js
 a = "hello";
