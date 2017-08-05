@@ -53,31 +53,13 @@ Combining and interpolating strings is part of any programming language and an i
 
 #### Combining strings 
 
-It is extremely common that we want to combine the value of a variable with other strings. For instance, lets start with this example string:
+If you have 2 or more strings, you can concatenate them by using the `&` operator:
 
-**Happy ColdBoxing!**
-
-When we put that into the CFML file, it just spits back the same string. If we were writing a proper program we might want it to greet the user when they start the program by saying **Happy** then the day of the week. So we can't just put a string like **Happy Saturday!** or it'd be saying Saturday even on Tuesday.
-
-What we need to do is combine a variable with the string. There are two ways to do that. The first approach is called *string concatenation* which is basically just adding strings together:
-
-
-`<cfscript>`
-```js
-today   = "Saturday";
-message = "Happy " & today & "!";
-
-writeOutput( message );
 ```
-`</cfscript>`
-
-In the first line we setup a variable to hold the day of the week. Then we printed the string *Happy* combined with the value of the variable "today" and the string *!*. You might be thinking, "What was the point of that since we still wrote *Saturday* in the first line?" Ok, well, if you were writing a real program you'd use CFMLs built-in date instructions like this:
-
-```js
-today = DayOfWeek(Now());
+name = "Luis";
+a = "Hello " & name & " how are you today?"
 ```
 
-`Now()` gets the current date and time of the computer running the ColdFusion server. "DayOfWeek" returns an integer in the range 1 (Sunday) to 7 (Saturday) for the day of the week. We still don't have the day of week as string. Try this:
 
 #### Tag Syntax
 
