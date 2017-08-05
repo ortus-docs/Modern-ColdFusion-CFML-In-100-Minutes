@@ -140,7 +140,22 @@ A part from the native Java member functions available to you, CFML also allows 
 Here are some examples:
 
 ```js
+// Function passing
+var myArray = [];
+ArrayAppend( myArray, "objec_new" );
+ArraySort( myArray, "ASC" );
 
+// Member Functions
+myArray.append( "objec_new" );
+myArray.sort( "ASC" );
+
+// Java Functions + CFML Functions
+var myProductObject = createObject( "java", "myJavaclass" );
+myjavaList = myProductObject.getProductList();
+myjavaList.add( "newProduct" ); // Java API
+
+myjavaList.append( "newProduct" ); // CF API
+myjavaList.sort( "ASC" );
 ```
 
 ## Naming Coding Standards
