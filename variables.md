@@ -156,6 +156,13 @@ myjavaList.add( "newProduct" ); // Java API
 
 myjavaList.append( "newProduct" ); // CF API
 myjavaList.sort( "ASC" );
+
+// DSL Chaining
+s="the";
+s = s.listAppend("quick brown fox", " ")
+     .listAppend("jumps over the lazy dog", " ")
+     .ucase()
+     .reverse();
 ```
 
 #### Member functions for the following data types are supported:
