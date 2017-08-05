@@ -60,3 +60,22 @@ name = "Luis";
 a = "Hello " & name & " how are you today?"
 ```
 
+### Interpolating Strings
+
+Interpolating is where we stick a string within another string.  In CFML we use the `#` hashes to output a variable to the stream in context.  This means we can interpolate into any string:
+
+```
+name = "luis";
+welcome = "Good morning #name#, how are you today?";
+writeoutput( welcome );
+```
+
+That's it! If you surround any **simple** variable with `#` hashes, CFML will interpret the variable.  Now try this with a complex variable and see what happens:
+
+```js
+complex = [1,2,3]
+welcome = "Good morning #complex#, how are you today?";
+writeoutput( welcome );
+```
+
+
