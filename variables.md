@@ -135,7 +135,7 @@ If you run the script above in the REPL tool, you will see the output as `java.l
 
 ### CFML Member Functions
 
-A part from the native Java member functions available to you, CFML also allows you to call on each variable's data type functions. This way you do not have to be passing variables into functions, but instead treat the variables as objects.  You can see all the member functions available according to data type here: https://cfdocs.org/member
+A part from the native Java member functions available to you, CFML also allows you to call on each variable's data type functions and chain them to create nice language DSLs. This way you do not have to be passing variables into functions, but instead treat the variables as objects.  You can see all the member functions available according to data type here: https://cfdocs.org/member
 
 Here are some examples:
 
