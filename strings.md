@@ -38,36 +38,14 @@ a.trim().len()
  
 * The `mid` instruction extracts a substring from a string. For instance, I could call `Mid("Welcome to CFML Jumpstart",4,12)` and it would give you back: **come to CFML**.
 
-Experiment with the following samples in a CFML file.
+### ListToArray
 
+Another great function is `listToArray()` which can take any string and convert it to an array according to a delimiter.  The default delimiter is a comma `,`, but you can use any 1 or combination of characters.
 
-
-`<cfscript>`
-```javascript
-tester = "Good Morning Everyone!";
-
-writeOutput ("#len(tester)#<br/>");
-writeOutput (Replace (tester, "o", "e", "All") & "<br/>");
-writeOutput (RemoveChars (tester, 2, 5) & "<br/>");
-
-t2 = "sample,data,from,a,CSV";
-t3 = Mid (t2,8,len(t2));
-
-writeOutput (t3 & "<br/>");
+```js
+a = "luis,majano,lucas,alexia,veronica";
+myArray = a.listToArray();
 ```
-`</cfscript>`
-
-Often a string may store a list like the *t2* variable in the last example. A string for storing a list isn't the best for performance and usage. Using an array for a list is so much better. We can convert a list into an *array* using *ListToArray*. We'll discuss arrays in an upcoming section. Try out these next examples in the CFML file assuming we have the code from the last example:
-
-
-`<cfscript>`
-```javascript
-t4 = ListToArray(t3);
-writeOutput(t4[2]);
-```
-`</cfscript>`
-
-The numbers inside the "[]" brackets specify which item of the array you want pulled out. They're numbered starting with 1. So the first example pulls out the "2" array item. This "t4" array contains position "1", the beginning of the list, up to position "4", the ending of the array.
 
 ### Combining Strings and Variables
 
