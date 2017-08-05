@@ -126,6 +126,13 @@ if( structKeyExists( variables, "myVariable" ){
 
 As we have discussed, CFML is a dynamic language built on-top of Java.  Thus each variable internally is represented by a native Java data type: String, Int, Float, Array, Vector, HashMap, etc.  This is important because each variable you create has member methods available to you that delegate or reflect back to its native Java class.
 
+```js
+a = "hello";
+writeOutput( a.getClass().getName() );
+```
+
+If you run the script above in the REPL tool, you will see the output as `java.lang.String`.  Therefore, the variable is typed as a String and can call on any method that `java.lang.String` implements. You can try this for the many types in CFML like structs, arrays, objects, etc.
+
 ## Naming Coding Standards
 
 At [Ortus Solutions](https://www.ortussolutions.com) we have developed a set of development standards for many languages. You can find our [ColdFusion standards](https://github.com/Ortus-Solutions/coding-standards/blob/master/coldfusion.md) here: https://github.com/Ortus-Solutions/coding-standards/blob/master/coldfusion.md
