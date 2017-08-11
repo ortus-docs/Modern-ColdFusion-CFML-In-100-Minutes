@@ -16,11 +16,12 @@
 * [Structures](structures.md)
 * [Queries](queries.md)
 * [Conditionals](conditionals.md)
-* [Dependency Injection](dependency-injection.md)
+* [Testing](testing.md)
 
 ## Advanced
 
 * [Application.cfc](applicationcfc.md)
+* [Dependency Injection](dependency-injection.md)
 * [MVC](mvc.md)
 * [ORM](orm.md)
 
