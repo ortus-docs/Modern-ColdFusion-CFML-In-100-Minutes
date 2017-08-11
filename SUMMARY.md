@@ -9,6 +9,7 @@
 * [Variables](variables.md)
 * [Variable Scopes](variable-scopes.md)
 * [Components](components.md)
+* [Includes](includes.md)
 * [Strings](strings.md)
 * [Numbers](numbers.md)
 * [Arrays](arrays.md)
