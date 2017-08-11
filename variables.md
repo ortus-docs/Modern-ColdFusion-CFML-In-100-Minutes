@@ -84,6 +84,12 @@ writeDump( complex );abort;
 writeDump( var=arrayOfORM, top=5 );abort;
 ```
 
+### Server Debugging Templates
+
+CFML Engines also allow you to turn on/off a debugging template that shows up at the bottom of requests when running in server mode.  You can activate this debugging by logging in to the appropriate engine administrator and look for the **debugging** section.  Turn it on and debug like a champ.
+
+> **Important** Adobe Engines have a very evil setting called *Report Execution Times*, make sure it is always turned **OFF**.  If you use it with any application that leverages Components, it will slow down your application tremendously.
+
 
 ## Paraming Variables
 
