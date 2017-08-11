@@ -13,4 +13,5 @@
 * [Arrays](arrays.md)
 * [Structures](structures.md)
 * [Queries](queries.md)
+* [Conditionals](conditionals.md)
 
