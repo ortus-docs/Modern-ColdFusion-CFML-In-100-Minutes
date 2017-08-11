@@ -14,12 +14,14 @@ CFML gives you two additional operators for working with numbers:
 
 It is also important to note that you can add these operators to the variables or numbers directly.  You can also add them before the instruction and after the instruction with different effects:
 
-### After Operation
+### After Operations
 
 If you add a `++,--` after the declaration, then CFML will use your number as is and once that operation is done, it will increment or decrement by 1 the value of the variable.
 
 ```js
 a = 1;
-writeOutput( a++ );
-writeOutput( a++ );
+writeOutput( a++ ); => 1
+writeOutput( a ); => 2
 ```
+
+As you can see from the example above, in line 2
