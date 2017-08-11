@@ -46,7 +46,7 @@ writeOutput( a ); => 2
 
 As you can see from the example above, in line 2 the output will be now 2, as `a` was incremented before. Same will go for the `--` operator used before operations.
 
-> See https://cfdocs.org/cfloop for more information
+> See https://cfdocs.org/cfloop, https://cfdocs.org/cfwhile for more information
 
 ## Repeating Instructions
 
