@@ -58,7 +58,7 @@ for( var i = 0; i lte 10; i++ ){
 }
 
 var i =1;
-while( i lte 10 ){
+while( i < 10 ){
     writeOutput( "Showing day " & i++ );
 }
 ```

@@ -5,8 +5,9 @@
 * [Intro to CommandBox](intro-to-commandbox.md)
 * [Instructions & Interpreters](instructions-and-interpreters.md)
 * [Syntax](syntax.md)
+* Comments
 * [Variables](variables.md)
 * [Variable Scopes](variable-scopes.md)
 * [Strings](strings.md)
-* [Numbers](numbers.md)
+* Comments
 
