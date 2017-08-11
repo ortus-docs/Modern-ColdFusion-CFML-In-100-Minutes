@@ -19,6 +19,7 @@
 * [Queries](queries.md)
 * [Conditionals](conditionals.md)
 * [Files](files.md)
+* [HTTP Calls](http-calls.md)
 
 ## Advanced
 
