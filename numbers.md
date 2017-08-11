@@ -45,3 +45,13 @@ writeOutput( a ); => 2
 ```
 
 As you can see from the example above, in line 2 the output will be now 2, as `a` was incremented before. Same will go for the `--` operator used before operations.
+
+## Repeating Instructions
+
+Number variables can be used to repeat instructions.  Like in many other languages, CFML supports the `for` loop and `while` loops.
+
+```js
+for( var i = 0; i lte 10; i++ ){
+    writeOutput( "Showing day " & i );
+}
+```
