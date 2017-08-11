@@ -46,6 +46,8 @@ writeOutput( a ); => 2
 
 As you can see from the example above, in line 2 the output will be now 2, as `a` was incremented before. Same will go for the `--` operator used before operations.
 
+> See https://cfdocs.org/cfloop for more information
+
 ## Repeating Instructions
 
 Number variables can be used to repeat instructions.  Like in many other languages, CFML supports the `for`, `while` and `loop` constructs:
