@@ -195,6 +195,8 @@ s = s.listAppend("quick brown fox", " ")
 * Query
 * Image
 
+Please see https://cfdocs.org/member for further information on member functions.
+
 ## Naming Coding Standards
 
 At [Ortus Solutions](https://www.ortussolutions.com) we have developed a set of development standards for many languages. You can find our [ColdFusion standards](https://github.com/Ortus-Solutions/coding-standards/blob/master/coldfusion.md) here: https://github.com/Ortus-Solutions/coding-standards/blob/master/coldfusion.md
