@@ -8,11 +8,11 @@
 * [Comments](comments.md)
 * [Variables](variables.md)
 * [Variable Scopes](variable-scopes.md)
+* [Components](components.md)
 * [Strings](strings.md)
 * [Numbers](numbers.md)
 * [Arrays](arrays.md)
 * [Structures](structures.md)
 * [Queries](queries.md)
 * [Conditionals](conditionals.md)
-* [Null \(Nothingness\)](null-nothingness.md)
 
