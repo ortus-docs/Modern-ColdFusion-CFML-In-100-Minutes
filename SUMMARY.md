@@ -8,4 +8,5 @@
 * [Variables](variables.md)
 * [Variable Scopes](variable-scopes.md)
 * [Strings](strings.md)
+* [Numbers](numbers.md)
 
