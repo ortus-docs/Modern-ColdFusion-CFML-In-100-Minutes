@@ -63,3 +63,5 @@ while( i <= 10 ){
 }
 ```
 
+> Please note that the syntax varies from tag to script, so refer to the docs for subtle differences.
+
