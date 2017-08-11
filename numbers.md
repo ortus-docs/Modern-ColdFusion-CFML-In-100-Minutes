@@ -24,4 +24,17 @@ writeOutput( a++ ); => 1
 writeOutput( a ); => 2
 ```
 
-As you can see from the example above, in line 2
+As you can see from the example above, in line 2 the output will be still 1, but after that operation `a` will be incremented. So the next usage will reflect it.  Same will go for the `--` operator used after operations.
+
+
+### Before Operations
+
+If you add a `++,--` before the declaration, then CFML will increment/decrement the number before the operation is used.
+
+```js
+a = 1;
+writeOutput( ++a ); => 2
+writeOutput( a ); => 2
+```
+
+As you can see from the example above, in line 2 the output will be now 2, as `a` was incremented before. Same will go for the `--` operator used before operations.
