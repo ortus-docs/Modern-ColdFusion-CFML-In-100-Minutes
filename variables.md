@@ -72,6 +72,18 @@ a = "hello luis";
 b = a;
 ```
 
+## Debugging Variables
+
+CFML offers one of the most used functions/tags ever: `<cfdump>, writeDump()` and `<cfabort>, abort;`.  These are used to dump the entire contents of a variable to the browser, console or even a file.  You can then leverage the `abort` construct to abort the request and see the output of your dumped variables.  This will work with both simple and complex variables.  However, be very careful when using it with Nested ORM objects as you can potentially dump your entire database and crash the server.  Leverage the `top` argument to limit the dumping.
+
+```js
+writeDump( complex );abort;
+
+<cfdump var="#server#" abort=true>
+
+writeDump( var=arrayOfORM, top=5 );abort;
+```
+
 
 ## Paraming Variables
 
