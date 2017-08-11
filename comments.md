@@ -36,5 +36,5 @@ If you are within a CFC or in a `<cfscript>` block you can use an alternate styl
 
 ## CFDoc Style Comments
 
-In the CFML world you can write JavaDoc comments in what we call CFDoc comments.  We leverage the DocBox library to generate documentation according to object metadata and comments.
+In the CFML world you can write JavaDoc comments in what we call CFDoc comments.  We leverage the [DocBox](https://github.com/Ortus-Solutions/DocBox) library to generate documentation according to object metadata and comments.
 
