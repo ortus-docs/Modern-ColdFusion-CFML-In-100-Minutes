@@ -63,5 +63,5 @@ while( i <= 10 ){
 }
 ```
 
-> Please note that the syntax varies from tag to script, so refer to the docs for subtle differences.
+> Please note that the syntax varies from tag to script, so refer to the docs for subtle differences. Please also note that you can iterate over structures, arrays, queries and objects in CFML as well; we will see this in later sections.
 
