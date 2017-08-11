@@ -5,6 +5,13 @@ There are two basic kinds of numbers: **integers** (whole numbers) and **floats*
 > **Tip**: If you are dealing with currency or tracking precision, please read about `precisionEvaluate()` to represent big numbers and precision results: https://cfdocs.org/precisionevaluate
 
 
+```js
+a = 1;
+b = 50.1;
+writeOutput( a * b );
+```
+
+
 ## Increment/Decrement
 
 CFML gives you two additional operators for working with numbers:
