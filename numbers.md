@@ -53,12 +53,12 @@ As you can see from the example above, in line 2 the output will be now 2, as `a
 Number variables can be used to repeat instructions.  Like in many other languages, CFML supports the `for`, `while` and `loop` constructs:
 
 ```js
-for( var i = 0; i lte 10; i++ ){
+for( var i = 0; i <= 10; i++ ){
     writeOutput( "Showing day " & i );
 }
 
 var i =1;
-while( i < 10 ){
+while( i <= 10 ){
     writeOutput( "Showing day " & i++ );
 }
 ```
