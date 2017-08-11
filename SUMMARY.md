@@ -10,4 +10,6 @@
 * [Variable Scopes](variable-scopes.md)
 * [Strings](strings.md)
 * [Numbers](numbers.md)
+* [Arrays](arrays.md)
+* Structures
 
