@@ -20,6 +20,7 @@
 * [Conditionals](conditionals.md)
 * [Files](files.md)
 * [HTTP Calls](http-calls.md)
+* [Closures](closures.md)
 
 ## Advanced
 
