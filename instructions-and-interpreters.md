@@ -12,7 +12,7 @@ You can run any ColdFusion script in any Adobe or Lucee server or in the command
 
 ## Java Integration
 
-ColdFusion is dynamic language for the JVM, thus it runs in a full JDK/JRE context. It also provides you with hooks into the Java virtual machine. Meaning you can create and use Java objects natively in CFML.  You can even create dynamic proxies and implement Java interfaces natively.  Almost **Any** Java library or program can be class loaded and executed in CFML.  For further reading check out the [Java Integration Guide](https://cfdocs.org/java): https://cfdocs.org/java
+ColdFusion is a dynamic language for the JVM, thus it runs in a full JDK/JRE context. It also provides you with hooks into the Java virtual machine. Meaning you can create and use Java objects natively in CFML.  You can even create dynamic proxies and implement Java interfaces natively.  Almost **Any** Java library or program can be class loaded and executed in CFML.  For further reading check out the [Java Integration Guide](https://cfdocs.org/java): https://cfdocs.org/java
 
 ```js
 currentFile = createObject("java", "java.io.File").init( getCurrentTemplatePath() );
