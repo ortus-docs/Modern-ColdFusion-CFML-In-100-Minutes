@@ -12,19 +12,19 @@
 * [Variable Scopes](variable-scopes.md)
 * [Components](components.md)
 * [Includes](includes.md)
+* [Conditionals](conditionals.md)
 * [Strings](strings.md)
 * [Numbers](numbers.md)
 * [Arrays](arrays.md)
 * [Structures](structures.md)
 * [Queries](queries.md)
-* [Conditionals](conditionals.md)
+* [Closures](closures.md)
 * [Files](files.md)
 * [HTTP Calls](http-calls.md)
-* [Closures](closures.md)
-
-## Advanced
-
 * [Application.cfc](applicationcfc.md)
+
+## Extra Credit
+
 * [Testing](testing.md)
 * [Dependency Injection](dependency-injection.md)
 * [MVC](mvc.md)
