@@ -38,3 +38,32 @@ If you are within a CFC or in a `<cfscript>` block you can use an alternate styl
 
 In the CFML world you can write JavaDoc comments in what we call CFDoc comments.  We leverage the [DocBox](https://github.com/Ortus-Solutions/DocBox) library to generate documentation according to object metadata and comments.
 
+```js
+/**
+* This is my component
+* 
+* @author Luis Majano
+*/
+component extends="Base" implements="IHello" singleton{
+
+    /**
+    * The Settings
+    */
+    property name="settings";
+
+
+    /**
+    * Constructor
+    *
+    * @wirebox The Injector
+    * @wirebox.inject wirebox
+    */
+    function init( required wirebox ){
+        variables.wirebox = arguments.wirebox;
+        return this;
+    }
+
+
+}
+```
+
