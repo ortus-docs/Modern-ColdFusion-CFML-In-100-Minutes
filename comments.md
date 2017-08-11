@@ -3,7 +3,7 @@
 Comments are necessary and essential for any programming language.  CFML is no different with helping you add code comments in both script and tag syntax.
 
 
-## Tags
+## Tag Comments
 
 You can use the `<!---` and `--->` Syntax to comment within a CFML template. This is very similar to HTML comments but adding an extra `-` to demarcate it as a CFML comment.
 
@@ -17,3 +17,24 @@ ColdFusion Comment
 <!---  I am a ColdFusion Comment--->
 
 ```
+
+## Script Comments
+
+If you are within a CFC or in a `<cfscript>` block you can use an alternate style for comments.  You can leverage `//` for single line comments and the following for multi-line comments:
+
+```js
+/**
+* Multi 
+* Line
+* Comments
+* are
+* great!
+*/
+
+// Single line comment
+```
+
+## CFDoc Style Comments
+
+In the CFML world you can write JavaDoc comments in what we call CFDoc comments.  We leverage the DocBox library to generate documentation according to object metadata and comments.
+
