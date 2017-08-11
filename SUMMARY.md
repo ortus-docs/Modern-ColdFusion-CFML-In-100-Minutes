@@ -11,5 +11,5 @@
 * [Strings](strings.md)
 * [Numbers](numbers.md)
 * [Arrays](arrays.md)
-* Structures
+* [Structures](structures.md)
 
