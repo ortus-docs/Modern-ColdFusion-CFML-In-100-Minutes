@@ -8,7 +8,7 @@ A typical example might be your website's header and footer, or the reuse of inc
 
 ## A Stern Warning
 
-Now, even though doing includes/mixins are easy to do in CFML, let me give you a **BIG WARNING**.  Includes are one of the most abused features in ANY language.  Easy doesn't mean sustainable or maintainable.  Do not go crazy with includes, there are many other design patterns like dependency injection and composition/aggregation that can solve reusability in much better approaches.
+Now, even though doing includes/mixins are easy to do in CFML, let me give you a **BIG WARNING**.  Includes are one of the most abused features in ANY language, that bring confusion and sustainability issues.  Easy doesn't mean sustainable or maintainable.  Do not go crazy with includes, there are many other design patterns like dependency injection and composition/aggregation that can solve reusability in much better approaches.  Think about it not twice, but thrice!
 
 > **Mixin** : In object-oriented programming languages, a mixin is a class that contains methods for use by other classes without having to be the parent class of those other classes; No inheritance needed. - https://en.wikipedia.org/wiki/Mixin
 
