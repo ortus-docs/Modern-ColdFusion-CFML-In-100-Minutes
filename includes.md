@@ -2,7 +2,9 @@
 
 If you've used other scripting environments such as PHP, or dynamic HTML, you would be familiar with the concept of **server side includes**.
 
-An **include** is a file that is embedded, or **included** within another file; simple as that. This can be very useful when you want multiple ColdFusion templates to share the same block of code. A typical example might be your website's header and footer. If your website has a consistent header and footer on every page, you could use an include file for each of these.
+An **include** is a file that is embedded, or **included** within another file; simple as that. This can be very useful when you want multiple CFML templates to share the same block of code, scopes and visibility.  In modern times, you can call this a **mixin**. A typical example might be your website's header and footer. If your website has a consistent header and footer on every page, you could use an include file for each of these.
+
+> **Mixin** : In object-oriented programming languages, a mixin is a class that contains methods for use by other classes without having to be the parent class of those other classes. - https://en.wikipedia.org/wiki/Mixin
 
 ColdFusion provides the <cfinclude> tag for specifying included files.
 
