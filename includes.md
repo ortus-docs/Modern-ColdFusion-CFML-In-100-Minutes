@@ -14,6 +14,13 @@ Now, even though doing includes/mixins are easy to do in CFML, let me give you a
 
 CFML provides the `<cfinclude>` tag and the `include` construct for including files in script - https://cfdocs.org/cfinclude.
 
+```js
+<cfinclude template="" runonce="true|false">
+
+// script
+include "template.cfm" runonce=true;
+```
+
 Tag Syntax
 
 You'll notice that the <cfinclude> tag doesn't have a closing tag — it just accepts an attribute value (the included filename).
