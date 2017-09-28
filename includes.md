@@ -1,6 +1,6 @@
 # Includes
 
-If you've used other scripting environments such as PHP, or dynamic HTML, you would be familiar with the concept of **server side includes**.  An **include** is a file that is embedded, or **included** within another file; simple as that. 
+If you've used other scripting environments such as PHP, or dynamic HTML, you would be familiar with the concept of **server side includes**.  An **include** is a file that is embedded, or **included** within another file making it part of the execution; simple as that. 
 
 This can be very useful when you want multiple CFML templates to share the same block of code, scopes and visibility.  In modern times, you can call this a **mixin**. 
 
