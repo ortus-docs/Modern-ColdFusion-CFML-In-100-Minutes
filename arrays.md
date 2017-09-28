@@ -60,4 +60,18 @@ Check it out:
 
 Please note that all member functions can also be used as traditional [array functions](https://cfdocs.org/array-functions). However, [member functions](https://cfdocs.org/member) do look so much better for readability.
 
+## Multi-Dimensional Arrays
+
+If you would like to create grids or matrix constructs you will have to create two-dimensional arrays.  Basically giving you and x and y axis of data.  You will do so using the `arrayNew( dimensions = max 3 )` method:
+
+```
+grid = arrayNew( 2 );
+grid[1][1] = 'Hammer';
+grid[1][2] = 'Nail';
+grid[2][1] = 'Screwdriver';
+grid[1][2] = 'Screw';
+```
+
+> **Tip** CFML only supports of two three dimensional arrays, so you can easily represent x, y and z axis.
+
 
