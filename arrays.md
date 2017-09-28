@@ -125,7 +125,7 @@ You can use different constructs for looping over arrays:
 
 * `for` loops
 * `loop` constructs
-* `each()` modern iterators
+* `each()` closures
 
 ```js
 for( var thisMeal in meals ){
