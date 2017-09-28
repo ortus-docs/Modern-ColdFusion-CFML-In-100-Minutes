@@ -17,7 +17,7 @@ You could number each one by its position left to right:
  ---  ---  ---
 |   ||   ||   |
  ---  ---  ---
-  0    1    2
+  1    2    3
 ```
 
 Then put strings in each box:
@@ -26,5 +26,5 @@ Then put strings in each box:
  -------------  ---------  ----------
 | "Breakfast" || "Lunch" || "Dinner" |
  -------------  ---------  ----------
-       0            1           2
+       1            2           3
 ```
