@@ -22,7 +22,6 @@
 * [Files](files.md)
 * [HTTP Calls](http-calls.md)
 * [Application.cfc](applicationcfc.md)
-* [Docker + CFML](docker-+-cfml.md)
 
 ## Extra Credit
 
@@ -30,4 +29,5 @@
 * [Dependency Injection](dependency-injection.md)
 * [MVC](mvc.md)
 * [ORM](orm.md)
+* [Docker + CFML](docker-+-cfml.md)
 
