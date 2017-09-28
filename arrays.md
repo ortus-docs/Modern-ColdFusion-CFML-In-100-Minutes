@@ -43,3 +43,10 @@ If you asked the array for the element in position two you’d get back `Lunch`.
 ## The Story of One
 
 Now, have you detected something funny with the ordering of the elements? Come on, look closer....... They start with `1` and not `0`, now isn't that funny.  CFML is one of the few languages were array indexes start at `1` and not `0`.  So if you have a PHP, Ruby or Java background, remember that `1` is were you start.
+
+## Arrays in Code
+
+Let's go ahead and model some code in CFML using our fancy REPL tool CommandBox:
+
+
+
