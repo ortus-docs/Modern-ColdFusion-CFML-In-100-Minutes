@@ -26,4 +26,5 @@ include "template.cfm" runonce=true;
 The `template` argument is a relative, absolute or CFML mapping path to the template to inject.
 
 ```js
-include template="path/to/libraries/greetingCustomizer.cfm";
+include template="path/to/libraries/mixins.cfm";
+```
