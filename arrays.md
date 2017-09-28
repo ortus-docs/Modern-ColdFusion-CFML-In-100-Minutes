@@ -118,3 +118,23 @@ complexData = [ {a: 4}, {a: 18}, {a: 51} ];
  }, 0 ); 
 writeDump(sum); 
 ```
+
+## Looping Over Arrays
+
+You can use different constructs for looping over arrays:
+
+* `for` loops
+* `loop` constructs
+* `each()` modern iterators
+
+```js
+for( var thisMeal in meals ){
+    systemOutput( "I just had #thisMeal#" );
+}
+
+meals.each( function( element, index ){
+  systemOutput( "I just had #element#" );
+} );
+
+
+```
