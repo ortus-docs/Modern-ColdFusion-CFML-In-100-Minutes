@@ -66,10 +66,10 @@ If you would like to create grids or matrix constructs you will have to create t
 
 ```
 grid = arrayNew( 2 );
-grid[1][1] = 'Hammer';
-grid[1][2] = 'Nail';
-grid[2][1] = 'Screwdriver';
-grid[1][2] = 'Screw';
+grid[ 1 ][ 1 ] = 'Hammer';
+grid[ 1 ][ 2 ] = 'Nail';
+grid[ 2 ][ 1 ] = 'Screwdriver';
+grid[ 1 ][ 2 ] = 'Screw';
 ```
 
 > **Tip** CFML only supports of two three dimensional arrays, so you can easily represent x, y and z axis.
