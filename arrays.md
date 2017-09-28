@@ -50,5 +50,14 @@ Let's go ahead and model some code in CFML using our fancy REPL tool CommandBox:
 
 ![](/assets/arrays_in_code.png)
 
+Check it out:
+
+* The array was created by putting pieces of data between square brackets (`[]`) and separated by commas
+* We added an element to the array using the member function `append()`
+* We fetched the element at a specific position by using square brackets (`[ x ]`) and replaced `x` with the index we wanted
+* We retrieved the size of the array by using the member function `len()`
+* We searched the contents of the array using the member function `findNoCase()` and it gave us the index position of the element in the array.
+
+Please note that all member functions can also be used as traditional [array functions](https://cfdocs.org/array-functions). However, [member functions](https://cfdocs.org/member) do look so much better for readability.
 
 
