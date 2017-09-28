@@ -48,5 +48,7 @@ Now, have you detected something funny with the ordering of the elements? Come o
 
 Let's go ahead and model some code in CFML using our fancy REPL tool CommandBox:
 
+![](/assets/arrays_in_code.png)
+
 
 
