@@ -129,12 +129,18 @@ You can use different constructs for looping over arrays:
 
 ```js
 for( var thisMeal in meals ){
-    systemOutput( "I just had #thisMeal#" );
+ systemOutput( "I just had #thisMeal#" );
+}
+
+for( var x = 1; x lte meals.len(); x++ ){
+ systemOutput( "I just had #meals[ x ]#" );
 }
 
 meals.each( function( element, index ){
   systemOutput( "I just had #element#" );
 } );
 
-
+cfloop( from=1, to=meals.len(), index=x ){
+  systemOutput( "I just had #meals[ x ]#" );
+}
 ```
