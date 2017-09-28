@@ -28,3 +28,14 @@ Then put strings in each box:
  -------------  ---------  ----------
        1            2           3
 ```
+
+We have a three element Array. CFML arrays can grow and shrink dynamically at runtime just like Array Lists or Vectors in Java, so if we added an element it’d usually go on the end or appended at the end.
+
+```
+ -------------  ---------  ----------  -----------
+| "Breakfast" || "Lunch" || "Dinner" || "Dessert" |
+ -------------  ---------  ----------  -----------
+       1            2           3           4
+```
+
+Now, have you detected something funny with the ordering of the elements? Come on, look closer....... They start with `1` and not `0`, now isn't that funny.  CFML is one of the few languages were array indexes start at `1` and not `0`.  So if you have a PHP, Ruby or Java background, remember that `1` is were you start.
