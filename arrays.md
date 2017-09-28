@@ -79,5 +79,42 @@ grid[1][2] = 'Screw';
 
 The best way to learn about using arrays is to check out the available [member functions](https://cfdocs.org/member)  and [array functions](https://cfdocs.org/array-functions).
 
+```
+// Sort an array
+meals.sort( "textnocase" );
+
+// Clear the array
+meals.clear();
+
+// Go on a diet
+meals.delete( "Dessert" );
+meals.deleteAt( 4 );
+
+// Iterate
+meals.each( function( element, index) {
+   systemOutput( element & " " & index );
+} );
+
+// Filter an array
+meals.filter( function( item ){
+ return item.findNoCase( "unch" ) gt 0 ? true : false;
+} );
+
+// Convert to a list
+meals.toList();
+
+// Map/ Reduce
+complexData = [ {a: 4}, {a: 18}, {a: 51} ];
+newArray = arrayMap( complexData, function(item){
+   return item.a;
+});
+writeDump(newArray);
 
 
+complexData = [ {a: 4}, {a: 18}, {a: 51} ]; 
+ sum = arrayReduce( complexData, function(prev, element) 
+ { 
+ return prev + element.a; 
+ }, 0 ); 
+writeDump(sum); 
+```
