@@ -75,3 +75,9 @@ grid[1][2] = 'Screw';
 > **Tip** CFML only supports of two three dimensional arrays, so you can easily represent x, y and z axis.
 
 
+## Common Methods
+
+The best way to learn about using arrays is to check out the available [member functions](https://cfdocs.org/member)  and [array functions](https://cfdocs.org/array-functions).
+
+
+
