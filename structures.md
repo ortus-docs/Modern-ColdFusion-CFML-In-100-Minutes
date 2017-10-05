@@ -36,7 +36,7 @@ produce = {
 The *key* is used as the address and the *value* is the data at that address.  Please note that the *value* can be ANYTHING. It can be an array, an object, a simple value or even an embedded structure. It doesn't matter.
 
 
-## StructNew()
+## StructNew() Types
 
 You can also declare new structures via the `structNew()` function.  This just basically assigns a struct to a variable. You will then be responsible for filling that structure out with data.
 
@@ -47,4 +47,7 @@ produce = structnew();
 
 But why would I ever use the function if I can do the `{}` notation which looks nicer?  The answer is that in CFML you can create different types of structures:
 
-* 
+* `linked/ordered` - a struct with ordered keys that maintain insertion order
+* `normal` - an unordered structure
+* `soft` - a struct with Java soft referenced values, which can be cleared by the garbage collector if memory is needed.
+* `weak` - a struct with Java weak referenced values, which do not prevent their referents from being garbage collected.
