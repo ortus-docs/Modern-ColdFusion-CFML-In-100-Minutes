@@ -18,4 +18,4 @@ produce = {
 };
 ```
 
-Since CFML is a case-insensitive language, the structure defined above will store the keys all in uppercase.  If you want the exact casing to be preserved in the structure, then surround the keys with quotes (`"`)
+Since CFML is a case-insensitive language, the structure defined above will store the keys all in uppercase.  If you want the exact casing to be preserved in the structure, then surround the keys with quotes (`"`).
