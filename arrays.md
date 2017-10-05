@@ -46,8 +46,6 @@ Now, have you detected something funny with the ordering of the elements? Come o
 
 > **Hint** All CFML arrays in Adobe ColdFusion are passed by values, while in Lucee they are passed by reference.  Please keep this in mind when working with arrays and passing them to functions.  There is also the `passby=reference|value` attribute to function arguments where you can decide if you want to pass by reference or value.
 
-
-
 ## Arrays in Code
 
 Let's go ahead and model some code in CFML using our fancy REPL tool CommandBox:
@@ -63,6 +61,9 @@ Check it out:
 * We searched the contents of the array using the member function `findNoCase()` and it gave us the index position of the element in the array.
 
 Please note that all member functions can also be used as traditional [array functions](https://cfdocs.org/array-functions). However, [member functions](https://cfdocs.org/member) do look so much better for readability.
+
+> **Tip** You can use the `toString()` call on any array to get a string representation of its values: `grid.toString()`
+
 
 ## Multi-Dimensional Arrays
 
