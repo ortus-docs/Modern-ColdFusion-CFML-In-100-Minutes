@@ -63,4 +63,6 @@ Once you create structures you can use them in many funky ways.  Please check ou
 
 ![](/assets/Screen Shot 2017-10-05 at 4.57.20 PM.png)
 
-As you can see, there are many cool methods from detecting keys, values, length, counts, etc.
+As you can see, there are many cool methods from detecting keys, values, length, counts, etc. A very cool method is `keyArray()` which gives you the listing of keys as an array:
+
+![](/assets/Screen Shot 2017-10-05 at 4.58.09 PM.png)
