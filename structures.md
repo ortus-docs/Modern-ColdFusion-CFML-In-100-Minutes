@@ -51,3 +51,8 @@ But why would I ever use the function if I can do the `{}` notation which looks 
 * `normal` - an unordered structure
 * `soft` - a struct with Java soft referenced values, which can be cleared by the garbage collector if memory is needed.
 * `weak` - a struct with Java weak referenced values, which do not prevent their referents from being garbage collected.
+
+```js
+linkedList = structNew( 'ordered' );
+cache = structnew( 'soft' );
+```
