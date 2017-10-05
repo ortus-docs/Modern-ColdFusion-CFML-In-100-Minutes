@@ -58,3 +58,5 @@ cache = structnew( 'soft' );
 ```
 
 ## Common Methods
+
+Once you create structures you can use them in many funky ways.  Please check out all the [structure functions](https://cfdocs.org/struct-functions) and all the structure modern [member functions](https://cfdocs.org/member) that are available to you.
