@@ -5,4 +5,4 @@ A structure is a collection of data where each element of data is addressed by a
 > **Tip** Underneath the hood, all CFML structures are based on the `java.util.Map` interface.  So if you are coming from a Java background, structures are just HashMaps. 
 
  
-As an analogy, think about a refrigerator. If we’re keeping track of the produce inside the fridge, we don’t really care about what shelf it’s on – the order doesn’t matter. Instead we organize things by name. Like the name "apples" might have the value 3, then the name "oranges" might have the value 1, and "carrots" the value 12. In this situation we’d use a hash.
+As an analogy, think about a refrigerator. If we’re keeping track of the produce inside the fridge, we don’t really care about where in the fridge the produce is in or basically: **order doesn’t matter**. Instead we organize things by name. Like the name "apples" might have the value 3, then the name "oranges" might have the value 1, and "carrots" the value 12. In this situation we’d use a hash.
