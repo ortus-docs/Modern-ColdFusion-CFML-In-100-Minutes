@@ -57,6 +57,8 @@ produce[ "grapes" ] = 1; // or
 produce.grapes--
 ```
 
+> **Tip** You can use the `toString()` call on any structure to get a string representation of its keys+values: `produce.toString()`
+
 ## StructNew() Types
 
 You can also declare new structures via the `structNew()` function.  This just basically assigns a struct to a variable. You will then be responsible for filling that structure out with data.
