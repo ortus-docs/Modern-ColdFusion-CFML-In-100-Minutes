@@ -60,3 +60,7 @@ cache = structnew( 'soft' );
 ## Common Methods
 
 Once you create structures you can use them in many funky ways.  Please check out all the [structure functions](https://cfdocs.org/struct-functions) and all the structure modern [member functions](https://cfdocs.org/member) that are available to you.
+
+![](/assets/Screen Shot 2017-10-05 at 4.57.20 PM.png)
+
+As you can see, there are many cool methods from detecting keys, values, length, counts, etc.
