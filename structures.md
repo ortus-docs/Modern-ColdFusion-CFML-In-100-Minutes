@@ -42,6 +42,17 @@ writeOutput( "I have #produce[ "grapes" ]# grapes in my fridge!" );
 writeOutput( "I have #produce[ "eggplants" ]# eggplants in my fridge!" );
 ```
 
+I can also set new or override values of the structure a-la-carte:
+
+```js
+// uppercase key
+produce.apples = 3;
+// case sensitive key
+produce[ "apples" ] = 3;
+
+// I just ate one grape, let's reduce it
+produce[ "grapes" ] = 1;
+```
 
 ## StructNew() Types
 
