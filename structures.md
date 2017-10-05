@@ -39,6 +39,8 @@ Retreiving values are also simple, just reference the structure by the key name:
 
 ```js
 writeOutput( "I have #produce[ "grapes" ]# grapes in my fridge!" );
+writeOutput( "I have #produce[ "eggplants" ]# eggplants in my fridge!" );
+
 ```
 
 
