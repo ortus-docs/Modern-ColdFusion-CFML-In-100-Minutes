@@ -30,3 +30,4 @@ produce = {
 };
 ```
 
+The *key* is used as the address and the *value* is the data at that address.  Please note that the *value* can be ANYTHING. It can be an array, an object, a simple value or even an embedded structure. It doesn't matter.
