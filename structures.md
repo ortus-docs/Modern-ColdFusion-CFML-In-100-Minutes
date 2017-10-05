@@ -1,6 +1,6 @@
 # Structures
 
-A structure is a collection of data where each element of data is addressed by a **name**.  
+A structure is a collection of data where each element of data is addressed by a **name**. 
 
 > **Tip** Underneath the hood, all CFML structures are based on the `java.util.Map` interface.  So if you are coming from a Java background, structures are just HashMaps. 
 
