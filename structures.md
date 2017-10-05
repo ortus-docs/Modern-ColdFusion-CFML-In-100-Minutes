@@ -56,3 +56,5 @@ But why would I ever use the function if I can do the `{}` notation which looks 
 linkedList = structNew( 'ordered' );
 cache = structnew( 'soft' );
 ```
+
+## Common Methods
