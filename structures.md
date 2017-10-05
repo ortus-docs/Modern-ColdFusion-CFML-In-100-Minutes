@@ -51,7 +51,8 @@ produce.apples = 3;
 produce[ "apples" ] = 3;
 
 // I just ate one grape, let's reduce it
-produce[ "grapes" ] = 1;
+produce[ "grapes" ] = 1; // or
+produce.grapes--
 ```
 
 ## StructNew() Types
