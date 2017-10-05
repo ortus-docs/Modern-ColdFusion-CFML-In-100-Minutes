@@ -6,6 +6,8 @@ A structure is a collection of data where each element of data is addressed by a
 
 As an analogy, think about a refrigerator. If we’re keeping track of the produce inside the fridge, we don’t really care about where in the fridge the produce is in or basically: **order doesn’t matter**. Instead we organize things by name, which are unique, and each name can have any value. Like the name *grapes* might have the value 2, then the name *lemons* might have the value 1, and *eggplants* the value 6.
 
+> **Hint** All CFML structures are passed to functions as memory references, not values.  Keep that in mind, when working with structures.
+
 ## Key-Value Pairs
 
 A structure is an *unordered collection* where the data gets organized as a key and value pair.  CFML syntax for structures follows the following syntax:
