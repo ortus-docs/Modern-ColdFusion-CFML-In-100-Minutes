@@ -45,9 +45,9 @@ writeOutput( "I have #produce[ "eggplants" ]# eggplants in my fridge!" );
 I can also set new or override values of the structure a-la-carte:
 
 ```js
-// uppercase key
+// new key using default uppercase notation
 produce.apples = 3;
-// case sensitive key
+// new key using case sensitive key
 produce[ "apples" ] = 3;
 
 // I just ate one grape, let's reduce it
