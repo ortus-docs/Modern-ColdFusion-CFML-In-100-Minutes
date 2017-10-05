@@ -44,6 +44,10 @@ If you asked the array for the element in position two you’d get back `Lunch`.
 
 Now, have you detected something funny with the ordering of the elements? Come on, look closer....... They start with `1` and not `0`, now isn't that funny.  CFML is one of the few languages were array indexes start at `1` and not `0`.  So if you have a PHP, Ruby or Java background, remember that `1` is were you start.
 
+> **Hint** All CFML arrays in Adobe ColdFusion are passed by values, while in Lucee they are passed by reference.  Please keep this in mind when working with arrays and passing them to functions.  There is also the `passby=reference|value` attribute to function arguments where you can decide if you want to pass by reference or value.
+
+
+
 ## Arrays in Code
 
 Let's go ahead and model some code in CFML using our fancy REPL tool CommandBox:
