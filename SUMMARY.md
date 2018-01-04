@@ -10,7 +10,7 @@
 * [Comments](comments.md)
 * [Variables](variables.md)
 * [Variable Scopes](variable-scopes.md)
-* [Components, Properties, Methods](components.md)
+* [Components, Properties, Functions](components.md)
 * [Includes](includes.md)
 * [Conditionals](conditionals.md)
 * [Strings](strings.md)
