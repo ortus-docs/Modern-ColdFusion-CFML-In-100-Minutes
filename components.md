@@ -10,4 +10,9 @@ For an example of an object, think about **you **as a human being. You have attr
 
 ## Classes and Instances
 
-In Object-Oriented programming we define classes which we will call CFML **components**, which are abstract descriptions of a category or type of thing. It defines what properties and functions all objects of that type have. You can consider to be a blueprint of your object representation.  An instance, is a copy of that blueprint that you are bringing to life 
+In Object-Oriented programming we define classes which we will call CFML **components**, which are abstract descriptions of a category or type of thing. It defines what properties and functions all objects of that type have. You can consider to be a blueprint of your object representation.  An instance, is a copy of that blueprint that you are bringing to life that will be stored in memory and used by the language.  Usually via a `new` or `createObject()` keyword operation.
+
+```
+user = new User();
+user.run();
+```
