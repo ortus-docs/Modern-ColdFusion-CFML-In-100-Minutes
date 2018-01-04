@@ -22,7 +22,7 @@ In Object-Oriented programming we define classes which are abstract descriptions
 
 An instance, is a copy of that blueprint that you are bringing to life that will be stored in memory and used by the language.  Usually via a `new` or `createObject()` keyword operation.
 
-```
+```java
 // Create a new instance of the User class
 user = new User( name="luis" );
 // execute a function within it
