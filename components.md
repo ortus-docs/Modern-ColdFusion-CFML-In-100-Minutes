@@ -7,3 +7,7 @@ CFML is an Object-Oriented programming language which means that all the things 
 > Remember that objects are not only data but data + behavior.
 
 For an example of an object, think about **you **as a human being. You have attributes like height, weight, and eye color. You have methods like walk, run, wash dishes, and daydream. Different kinds of objects have different properties and functions.
+
+## Classes and Instances
+
+In Object-Oriented programming we define classes which we will call **components**, which are abstract descriptions of a category or type of thing. It defines what properties and functions all objects of that type have.
