@@ -255,12 +255,12 @@ Please note that in CFML you can also declare these attributes via annotations i
 
 ```java
 /**
-* My User
-* @extends BaseUser
-* @accessors true
-* @serializable true
+* Say Hello
+*
+* @description A nice function
+* @output false
 */
-component{
+function sayHello(){
 
 }
 ```
