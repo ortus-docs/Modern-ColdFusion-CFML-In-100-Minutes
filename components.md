@@ -125,7 +125,7 @@ Every component has certain visibility scopes where properties, variables and fu
 
 ## Component Attributes
 
-The `component` construct can also have many attributes or name-value pairs that will give it some extra functionality. Each CFML engine provides different capabilities.  You can find all of them here: https://cfdocs.org/cfcomponent. Below are the most common ones:
+The `component` construct can also have many attributes or name-value pairs that will give it some extra functionality for SOAP/REST web services and for Hibernate ORM Persistence. Each CFML engine provides different capabilities.  You can find all of them here: https://cfdocs.org/cfcomponent. Below are the most common ones:
 
 * `accessors` - Enables automatic getters/setters for properties
 * `extends` - Provides inheritance
