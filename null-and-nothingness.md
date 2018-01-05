@@ -14,4 +14,29 @@ If you’re working with words and have a string like "hello" then delete the "h
 
 Null in CFML is usually encountered when you ask for something that doesn’t exist. When looking at arrays, for instance, we created a list with five elements then asked CFML to give us the sixth element of that list. There is no sixth element, so CFML gave us null. It isn’t that there’s a blank in that sixth spot (""), it’s not a number 0, it’s nothingness – null.
 
-A large percentage of the errors you encounter while writing Ruby code will involve nil. You thought something was there, you tried to do something to it, and you can’t do something to nothing so Ruby raises an error.
+**Examples**
+
+```java
+
+function getData( filter ){
+
+    if( isNull( arguments.filter ) ){
+      // then do this
+    } else {
+      // use the filter
+    }
+
+}
+
+function returnsNull(){
+  if( key.exists( "invalid" ) ){
+    return key[ "invalid" ];
+  }
+}
+
+results = returnsNull();
+
+writeOutput( isNull( results ) );
+```
+
+Also note that if a function returns **nothing** it will be the same as returning `null`.
