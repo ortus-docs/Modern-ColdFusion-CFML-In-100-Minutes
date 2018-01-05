@@ -2,6 +2,15 @@
 
 Conditional statements evaluate to **true** or **false** only. The most common conditional operators are `==` (equal), `!=` (not equal), `>` (greater than), `>=` (greater than or equal to), `<` (less than), and `<=` (less than or equal to). You can also define the operators as abbreviations: `EQ, NEQ, GT, GTE, LT, and LTE`. 
 
+```java
+a = 1;
+if( a == 1 )
+if( a > 2 )
+if( a != 2 )
+if( a >= 1 )
+if( a <= 1 )
+```
+
 Some instructions return a `true` or `false`, so they're used in conditional statements, for example, `IsArray` which is `true` only when the variable is an "array". Structures have an instruction named `structKeyExists()` or `exists()` which returns `true` if a key is present in a structure.  Strings can also be used for conditional operations by checking the `.length()` member function.
 
 ```java
