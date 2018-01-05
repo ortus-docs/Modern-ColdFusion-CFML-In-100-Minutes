@@ -258,7 +258,7 @@ function hello() description="" returnFormat=""{
 }
 ```
 
-Please note that in CFML you can also declare these attributes via annotations in the comments section, weird, I know!
+Please note that in CFML you can also declare these attributes via annotations in the comments section:
 
 ```java
 /**
