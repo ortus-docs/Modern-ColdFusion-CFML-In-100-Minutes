@@ -63,10 +63,10 @@ The following details the scope of closure based on the way they are defined:
 | In a CFM function      | Closure argument scope, enclosing function local scope and argument scope, this scope, variable scope, and super scope|
 | As function argument| Closure argument scope, variable scope, and this scope and super scope (if defined in CFC component).      |
 
-In closure, following is the order of search for an unscoped variable:
+In a closure, the following is the order of search for an unscoped variable:
 
-- Closure's local scope
-- Closure's arguments scope
-- Outer function's local scope if available
-- Owner function's local scope if available
+- Closure's `local` scope
+- Closure's `arguments` scope
+- Outer function's `local` scope if available
+- Owner function's `local` scope if available
 - ColdFusion built-in scope
