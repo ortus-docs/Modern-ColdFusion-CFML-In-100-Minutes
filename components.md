@@ -196,7 +196,7 @@ Functions are the way to interact with objects, with no functions we have no obj
 accessType returnType function name(){}
 ```
 
-### Access Types 
+### Access Types and Scopes
 
 Functions can have different visibility contexts:
 
