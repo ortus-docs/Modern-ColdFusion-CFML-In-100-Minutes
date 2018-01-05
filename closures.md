@@ -18,15 +18,20 @@ function hello(){
 hello();
 ```
 
-If we execute this template via CommandBox our output will be **luis**. Meaning the `display` closure has access to its surroundings in order to display the `name` variable.  It can manipulate it, add to it, remove from it and more.
+If we execute this template via CommandBox our output will be **luis**. Meaning the `display` closure has access to its surroundings in order to display the `name` variable.  It can manipulate it, add to it, remove from it and more.  We can also have a function return a closure that can leverage the function's variable environment.
 
 ```java
 function makeAdder( required x ){
-  return function( required y ){
-    return x + y;
-  };
+	return function( required y ){
+		return x + y;
+	};
 }
+
+add = makeAdder( 1 );
+systemOutput( add( 2 ) );
 ```
+
+In this case the 
 
 **Funky!!**
 
