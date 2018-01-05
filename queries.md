@@ -186,3 +186,12 @@ writedump( subUsers );
 
 In the Lucee CFML engine (coming soon to Adobe), you can also determine the return type of database queries to be something other than the CFML query object.  You can choose array of structs or struct of structs.  This is fantastic for modern applications that rely on rich Javascript frameworks and producing JSON.
 
+```java
+users = queryNew( "firstname", "varchar", [{"firstname":"Han"}] );
+subUsers = queryExecute( "select * from users", {}, { dbtype="query", returntype="array" } );
+writedump( subUsers ); 
+
+users = queryNew( "id, firstname", "integer, varchar", [{"id":1, "firstname":"Han"}] );
+subUsers = queryExecute( "select * from users", {}, { dbtype="query", returntype="struct", columnkey="id" } );
+writedump( subUsers ); 
+```
