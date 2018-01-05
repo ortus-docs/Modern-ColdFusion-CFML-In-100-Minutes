@@ -38,6 +38,10 @@ In Object-Oriented programming we define classes which are abstract descriptions
    return this;
   }
   
+  function run(){
+   // run baby, run!
+  }
+  
  }
  ``` 
  
