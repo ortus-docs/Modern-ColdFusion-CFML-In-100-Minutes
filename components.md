@@ -94,6 +94,10 @@ function setValue( required val ){
  variables.value = arguments.val;
  return this;
 }
+
+obj
+ .setValue( 'myvalue' )
+ .setValue( 'otherValue' );
 ```
 
 ## Component Scopes
