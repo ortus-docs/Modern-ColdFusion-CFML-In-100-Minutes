@@ -151,6 +151,9 @@ The `property` construct can also have different name-value pair attributes that
 * `setter` - Generate a setter method or not, defaults to true
 * `getter` - Generate a getter method or not, defaults to true
 
+## Functions
+
+Functions are the way to interact with objects, with no functions we have no object-oriented behaviors, no abstractions and no encapsulation.
 
 
 
