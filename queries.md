@@ -153,6 +153,22 @@ queryAddRow(news);
 querySetCell(news, "id", "2");
 querySetCell(news, "title", "Men walk on Moon");
 writeDump(news);
+
+
+users = queryNew( "firstname", "varchar", [{"firstname":"Han"}] );
+subUsers = queryExecute( "select * from users", {}, { dbtype="query" } );
+writedump( subUsers ); 
+
+news = queryNew("id,title",
+    "integer,varchar",
+    [ {"id":1,"title":"Dewey defeats Truman"}, {"id":2,"title":"Man walks on Moon"} ]);
+writeDump(news);
+
+news = queryNew("id,title",
+    "integer,varchar",
+    {"id":1,"title":"Dewey defeats Truman"});
+writeDump(news);
+
 ```
 
 
