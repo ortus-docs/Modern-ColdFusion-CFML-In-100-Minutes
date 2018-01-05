@@ -44,3 +44,27 @@ Please note that when using the `Query` object, you can pass many attributes int
 ```java
 this.datasource = "pantry";
 ```
+
+## Displaying Results
+
+The query object can be iterated on like a normal collection through a `for, cfloop or cfoutput` construct.
+
+**In a Template**
+
+```
+<cfoutput query = "qItems">
+There are #qItems.Quantity# #qItems.Item# in the pantry<br />
+</cfoutput>
+```
+
+**Using Loops**
+
+```java
+for( var row in qItems ){
+ systemOutput( "There are #row.quantity# #row.item# in the pantry" );
+}
+
+qItems.each( function( item, index ){
+ systemOutput( "There are #item.quantity# #item.item# in the pantry" );
+
+} );
