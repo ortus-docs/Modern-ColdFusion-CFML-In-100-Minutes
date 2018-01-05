@@ -181,3 +181,8 @@ users = queryNew( "firstname", "varchar", [{"firstname":"Han"}] );
 subUsers = queryExecute( "select * from users", {}, { dbtype="query" } );
 writedump( subUsers ); 
 ```
+
+## Returning Arrays of Structs or Struct of Structs
+
+In the Lucee CFML engine (coming soon to Adobe), you can also determine the return type of database queries to be something other than the CFML query object.  You can choose array of structs or struct of structs.  This is fantastic for modern applications that rely on rich Javascript frameworks and producing JSON.
+
