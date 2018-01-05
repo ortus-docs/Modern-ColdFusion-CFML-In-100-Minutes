@@ -10,7 +10,7 @@ For an example of an object, think about **you ** as a human being. You have pro
 
 ## Classes and Instances
 
-In Object-Oriented programming we define classes which are abstract descriptions of a category or type of thing.  In our case, we will call them components and it defines what properties and functions all objects of that type have. You can consider to be a blueprint of your object representation. 
+In Object-Oriented programming we define classes which are abstract descriptions of a category or type of thing.  In our case, we will call them components and it defines what properties and functions all objects of that type have. You can consider to be a blueprint of your object representation.  They should have a distinct job and a single responsibility, try to avoid creating God objects.
 
  ```java
  /**
