@@ -217,7 +217,7 @@ function boolean valueExists( required name ){
 }
 ```
 
-Please note that you can use valid JavaDoc syntax and DocBox will document your functions and arguments as well.
+> Please note that you can use valid JavaDoc syntax and DocBox will document your functions and arguments as well.
 
 ### Function Access Types and Scopes
 
