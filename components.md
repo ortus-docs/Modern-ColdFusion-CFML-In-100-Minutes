@@ -419,7 +419,6 @@ results = calculator.add( argumentCollection=vals );
 
 vals = { a = 1, b = 2 };
 results = calculator.add( argumentCollection=vals );
-
 ```
 
 
