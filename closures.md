@@ -40,4 +40,13 @@ var observe = function( val ){
     
     return val;
 }
+
+describe( "A spec suite", function(){
+
+    it( "can do funky stuff", function(){
+        // I can do funky stuff here
+        
+    } );
+
+} );
 ```
