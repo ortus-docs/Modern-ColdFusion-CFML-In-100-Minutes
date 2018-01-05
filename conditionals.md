@@ -171,30 +171,30 @@ Much like how the `if` statement marks the start of an `if` block and contains o
 The main difference is that `switch / case / default` can only evaluate the resulting value of a single variable or expression, while the `if / else if / else` block lets you evaluate the `true or false` result of different variables or expressions throughout the block.
 
 ```java
-switch(city) {
+switch( city ){
 
- case "New York":
-  region= "East Coast";
- break;
+	case "New York":
+ 		region= "East Coast";
+ 		break;
 	
- case "Los Angeles":
-  region= "West Coast";
- break;
+	case "Los Angeles":
+  		region= "West Coast";
+ 		break;
 
- case "Phoenix":
-  region= "Phoenix";
- break;
+ 	case "Phoenix":
+  		region= "Phoenix";
+ 		break;
 
- case "Cleveland":
- case "Cincinnati":
-  region= "Midwest";
- break;
-
- default:
-  region="Unknown";
+ 	case "Cleveland" : case "Cincinnati" : {
+  		region= "Midwest";
+		break;
+	}
+ 	default:
+  		region="Unknown";
 }
 ```
 
+Please note that you can create a body for the `case` statements with curly braces.  As best practice, do so for all `case` and/or `default` blocks
 
 
 
