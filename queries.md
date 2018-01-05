@@ -12,11 +12,20 @@ A query is a request to a database. It returns a CFML `query` object containing 
 * Using the `queryExecute()` function. (https://cfdocs.org/queryexecute)
 
 ```
+// Tag syntax
 <cfquery name = "getBreakfastItems" datasource="pantry"> 
  SELECT QUANTITY, ITEM 
  FROM CUPBOARD 
  ORDER BY ITEM 
 </cfquery> 
+
+// New script syntax
+var q = new Query( datasource="pantry" );
+q.setSQL( "
+SELECT QUANTITY, ITEM 
+FROM CUPBOARD
+ORDER BY ITEM
+" );
 ```
 
 > **Info** on Lucee, the `datasource` can even be defined inline.
