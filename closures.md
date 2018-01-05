@@ -20,6 +20,16 @@ hello();
 
 If we execute this template via CommandBox our output will be **luis**. Meaning the `display` closure has access to its surroundings in order to display the `name` variable.  It can manipulate it, add to it, remove from it and more.
 
+```java
+function makeAdder( required x ){
+  return function( required y ){
+    return x + y;
+  };
+}
+```
+
+**Funky!!**
+
 ## Delayed Execution
 
 Another big advantage of leveraging closures for functional programming is that closures are the blueprint of a function and are not executed until you want to. Meaning they are useful for delaying execution and great for design patterns like: observer, filters, iterators and much more.
