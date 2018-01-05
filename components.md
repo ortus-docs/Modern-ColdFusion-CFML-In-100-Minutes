@@ -274,13 +274,20 @@ function sayHello(){
 
 ### Function Arguments
 
-All CFML functions are dynamic, meaning it can take any number of arguments without you even adding the signatures.  You can call functions by passing arguments by position or via name-value pairs or even with a structure/array of values.  Arguments tell the function how to do their operation.
+Arguments tell the function how to do their operation.  A function can receive zero or more arguments separated by commas in its declaration.
 
 **declaration**
 
 ```js
-required type name=default attribute=value
+function(
+ required type name=default attribute=value,
+ required type name=default attribute=value
+){
+}
 ```
+
+All CFML functions are dynamic, meaning it can take any number of arguments without you even adding the signatures.  You can call functions by passing arguments by position or via name-value pairs or even with a structure/array of values.  
+
 
 **example**
 
