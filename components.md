@@ -16,6 +16,7 @@ In Object-Oriented programming we define classes which are abstract descriptions
  component accessors="true"{
  
   property name="user";
+  property name="age";
   
   function init(){
   
@@ -25,7 +26,7 @@ In Object-Oriented programming we define classes which are abstract descriptions
  }
  ``` 
 
-An instance, is a copy of that blueprint that you are bringing to life that will be stored in memory and used by the language.  Usually via a `new` or `createObject()` keyword operation.
+An instance, is a copy of that blueprint that you are bringing to life that will be stored in memory and used by the language during a set of executions.  Usually via a `new` or `createObject()` keyword operation.
 
 ```java
 // Create a new instance of the User class
