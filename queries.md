@@ -219,3 +219,5 @@ q = query.from( 'posts' )
          .whereIn( 'author_id', [5, 10, 27] )
          .get();
 ```
+
+You can find all the documentation in our Ortus Books docs: http://qb.ortusbooks.com/
