@@ -151,8 +151,8 @@ A complex lambda expression with an argument:
 
 ```java
 // Takes a numeric value and returns a string
-isOdd = (numeric n) => {
-  if ( n % 2 == 0 ) {
+isOdd = ( numeric n ) => {
+  if( n % 2 == 0 ){
     return 'even';
   } else {
     return 'odd';
