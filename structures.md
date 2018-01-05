@@ -89,3 +89,22 @@ Once you create structures you can use them in many funky ways.  Please check ou
 As you can see, there are many cool methods from detecting keys, values, length, counts, etc. A very cool method is `keyArray()` which gives you the listing of keys as an array:
 
 ![](/assets/Screen Shot 2017-10-05 at 4.58.09 PM.png)
+
+## Looping Over Structures
+
+You can use different constructs for looping over structures:
+
+* `for` loops
+* `loop` constructs
+* `each()` closures
+
+```js
+for( var key in produce ){
+ systemOutput( "I just had #produce[ key ]# #key#" );
+}
+
+produce.each( function( key, value ){
+  systemOutput( "I just had #value# #key#" );
+} );
+
+```
