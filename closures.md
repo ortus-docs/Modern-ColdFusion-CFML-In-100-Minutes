@@ -2,7 +2,7 @@
 
 > A closure is the combination of a function and the lexical environment within which that function was declared.
 
-Remember that functions (UDFs) in CFML are objects, closures are objects as well.  So are closures and functions the same? The answer is yes and no.  The main difference between a UDF and a closure is that closures have access to their lexical environment in which they are declared.
+Remember that functions (UDFs) in CFML are objects, closures are objects as well.  So are closures and functions the same? The answer is yes and no.  The main difference between a UDF and a closure is that closures have access to their lexical environment in which they are declared.  Both functions and closures can be manipulated at runtime and can be passed around to other functions and closures or can be returned from other functions and closures. Phew!
 
 ```java
 function hello(){
