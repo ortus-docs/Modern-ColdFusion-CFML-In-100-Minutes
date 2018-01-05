@@ -283,4 +283,20 @@ function sayHello( target ){
 }
 ```
 
+> Please also note that you can add a-la-carte metadata or name-value pairs to each argument inline or via annotations like we have seen above.
+
+**example with annotations**
+
+```js
+/**
+* Constructor
+*
+* @wirebox.inject wirebox
+*/
+function init( wirebox ){
+  variables.wirebox = arguments.wirebox;
+  return this;
+}
+```
+
 
