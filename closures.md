@@ -124,3 +124,25 @@ if( isClosure( arguments.body ) ){
 At the moment, only the Lucee CFML engine supports lambda expressions, which basically are a shorthand notation for defining closures.
 
 Lambda expressions reduce much of the syntax around creating closures. In its simplest form, you can eliminate the `function` keyword, curly braces and `return` statement. Lambda expressions implicitly return the results of the expression body.
+
+
+```
+// Using a traditional closure
+makeSix = function(){ return 5 + 1; }
+
+// Using a lambda expression
+makeSix = () => 5 + 1;
+
+// returns 6
+systemOutput( makeSix() );
+```
+
+A simple lambda expression with multiple arguments:
+
+```java
+// Takes two numeric values and adds them
+add = ( numeric x, numeric y ) => x + y;
+
+// returns 4
+systemOutput( add( 1, 3 ) );
+```
