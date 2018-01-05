@@ -78,7 +78,7 @@ As you can see, there are many ways to iterate over the query. Choose the approa
 
 ## Using Input
 
-Most of the time we won't have the luxury of simple queries, we will need user input in order to construct our queries.  Here is where you need to be extra careful as to not allow for SQL injection.  CFML has several ways to help you prevent SQL Injection whether using tags or script calls.  Levarage the `cfqueryparam` construct/tag and always sanitize your input via the `encode` functions in CFML.
+Most of the time we won't have the luxury of simple queries, we will need user input in order to construct our queries.  Here is where you need to be extra careful as to not allow for SQL injection.  CFML has several ways to help you prevent SQL Injection whether using tags or script calls.  Levarage the `cfqueryparam` construct/tag (https://cfdocs.org/cfqueryparam) and always sanitize your input via the `encode` functions in CFML.
 
 ```java
 q = new Query(
