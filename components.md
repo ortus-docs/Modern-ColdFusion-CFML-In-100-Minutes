@@ -14,7 +14,7 @@ In Object-Oriented programming we define classes which are abstract descriptions
 
 > In object-oriented programming, a God object is an object that knows too much or does too much. The God object is an example of an anti-pattern. A common programming technique is to separate a large problem into several smaller problems (a divide and conquer strategy) and create solutions for each of them. - https://en.wikipedia.org/wiki/God_object
 
-Let's check out an example of a simple Component:
+Let's check out an example of a simple Component, `User.cfc`
 
  ```java
  /**
