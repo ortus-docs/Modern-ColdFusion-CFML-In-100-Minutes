@@ -73,3 +73,5 @@ for( var i = 1; i lte qItems.recordCount; i++ ){
  systemOutput( "There are #qItems.quantity[ i ]# #qItems.item[ i ]# in the pantry" );
 }
 ```
+
+As you can see, there are many ways to iterate over the query. Choose the approach that suits your needs.
