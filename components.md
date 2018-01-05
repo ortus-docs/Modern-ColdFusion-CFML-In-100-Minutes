@@ -68,5 +68,17 @@ user = createObject( "component", "User" ).init();
 
 In later chapters we will investigate the concept of dependency injection.
 
+### Constructors
+
+Every object in theory should have a constructor method or a method that initializes the object to a **ready** state.  Even if the constructor is empty, get into the habit of creating one.
+
+```java
+function init(){
+return this;
+}
+```
+
+Note that the constructor returns the `this` scope.  This is a reference of the object itself that is returned.  You can also return `this` from **ANY** other function which allows for expressive or fluently chainable methods.
+
 
 
