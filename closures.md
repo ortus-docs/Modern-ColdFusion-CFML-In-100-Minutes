@@ -18,7 +18,7 @@ function hello(){
 
     var display = function(){
         systemOutput( name );
-    }
+    };
 
     display();
 }
