@@ -4,6 +4,13 @@
 
 Remember that functions (UDFs) in CFML are objects, closures are objects as well.  So are closures and functions the same? The answer is yes and no.  The main difference between a UDF and a closure is that closures have access to their lexical environment in which they are declared.  Both functions and closures can be manipulated at runtime and can be passed around to other functions and closures or can be returned from other functions and closures. Phew!
 
+A closure can be used in any of the following ways:
+
+* Defined inline without giving a name. 
+* They can be assigned to a variable, array item, struct, and variable scope. 
+* It can be returned directly from a function.
+
+
 ```java
 function hello(){
     var name = "luis";
@@ -18,7 +25,7 @@ function hello(){
 hello();
 ```
 
-If we execute this template via CommandBox our output will be **luis**. Meaning the `display` closure has access to its surroundings in order to display the `name` variable.  It can manipulate it, add to it, remove from it and more.  We can also have a function return a closure that can leverage the function's variable environment.
+If we execute this template via CommandBox our output will be **luis**. Meaning the `display` closure has access to its surroundings in order to display the `name` variable.  It can manipulate it, add to it, remove from it and more. We can also have a function return a closure that can leverage the function's variable environment.
 
 ```java
 function makeAdder( required x ){
@@ -75,3 +82,5 @@ In a closure, the following is the order of search for an unscoped variable:
 - Outer function's `local` scope if available
 - Owner function's `local` scope if available
 - ColdFusion built-in scope
+
+##
