@@ -301,7 +301,7 @@ function sayHello( target ){
 * @wirebox The wirebox reference
 * @wirebox.inject wirebox
 */
-function init( wirebox ){
+function init( required wirebox ){
   variables.wirebox = arguments.wirebox;
   return this;
 }
