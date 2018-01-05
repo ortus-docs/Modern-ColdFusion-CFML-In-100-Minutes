@@ -82,7 +82,7 @@ Please note that the `new` keyword will automatically call an object's construct
 user = createObject( "component", "User" ).init();
 ```
 
-In later chapters we will investigate the concept of [dependency injection](/dependency-injection.md). Please also note that the `createObject()` function can also be used to create different types of objects like:
+In later chapters we will investigate the concept of [dependency injection](/dependency-injection.md). Please also note that the `createObject()` function can also be used to create different types of objects in CFML like:
 
 * Components
 * Webservices (WSDL based)
