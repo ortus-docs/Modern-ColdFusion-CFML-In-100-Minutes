@@ -6,8 +6,10 @@ Some instructions return a `true` or `false`, so they're used in conditional sta
 
 Also integers can be evaluated as **true** or **false**. In ColdFusion, **0 (zero)** is **false **and any other integers are **true**.
 
+```
 <cfif 1>I am true so will show</cfif>
 
 <cfif -2>I am true so will show</cfif>
 
 <cfif 0>I am false so will not show</cfif>
+```
