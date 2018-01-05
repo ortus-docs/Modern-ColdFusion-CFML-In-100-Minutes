@@ -32,8 +32,7 @@ qItems = q.execute().getResult();
 // Yet another script alternative
 
 qItems = queryExecute( 
- sql = "SELECT QUANTITY, ITEM FROM CUPBOARD ORDER BY ITEM",
- options = { datsource = "pantry" }
+ sql = "SELECT QUANTITY, ITEM FROM CUPBOARD ORDER BY ITEM"
 );
 
 ```
