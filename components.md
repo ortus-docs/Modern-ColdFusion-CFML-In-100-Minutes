@@ -81,11 +81,17 @@ Every object in theory should have a constructor method or a method that initial
 
 ```java
 function init(){
-return this;
+ return this;
 }
 ```
 
 Note that the constructor returns the `this` scope.  This is a reference of the object itself that is returned.  You can also return `this` from **ANY** other function which allows for expressive or fluently chainable methods.
+
+```java
+function setValue( required val ){
+ variables.value = arguments.val;
+ return this;
+}
 
 
 ### Component Scopes
