@@ -1,6 +1,6 @@
 # Queries
 
-CFML became famous in its infancy with easy it was to query databases with a simple `cfquery` tag. No ceremony, just a plain datasource definition in the administrator and we could query the database with ease.
+CFML became famous in its infancy with how easy it was to query databases with a simple `cfquery` tag. No ceremony, just a plain datasource definition in the administrator and we could query the database with ease.
 
 In modern times, we have many more ways to query the database and defining datasources can occur not only in the admin but in our application's `Application.cfc`. See [Application.cfc](/applicationcfc.md) for more information.
 
