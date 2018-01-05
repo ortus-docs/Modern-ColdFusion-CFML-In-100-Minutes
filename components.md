@@ -398,6 +398,29 @@ CFML also has a weird cascading lookup for variables, so if you do not explicitl
 Because CFML must search for variables when you do not specify the scope, you can improve performance by specifying the scope for all variables.
 
 
+## Executing Functions
+
+You can execute functions once you have an instance or reference of a component.  If the function has arguments, you can pass them in three ways: positional, name-value pairs, or using a collection (array,struct) via the `argumentCollection` attribute.
+
+
+```java
+user = new User( name="luis" );
+writeoutput( user.getName() );
+
+hello = user.sayHello( "bob" );
+
+hello = user.sayHello( target="bob" );
+
+results = calculator.add( 1, 2 );
+results = calculator.add( a=1, b=2 );
+
+vals = [ 1, 2 ];
+results = calculator.add( argumentCollection=vals );
+
+vals = { a = 1, b = 2 };
+results = calculator.add( argumentCollection=vals );
+
+```
 
 
 
