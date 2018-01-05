@@ -185,15 +185,31 @@ property name="age"
 
 ## Functions
 
-Functions are the way to interact with objects, with no functions we have no object-oriented behaviors, no abstractions and no encapsulation.  Functions have an automatic return type of `any` which means it can return any type of variable back to a user.  They also can take in _ANY_ amount of arguments, which don't event have to be defined in the function signature. WOWZA!
+Functions are the way to interact with objects, with no functions we have no object-oriented behaviors, no abstractions and no encapsulation.  Functions have an automatic return type of `any` which means it can return any type of variable back to a user and an automatic visibility scope of `public`.  They also can take in _ANY_ amount of arguments, which don't event have to be defined in the function signature. WOWZA!
 
 **Declaration**
 
 ```
 /**
-* Comments
+* Hint
 */
 accessType returnType function name(){}
+```
+
+**Examples**
+
+```java
+function hello(){
+ return "Hola";
+}
+
+private function saveData(){
+
+}
+
+function boolean valueExists( required name ){
+ return variables.exists( arguments.name );
+}
 ```
 
 ### Access Types and Scopes
