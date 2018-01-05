@@ -42,7 +42,7 @@ In Object-Oriented programming we define classes which are abstract descriptions
 
 ### Notes of Interest
  
-The attribute `accessors` in the component definition denotes that automatic getters and setters will be created for all defined properties in the object.  Also notice that the component and each property can be documented using `/** **/` notation, which is great for automatic documentation generators like [DocBox](https://www.forgebox.io/view/docbox).
+The attribute `accessors` in the component definition denotes that automatic getters and setters will be created for all defined properties in the object.  Also notice that the component and each property can be documented using `/** **/` notation, which is great for automatic documentation generators like [DocBox](https://www.forgebox.io/view/docbox).  Get into the habit of inline documentation, it can go a long way for automatic generators.
 
 ### Creating Instances
 
