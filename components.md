@@ -129,13 +129,13 @@ Every component has certain visibility scopes where properties, variables and fu
 The `component` construct can also have many attributes or name-value pairs that will give it some extra functionality for SOAP/REST web services and for Hibernate ORM Persistence. Each CFML engine provides different capabilities.  You can find all of them here: https://cfdocs.org/cfcomponent. Below are the most common ones:
 
 * `accessors` - Enables automatic getters/setters for properties
-* `extends` - Provides inheritance
+* `extends` - Provides inheritance via the path of the Component (CFC)
 * `implements` - Names of the interfaces it implements
 * `persistent` - Makes the object a Hibernate Entity which can be fine tuned through a slew of other attributes.
 * `serializable` - Whether the component can be serialized into a string/binary format or not. Default is `true`.
 
 ```java
-component accessors="true" serializable="false"{
+component accessors="true" serializable="false" extends="BaseUser"{
 
 }
 ```
