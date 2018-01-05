@@ -17,6 +17,11 @@ In Object-Oriented programming we define classes which are abstract descriptions
  
   property name="user";
   
+  function init(){
+  
+   return this;
+  }
+  
  }
  ``` 
 
