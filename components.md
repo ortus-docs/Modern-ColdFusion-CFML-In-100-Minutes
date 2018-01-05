@@ -13,6 +13,10 @@ For an example of an object, think about **you ** as a human being. You have pro
 In Object-Oriented programming we define classes which are abstract descriptions of a category or type of thing.  In our case, we will call them components and it defines what properties and functions all objects of that type have. You can consider to be a blueprint of your object representation. 
 
  ```java
+ /**
+ * I represent a user in the system
+ * @author Luis Majano
+ */
  component accessors="true"{
   
   /**
@@ -35,8 +39,10 @@ In Object-Oriented programming we define classes which are abstract descriptions
   
  }
  ``` 
+
+### Notes of Interest
  
-> The attribute `accessors` in the component definition denotes that automatic getters and setters will be created for all defined properties in the object.
+The attribute `accessors` in the component definition denotes that automatic getters and setters will be created for all defined properties in the object.  Also notice that the component and each property can be documented using `/** **/` notation, which is great for automatic documentation generators like [DocBox](https://www.forgebox.io/view/docbox).
 
 ### Creating Instances
 
