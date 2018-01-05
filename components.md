@@ -40,6 +40,9 @@ In Object-Oriented programming we define classes which are abstract descriptions
   
  }
  ``` 
+ 
+* See https://en.wikipedia.org/wiki/Class_(computer_programming)
+* See https://en.wikipedia.org/wiki/Instance_(computer_science)
 
 ### Notes of Interest
  
