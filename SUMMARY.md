@@ -25,9 +25,10 @@
 
 ## Extra Credit
 
-* [Testing](testing.md)
-* [Dependency Injection](dependency-injection.md)
+* Object Orientation
 * [MVC](mvc.md)
+* [Dependency Injection](dependency-injection.md)
+* [Testing](testing.md)
 * [ORM](orm.md)
 * [Docker + CFML](docker-+-cfml.md)
 
