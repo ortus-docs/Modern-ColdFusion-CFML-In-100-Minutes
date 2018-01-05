@@ -86,11 +86,24 @@ q = new Query(
 );
 
 q.addParam( 
- name = "itemID",
+ name      = "itemID",
  cfsqltype = "CF_SQL_VARCHAR",
- value = itemID,
- list = true
+ value     = arguments.itemID,
+ list      = true
 );
 
-GetBreakfastItem = queryService.execute().getResult(); 
+qItems = q.execute().getResult(); 
+
+queryExecute(
+ "select quantity, item from cupboard where item_id = :itemID"
+ { itemID = arguments.itemID }
+);
+
+queryExecute(
+ "select quantity, item from cupboard where item_id = ?"
+ [ arguments.itemID ]
+);
+
 ```
+
+You can use the `:varname` notation in your SQL construct to denote a variable place holder or a `?` to denote a positional placeholder.
