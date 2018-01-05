@@ -112,6 +112,8 @@ The ternary operator is a compact way to do an `if, else, else if` expression st
 ( condition ) ? trueStatement : falseStatement
 ```
 
+The way it works is that the `condition` is evaluated. If it is **true**, then the true statement executed; if it is **false**, then the false statement executes.
+
 Please note that you can chain the `trueStatement` and the `falseStatement` into more tenrary operations.  However, don't abuse it as they will look ugly and just be very complex to debug.
 
 ```java
@@ -119,3 +121,17 @@ Please note that you can chain the `trueStatement` and the `falseStatement` into
 ```
 
 The output of the above statement will be..... `true` of course!
+
+## Elvis Operator
+
+Before Elvis we had `isDefined(), structKeyExists()` and `IF` statements to do these kind of evaluations. They work, but not very expressive or concise.
+
+The Elvis operator is primarily used to assign the `right default` for a variable or an expression Or it is a short-hand way to do parameterization. It will allow us to set a value if the variable is `Null` or does not exist.
+
+For instance,
+
+```java
+myName = userName ?: "Anonymous";
+```
+
+If `userName` does not exist or evaluates to `null` then the default value of the `myName` will be assigned the right part of the `?:` elvis operator -> `Anonymous`
