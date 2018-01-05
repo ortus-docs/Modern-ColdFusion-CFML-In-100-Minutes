@@ -11,7 +11,16 @@ if( isArray( a ) ){
     // work on the array
 }
 
+produce = {
+    grapes     = 2,
+    lemons     = 1,
+    eggplants  = 6
+};
 
+if( produce.keyExists( "grapes" ) ){
+    // eat a grape
+    produce.grapes--;
+}
 ```
 
 Also integers can be evaluated as **true** or **false**. In ColdFusion, **0 (zero)** is **false **and any other integers are **true**.
