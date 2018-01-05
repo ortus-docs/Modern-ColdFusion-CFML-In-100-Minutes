@@ -54,6 +54,7 @@ Please check out the following articles:
 * https://en.wikipedia.org/wiki/Class_(computer_programming)
 * https://en.wikipedia.org/wiki/Instance_(computer_science)
 * https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)
+* https://en.wikipedia.org/wiki/Abstraction_(software_engineering)
 * https://en.wikipedia.org/wiki/God_object
 * http://www.learncfinaweek.com/week1/OOP/
 
