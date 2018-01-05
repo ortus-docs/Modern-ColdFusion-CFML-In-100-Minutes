@@ -286,7 +286,7 @@ function(
 }
 ```
 
-All CFML functions are dynamic, meaning it can take any number of arguments without you even adding the signatures.  You can call functions by passing arguments by position or via name-value pairs or even with a structure/array of values.  
+All CFML functions are dynamic, meaning it can take any number of arguments without you even adding the signatures.  You can call functions by passing arguments by position or via name-value pairs or even with a structure/array of values, which will be called an `argumentCollection`.  
 
 
 **example**
@@ -299,6 +299,20 @@ function sayHello( target ){
 function add( required a, required b ){
  return a + b;
 }
+
+
+// Let's call add
+calculator.add( 1, 2 );
+calculator.add( a=1, b=2 );
+
+// struct collection
+values = { a = 1, b = 2 };
+calculator.add( argumentCollection=values );
+
+// array collection
+values = [ 1, 2 ];
+calculator.add( argumentCollection=values );
+
 ```
 
 > Please also note that you can add a-la-carte metadata or name-value pairs to each argument inline or via annotations like we have seen above.
