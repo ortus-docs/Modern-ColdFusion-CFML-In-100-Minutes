@@ -13,7 +13,7 @@ A query is a request to a database. It returns a CFML `query` object containing 
 
 ```
 // Tag syntax
-<cfquery name = "getBreakfastItems" datasource="pantry"> 
+<cfquery name = "qItems" datasource="pantry"> 
  SELECT QUANTITY, ITEM 
  FROM CUPBOARD 
  ORDER BY ITEM 
@@ -26,6 +26,8 @@ SELECT QUANTITY, ITEM
 FROM CUPBOARD
 ORDER BY ITEM
 " );
+
+qItems = q.execute().getResult();  
 ```
 
 > **Info** on Lucee, the `datasource` can even be defined inline.
