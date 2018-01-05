@@ -25,6 +25,8 @@ In Object-Oriented programming we define classes which are abstract descriptions
   
  }
  ``` 
+ 
+> The attribute `accessors` in the component definition denotes that automatic getters and setters will be created for all defined properties in the object.
 
 An instance, is a copy of that blueprint that you are bringing to life that will be stored in memory and used by the language during a set of executions.  Usually via a `new` or `createObject()` keyword operation.
 
