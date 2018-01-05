@@ -74,7 +74,14 @@ Please note that the `new` keyword will automatically call an object's construct
 user = createObject( "component", "User" ).init();
 ```
 
-In later chapters we will investigate the concept of dependency injection.
+In later chapters we will investigate the concept of dependency injection. Please also note that the `createObject()` function is also used to create different types of objects like:
+
+* Components
+* Webservices (WSDL based)
+* Java Objects
+* .NET assemblies
+* COM Objects
+* Corba
 
 ## Constructors
 
