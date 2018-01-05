@@ -209,6 +209,21 @@ switch( city ){
 
 Please note that you can create a body for the `case` statements with curly braces.  As best practice, do so for all `case` and/or `default` blocks
 
+## While Loops
+
+The `while( conditional )` expression allows you to execute a code block as many times as the `conditional` expression evaluates to **true**.  This is a great way to work with queues, stacks or just simple evaluations.
+
+```
+testCondition = true;
+count = 0;
+while( testCondition ){
+    count++;
+    if( count == 5) {
+        testCondition = false;
+    }
+}
+systemOutput( count );
+```
 
 ## The `==` and `=` Common Mistake
 
