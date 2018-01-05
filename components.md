@@ -288,6 +288,10 @@ required type name=default attribute=value
 function sayHello( target ){
  return "Hi #target#! I'm #name#";
 }
+
+function add( required a, required b ){
+ return a + b;
+}
 ```
 
 > Please also note that you can add a-la-carte metadata or name-value pairs to each argument inline or via annotations like we have seen above.
