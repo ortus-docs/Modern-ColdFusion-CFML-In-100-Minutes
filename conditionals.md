@@ -103,3 +103,19 @@ An `if` block has:
 * Zero or one `else` statement whose instructions are executed if no `if` nor `else if` statements were **true**
 
 Only one section of the `if / else if / else` structure can have its instructions run. If the if is **true**, for instance, CFML will never look at the `else if`. Once one block executes, that’s it.
+
+## Ternary Operator
+
+The ternary operator is a compact way to do an `if, else, else if` expression statements.  It is very common in other languages and can be used for a more fluent expressive conditional expression.
+
+```
+( condition ) ? trueStatement : falseStatement
+```
+
+Please note that you can chain the `trueStatement` and the `falseStatement` into more tenrary operations.  However, don't abuse it as they will look ugly and just be very complex to debug.
+
+```java
+( 1 == 1 ) ? systemOutput( "true" ) : systemOutput( "false" )
+```
+
+The output of the above statement will be..... `true` of course!
