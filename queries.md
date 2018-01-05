@@ -161,17 +161,5 @@ writeDump(news);
 Query a local database variable without going through your database
 
 ```java
-users = queryNew( "firstname", "varchar", [{"firstname":"Han"}] );
-subUsers = queryExecute( "select * from users", {}, { dbtype="query" } );
-writedump( subUsers ); 
 
-news = queryNew("id,title",
-    "integer,varchar",
-    [ {"id":1,"title":"Dewey defeats Truman"}, {"id":2,"title":"Man walks on Moon"} ]);
-writeDump(news);
-
-news = queryNew("id,title",
-    "integer,varchar",
-    {"id":1,"title":"Dewey defeats Truman"});
-writeDump(news);
 ```
