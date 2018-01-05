@@ -132,7 +132,10 @@ The `component` construct can also have many attributes or name-value pairs that
 * `implements` - Names of the interfaces it implements
 * `persistent` - Makes the object a Hibernate Entity which can be fine tuned through a slew of other attributes.
 * `serializable` - Whether the component can be serialized into a string/binary format or not. Default is `true`.
-* `
+
+## Properties
+
+Properties are a way to create attributes/data for your object.  In CFML, they can also be used to describe further capabilities for RESTFul/SOAP web services and Hibernate ORM.
 
 
 
