@@ -65,6 +65,13 @@ for( var row in qItems ){
 }
 
 qItems.each( function( row, index ){
- systemOutput( "There are #item.quantity# #item.item# in the pantry" );
+ systemOutput( "There are #row.quantity# #row.item# in the pantry" );
 
 } );
+
+for( var i = 1; i lte qItems.recordCount; i++ ){
+ systemOutput( "There are #qItems.quantity[ i ]# #qItems.item[ i ]# in the pantry" );
+}
+
+
+```
