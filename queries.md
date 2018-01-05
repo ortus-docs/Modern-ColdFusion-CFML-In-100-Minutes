@@ -107,3 +107,13 @@ queryExecute(
 ```
 
 You can use the `:varname` notation in your SQL construct to denote a variable place holder or a `?` to denote a positional placeholder.
+
+## Query of Queries
+
+Query a local database variable without going through your database
+
+```java
+users = queryNew( "firstname", "varchar", [{"firstname":"Han"}] );
+subUsers = queryExecute( "select * from users", {}, { dbtype="query" } );
+writedump( subUsers ); 
+```
