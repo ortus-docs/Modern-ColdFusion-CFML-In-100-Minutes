@@ -204,3 +204,18 @@ We have created a fantastic module to deal with queries in a fluent and elegant 
 box install qb
 ```
 
+Using qb, you can:
+
+* Quickly scaffold simple queries
+* Make complex, out-of-order queries possible
+* Abstract away differences between database engines
+
+
+```java
+// qb
+query = wirebox.getInstance('Builder@qb');
+q = query.from( 'posts' )
+         .whereNotNull( 'published_at' )
+         .whereIn( 'author_id', [5, 10, 27] )
+         .get();
+```
