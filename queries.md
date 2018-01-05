@@ -108,6 +108,28 @@ queryExecute(
 
 You can use the `:varname` notation in your SQL construct to denote a variable place holder or a `?` to denote a positional placeholder.
 
+## Query Methods
+
+There are also several query methods available in CFML that can help you manage queries but also create them on the fly (https://cfdocs.org/query-functions). Please note that you can also use chaining and member functions as well.
+
+* queryNew()
+* queryAddRow()
+* queryAddColumn()
+* queryColumnArray()
+* queryColumnCount()
+* queryColumnData()
+* queryColumnExists()
+* queryColumnList()
+* queryCurrentRow()
+* queryDeleteColumn()
+* queryDeleteRow()
+* queryEach()
+* queryEvery()
+* queryFilter()
+
+
+
+
 ## Query of Queries
 
 Query a local database variable without going through your database
