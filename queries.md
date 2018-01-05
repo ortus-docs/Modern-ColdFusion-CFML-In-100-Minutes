@@ -140,7 +140,20 @@ There are also several query methods available in CFML that can help you manage 
 * quotedValueList()
 * valueList()
 
+## Building Queries
 
+You can use a combination of the methods above to create your own queries
+
+```java
+news = queryNew("id,title", "integer,varchar");
+queryAddRow(news);
+querySetCell(news, "id", "1");
+querySetCell(news, "title", "Dewey defeats Truman");
+queryAddRow(news);
+querySetCell(news, "id", "2");
+querySetCell(news, "title", "Men walk on Moon");
+writeDump(news);
+```
 
 
 ## Query of Queries
