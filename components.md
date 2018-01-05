@@ -207,10 +207,17 @@ private function saveData(){
 
 }
 
+/**
+* Check for existence
+*
+* @name The key to check
+*/
 function boolean valueExists( required name ){
  return variables.exists( arguments.name );
 }
 ```
+
+Please note that you can use valid JavaDoc syntax and DocBox will document your functions and arguments as well.
 
 ### Function Access Types and Scopes
 
