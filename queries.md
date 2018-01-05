@@ -64,7 +64,7 @@ for( var row in qItems ){
  systemOutput( "There are #row.quantity# #row.item# in the pantry" );
 }
 
-qItems.each( function( item, index ){
+qItems.each( function( row, index ){
  systemOutput( "There are #item.quantity# #item.item# in the pantry" );
 
 } );
