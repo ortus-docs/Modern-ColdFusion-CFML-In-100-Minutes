@@ -4,5 +4,6 @@ CFML became famous in its infancy with easy it was to query databases with a sim
 
 In modern times, we have many more ways to query the database and defining datasources can occur not only in the admin but in our application's `Application.cfc`. See [Application.cfc](/applicationcfc.md) for more information.
 
+## What is a query?
 
 A query is a request to a database. It returns ```query object``` containing a **recordset** and other information. The query can ask for information from the database, write new data to the database, update existing information in the database, or delete records from the database. ```cfquery``` passes SQL statements to the ```datasource```. The ```datasource``` is set in the ColdFusion administrator.
