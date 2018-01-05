@@ -4,7 +4,9 @@ What is nothingness? Is there nothingness only in outer space? If a tree falls i
 
 `null` is Java's way to refer to "nothingness.", something that does not exist and has no value.  In CFML, we also use `null` even though the `null` keyword is yet to be introduced into the language.  
 
-We can use the `isNull()` method to evaulate for nothingness and we can event create a `null` value with a `javaCast( "null", "" )` function call.  However, please note that the `null` keyword is coming to CFML in the near distant future.
+## Usage
+
+We can use the `isNull()` method to evaulate for nothingness and we can event create a `null` value with a `javaCast( "null", "" )` function call or in lucee you can use the `nullValue()` function.  However, please note that the `null` keyword is coming to CFML in the near distant future.
 
 If you have three eggs, eat three eggs, then you might think you have "nothing", but in terms of eggs you have "0". Zero is something, it’s a number, and it’s not nothing.
 
