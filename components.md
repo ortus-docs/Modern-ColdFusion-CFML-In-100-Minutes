@@ -350,4 +350,39 @@ function add( a, b ){
 }
 ```
 
+### Function Scopes
+
+You must be getting into the habit of scopes by now.  Functions also has access to all Component scopes plus a few more that are only available to the function itself.
+
+- `arguments` - Collects all the incoming arguments.  If the function is called via positional, then this will be a struct with numbers as keys. If the function is called via name-value pairs, then the struct will contain the same name-value pairs.
+- `local` - A struct that contains all the variables that are ONLY defined in the functions via the `var` keyword.
+
+### Function Var Scope or Local Scope
+
+Each function has a `local` scope that is ONLY available for the life-time of the execution of the function.  This is where you will be defining localized variables since your object can be multi-threaded. Always Always Always plan for multi-threaded applications and make sure you var scope your variables.  Why?  Well, if you do not var scope a variable then your variable will end up in the implicit scope which is `variables`.  
+
+```js
+// Sum is not var scoped, so it will be placed in the variables scope, memory leak anyone?
+function hello(){
+  sum = a + b;
+  
+  return sum;
+}
+
+function hello( a, b ){
+ var sum = a + b;
+ return sum;
+}
+
+function hello( a, b ){
+ local.sum = a + b;
+ return local.sum;
+}
+```
+
+CFML also has a weird cascading lookup for variables, so if you do not explicitly specify the scope it is in, CFML will look for it for you.
+
+
+
+
 
