@@ -12,6 +12,6 @@ If you have three eggs, eat three eggs, then you might think you have "nothing",
 
 If you’re working with words and have a string like "hello" then delete the "h", "e", "l"s, and "o" you might think you’d end up with nothing, but you really have "" which is an empty string. It’s still something.
 
-nil is Ruby’s idea of nothingness. It’s usually encountered when you ask for something that doesn’t exist. When looking at arrays, for instance, we created a list with five elements then asked Ruby to give us the sixth element of that list. There is no sixth element, so Ruby gave us nil. It isn’t that there’s a blank in that sixth spot (""), it’s not a number 0, it’s nothingness – nil.
+Null in CFML is usually encountered when you ask for something that doesn’t exist. When looking at arrays, for instance, we created a list with five elements then asked CFML to give us the sixth element of that list. There is no sixth element, so CFML gave us null. It isn’t that there’s a blank in that sixth spot (""), it’s not a number 0, it’s nothingness – null.
 
 A large percentage of the errors you encounter while writing Ruby code will involve nil. You thought something was there, you tried to do something to it, and you can’t do something to nothing so Ruby raises an error.
