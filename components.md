@@ -291,6 +291,7 @@ function sayHello( target ){
 /**
 * Constructor
 *
+* @wirebox The wirebox reference
 * @wirebox.inject wirebox
 */
 function init( wirebox ){
