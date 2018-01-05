@@ -380,7 +380,22 @@ function hello( a, b ){
 }
 ```
 
-CFML also has a weird cascading lookup for variables, so if you do not explicitly specify the scope it is in, CFML will look for it for you.
+CFML also has a weird cascading lookup for variables, so if you do not explicitly specify the scope it is in, CFML will look for it for you.  If you use a variable name without a scope prefix, CFML checks the scopes in the following order to find the variable:
+
+- Local (function-local, UDFs and CFCs only)
+- Arguments
+- Thread local (inside threads only)
+- Query (not a true scope; variables in query loops)
+- Thread
+- Variables
+- CGI
+- Cffile
+- URL
+- Form
+- Cookie
+- Client
+
+Because CFML must search for variables when you do not specify the scope, you can improve performance by specifying the scope for all variables.
 
 
 
