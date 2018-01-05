@@ -195,3 +195,12 @@ users = queryNew( "id, firstname", "integer, varchar", [{"id":1, "firstname":"Ha
 subUsers = queryExecute( "select * from users", {}, { dbtype="query", returntype="struct", columnkey="id" } );
 writedump( subUsers ); 
 ```
+
+## QB = Query Builder
+
+We have created a fantastic module to deal with queries in a fluent and elegant manner.  We call it **QB** short for query builder (https://www.forgebox.io/view/qb).  You can install it using CommandBox into your application by just saying:
+
+```
+box install qb
+```
+
