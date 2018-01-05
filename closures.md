@@ -47,6 +47,10 @@ In this case the `makeAdder` creates a function that will add the passed in vari
 
 **Funky!!**
 
+## Passed Closures
+
+CFML also has the concept of functional programming using several modern operations like `map(), reduce(), filter(), each(), etc`.
+
 ## Delayed Execution
 
 Another big advantage of leveraging closures for functional programming is that closures are the blueprint of a function and are not executed until you want to. Meaning they are useful for delaying execution and great for design patterns like: observer, filters, iterators and much more.
