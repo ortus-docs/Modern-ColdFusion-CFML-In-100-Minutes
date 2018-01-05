@@ -81,4 +81,15 @@ return this;
 Note that the constructor returns the `this` scope.  This is a reference of the object itself that is returned.  You can also return `this` from **ANY** other function which allows for expressive or fluently chainable methods.
 
 
+### Component Scopes
+
+Every component has certain visibility scopes where properties, variables and functions are attached to.
+
+* `variables` - Private scope, visible internally to the CFC only, where all `properties` are placed in by default.  Public and private function references are place here as well.
+* `this` - Public scope, visible from the outside world (can break encapsulation) public function references are placed here.
+* `static` - No need for a CFC instance, available as a CFC representation \(Lucee only\)
+
+### Properties
+
+
 
