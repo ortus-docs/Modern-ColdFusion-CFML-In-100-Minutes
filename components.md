@@ -12,7 +12,7 @@ For an example of an object, think about **you ** as a human being. You have pro
 
 In Object-Oriented programming we define classes which are abstract descriptions of a category or type of thing.  In our case, we will call them components and it defines what properties and functions all objects of that type have. You can consider to be a blueprint of your object representation.  They should have a distinct job and a single responsibility, try to avoid creating God objects.
 
-> In object-oriented programming, a God object is an object that knows too much or does too much. The God object is an example of an anti-pattern. A common programming technique is to separate a large problem into several smaller problems (a divide and conquer strategy) and create solutions for each of them.
+> In object-oriented programming, a God object is an object that knows too much or does too much. The God object is an example of an anti-pattern. A common programming technique is to separate a large problem into several smaller problems (a divide and conquer strategy) and create solutions for each of them. - https://en.wikipedia.org/wiki/God_object
 
 Let's check out an example of a simple Component:
 
