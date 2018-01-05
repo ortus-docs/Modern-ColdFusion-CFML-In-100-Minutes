@@ -31,7 +31,7 @@ add = makeAdder( 1 );
 systemOutput( add( 2 ) );
 ```
 
-In this case the 
+In this case the `makeAdder` creates a function that will add the passed in variable with another via a delay of execution.  You can then execute the resultant closures `add` with another number to get your calculation of `3` in this case.
 
 **Funky!!**
 
