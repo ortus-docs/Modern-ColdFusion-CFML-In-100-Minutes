@@ -212,7 +212,7 @@ function boolean valueExists( required name ){
 }
 ```
 
-### Access Types and Scopes
+### Function Access Types and Scopes
 
 Functions can have different visibility contexts:
 
