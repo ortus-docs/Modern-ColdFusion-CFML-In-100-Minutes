@@ -336,7 +336,7 @@ function init( required wirebox ){
 
 CFML functions will use the `return` keyword to return a value from the function.  A function can be marked `void` in its return type to denote that it does **not** return any value.  However, if a function has no return type or `any` and you do not return explicitly a value, then the function will automatically return `null`.
 
-```
+```java
 void function nada(){
  // I do stuff, but return nothing
 }
