@@ -55,7 +55,7 @@ The attribute `accessors` in the component definition denotes that automatic get
 
 ### Creating Instances
 
-The user component above is a representation of _any_ user or the _idea_ of a user.  In order to bring it to life we will create an instance of it.
+The user component above is a representation of _any_ user or the _idea_ of a user.  In order to bring it to life we will create an instance of it, populate it with instance data and then use it.
 
 An instance, is a copy of that blueprint that you are bringing to life that will be stored in memory and used by the language during a set of executions.  Usually via a `new` or `createObject()` keyword operation from another file, which can be a template or yet another component.
 
