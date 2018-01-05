@@ -43,3 +43,11 @@ user.run();
 
 * See https://cfdocs.org/new and https://cfdocs.org/createobject
 
+Please note that the `new` keyword will automatically call an object's constructor: the `init()` method.  The `createObject()` will not, you will have to call the constructor manually:
+
+```java
+user = createObject( "component", "User" ).init();
+```
+
+
+
