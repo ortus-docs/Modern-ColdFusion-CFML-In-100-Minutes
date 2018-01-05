@@ -265,4 +265,10 @@ function sayHello(){
 }
 ```
 
+### Function Arguments
+
+All CFML functions are dynamic, meaning it can take any number of arguments without you even adding the signatures.  You can call functions by passing arguments by position or via name-value pairs or even with a structure/array of values.
+
+
+
 
