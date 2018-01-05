@@ -210,6 +210,12 @@ switch( city ){
 Please note that you can create a body for the `case` statements with curly braces.  As best practice, do so for all `case` and/or `default` blocks
 
 
+## The `==` and `=` Common Mistake
+
+The #1 mistake people encounter when writing conditional statements is the difference between `=` and `==`.
+
+* `=` is an assignment. It means "take what's on the right side and stick it into whatever is on the left side" (or its telling not asking.)
+* `==` is a question. It means "is the thing on the right equal to the thing on the left" (or its asking not telling.)
 
 
 
