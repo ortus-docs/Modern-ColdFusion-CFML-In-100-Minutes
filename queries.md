@@ -10,5 +10,3 @@ A query is a request to a database. It returns a CFML `query` object containing 
 
 * Using the `cfquery` tag or function construct. (https://cfdocs.org/cfquery)
 * Using the `queryExecute()` function. (https://cfdocs.org/queryexecute)
-
-`cfquery(), queryExecute()` passes SQL statements to the datasource connection
