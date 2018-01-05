@@ -47,6 +47,7 @@ In Object-Oriented programming we define classes which are abstract descriptions
  
 * See https://en.wikipedia.org/wiki/Class_(computer_programming)
 * See https://en.wikipedia.org/wiki/Instance_(computer_science)
+* See http://www.learncfinaweek.com/week1/OOP/
 
 ### Notes of Interest
  
@@ -75,7 +76,7 @@ user = createObject( "component", "User" ).init();
 
 In later chapters we will investigate the concept of dependency injection.
 
-### Constructors
+## Constructors
 
 Every object in theory should have a constructor method or a method that initializes the object to a **ready** state.  Even if the constructor is empty, get into the habit of creating one.
 
@@ -94,7 +95,7 @@ function setValue( required val ){
 }
 ```
 
-### Component Scopes
+## Component Scopes
 
 Every component has certain visibility scopes where properties, variables and functions are attached to.
 
@@ -102,7 +103,16 @@ Every component has certain visibility scopes where properties, variables and fu
 * `this` - Public scope, visible from the outside world (can break encapsulation) public function references are placed here.
 * `static` - No need for a CFC instance, available as a CFC representation \(Lucee only\)
 
-### Properties
+## Component Attributes
+
+The `component` construct can also have many attributes or name-value pairs that will give it some extra functionality. Each CFML engine provides different capabilities.  You can find all of them here: https://cfdocs.org/cfcomponent. Below are the most common ones:
+
+* `accessors` - Enables automatic getters/setters for properties
+* `extends` - Provides inheritance
+* `implements` - Names of the interfaces it implements
+* `persistent` - Makes the object a Hibernate Entity which can be fine tuned through a slew of other attributes.
+* `serializable` - Whether the component can be serialized into a string/binary format or not. Default is `true`.
+* `
 
 
 
