@@ -105,8 +105,16 @@ In a closure, the following is the order of search for an unscoped variable:
 
 - Closure's `local` scope
 - Closure's `arguments` scope
-- Outer function's `local` scope if available
+- Outer function' `local` scope if available
 - Owner function's `local` scope if available
 - ColdFusion built-in scope
 
-##
+## isClosure()
+
+CFML has a built in function called `isClosure()` that allows you to evaluate if a variable is a closure or not:
+
+```java
+if( isClosure( arguments.body ) ){
+    arguments.body();
+}
+````
