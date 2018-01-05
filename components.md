@@ -183,8 +183,6 @@ Please note that in CFML you can also declare these attributes via annotations i
 property name="age"
 ```
 
-
-
 ## Functions
 
 Functions are the way to interact with objects, with no functions we have no object-oriented behaviors, no abstractions and no encapsulation.  Functions have an automatic return type of `any` which means it can return any type of variable back to a user.  They also can take in _ANY_ amount of arguments, which don't event have to be defined in the function signature. WOWZA!
