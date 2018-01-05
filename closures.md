@@ -146,3 +146,22 @@ add = ( numeric x, numeric y ) => x + y;
 // returns 4
 systemOutput( add( 1, 3 ) );
 ```
+
+A complex lambda expression with an argument:
+
+```java
+// Takes a numeric value and returns a string
+isOdd = (numeric n) => {
+  if ( n % 2 == 0 ) {
+    return 'even';
+  } else {
+    return 'odd';
+  }
+};
+
+// returns 'odd'
+SystemOutput( isOdd( 1 ) );
+
+// returns 'even'
+SystemOutput( isOdd( 10 ) );
+```
