@@ -19,4 +19,4 @@ A query is a request to a database. It returns a CFML `query` object containing 
 </cfquery> 
 ```
 
-> **Info** On Lucee, the `datasource` can even be defined inline.
+> **Info** on Lucee, the `datasource` can even be defined inline.
