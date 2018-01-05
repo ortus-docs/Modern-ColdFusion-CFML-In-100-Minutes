@@ -140,5 +140,22 @@ If `userName` does not exist or evaluates to `null` then the default value of th
 
 ## Safe Navigation Operator
 
-The safe navigation operator was introduced in Adobe ColdFusion 2016 and Lucee 5.2 and it allows for you to navigate structures by not throwing the dreaded `key not exists` exception.
+The safe navigation operator was introduced in Adobe ColdFusion 2016 and Lucee 5.2 and it allows for you to navigate structures by not throwing the dreaded `key not exists` exception but returning an `undefined` or `null` value.  You can then combine that with the elvis operator and create nice chainable struct navigation. For example instead of doing things like:
+
+```java
+result = "";
+if( structKeyExists( var, "key" ) ){
+	if( structKeyExists( var.key, "otherkey" ){
+		result = var.key.otherkey;
+	}
+}
+```
+
+You can do things like this:
+
+```java
+result = var?.key?.otherKey ?: "";
+```
+
+The hook operator (`?`) along with the dot operator (`.`) is known as safe navigation operator(`?.`). The safe navigation operator makes sure that if the variable used before the operator is not defined or java `null`, then instead of throwing an error, the operator returns `undefined` for that particular access.
 
