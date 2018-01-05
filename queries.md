@@ -26,8 +26,22 @@ SELECT QUANTITY, ITEM
 FROM CUPBOARD
 ORDER BY ITEM
 " );
-
+// Execute it
 qItems = q.execute().getResult();  
+
+// Yet another script alternative
+
+qItems = queryExecute( 
+ sql = "SELECT QUANTITY, ITEM FROM CUPBOARD ORDER BY ITEM",
+ options = { datsource = "pantry" }
+);
+
 ```
 
 > **Info** on Lucee, the `datasource` can even be defined inline.
+
+Please note that when using the `Query` object, you can pass many attributes into the constructor, chain and much more.  Please see the docs for further syntax options: https://helpx.adobe.com/coldfusion/cfml-reference/script-functions-implemented-as-cfcs/query.html.  You can also omit the `datasouce` completely from query calls and CFML will use the one defined in `Application.cfc` as the default datasource connection.
+
+```java
+this.datasource = "pantry";
+```
