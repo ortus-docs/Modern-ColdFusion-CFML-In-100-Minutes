@@ -187,7 +187,7 @@ property name="age"
 
 Functions are the way to interact with objects, with no functions we have no object-oriented behaviors, no abstractions and no encapsulation.  Functions have an automatic return type of `any` which means it can return any type of variable back to a user.  They also can take in _ANY_ amount of arguments, which don't event have to be defined in the function signature. WOWZA!
 
-### Declaration
+**Declaration**
 
 ```
 /**
@@ -195,6 +195,18 @@ Functions are the way to interact with objects, with no functions we have no obj
 */
 accessType returnType function name(){}
 ```
+
+### Access Types 
+
+Functions can have different visibility contexts:
+
+- `public` - Available to the component and externally
+- `private` - Available only to the component that declares the
+method and any components that extend the component in
+which it is defined
+- `package` - Available only to the component that declares the
+method, components that extend the component, or any
+other components in the package
 
 
 
