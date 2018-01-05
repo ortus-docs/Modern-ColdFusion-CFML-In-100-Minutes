@@ -14,10 +14,20 @@ In Object-Oriented programming we define classes which are abstract descriptions
 
  ```java
  component accessors="true"{
- 
-  property name="user";
-  property name="age";
   
+  /**
+  * The name of the user
+  */
+  property name="name";
+  
+  /**
+  * The age of the user
+  */
+  property name="age" type="numeric";
+  
+  /**
+  * Constructor
+  */
   function init(){
   
    return this;
