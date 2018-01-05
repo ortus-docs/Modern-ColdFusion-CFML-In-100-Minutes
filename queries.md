@@ -174,8 +174,10 @@ writeDump(news);
 
 ## Query of Queries
 
-Query a local database variable without going through your database
+Query a local database variable without going through your database is another great way to query an already queried query.  Too many queries?
 
 ```java
-
+users = queryNew( "firstname", "varchar", [{"firstname":"Han"}] );
+subUsers = queryExecute( "select * from users", {}, { dbtype="query" } );
+writedump( subUsers ); 
 ```
