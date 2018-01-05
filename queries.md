@@ -126,6 +126,19 @@ There are also several query methods available in CFML that can help you manage 
 * queryEach()
 * queryEvery()
 * queryFilter()
+* queryGetCell()
+* queryGetResult()
+* queryGetRow()
+* queryMap()
+* queryRecordCount()
+* queryReduce()
+* queryRowData()
+* querySetCell()
+* querySlice()
+* querySome()
+* querySort()
+* quotedValueList()
+* valueList()
 
 
 
