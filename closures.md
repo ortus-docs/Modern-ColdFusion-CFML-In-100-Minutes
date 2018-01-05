@@ -50,3 +50,15 @@ describe( "A spec suite", function(){
 
 } );
 ```
+
+## Closure Scopes
+
+A closure retains a copy of variables visible at the time of its creation. The global variables (like ColdFusion specific scopes) and the local variables (including declaring or outer function's local and arguments scope) are retained at the time of a closure creation. Functions are static.
+
+The following details the scope of closure based on the way they are defined:
+
+| Scenario      | Scope         |
+| ------------- |:-------------:|
+| In a CFC function      | Closure argument scope, enclosing function local scope and argument scope, this scope, variable scope, and super scope |
+| In a CFM function      | Closure argument scope, enclosing function local scope and argument scope, this scope, variable scope, and super scope|
+| As function argument| Closure argument scope, variable scope, and this scope and super scope (if defined in CFC component).      |
