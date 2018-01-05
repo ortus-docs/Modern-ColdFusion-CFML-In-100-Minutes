@@ -140,6 +140,20 @@ component accessors="true" serializable="false" extends="BaseUser"{
 }
 ```
 
+Please note that in CFML you can also declare these attributes via annotations in the comments section, weird, I know!
+
+```java
+/**
+* My User
+* @extends BaseUser
+* @accessors true
+* @serializable true
+*/
+component{
+
+}
+```
+
 ## Properties
 
 Properties are a way to create attributes/data for your object, which can also adhere to inheritance rules.  In CFML, they can also be used to describe further capabilities for RESTFul/SOAP web services and Hibernate ORM.  If `accessors` are enabled, CFML will track those properties in the `variables` scope according to their name and create automatic getter and setter methods for those properties. (https://cfdocs.org/cfproperty)
