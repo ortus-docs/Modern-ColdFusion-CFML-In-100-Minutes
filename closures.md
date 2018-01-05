@@ -49,7 +49,22 @@ In this case the `makeAdder` creates a function that will add the passed in vari
 
 ## Passed Closures
 
-CFML also has the concept of functional programming using several modern operations like `map(), reduce(), filter(), each(), etc`.
+CFML also has the concept of functional programming using several modern operations like `map(), reduce(), filter(), each(), etc` where you can pass closures into other functions for operating on different data structures.
+
+```java
+fruitArray = [
+	{ fruit='apple', rating=4 }, 
+	{ fruit='banana', rating=1 }, 
+	{ fruit='orange', rating=5 }, 
+	{ fruit='mango', rating=2 }, 
+	{ fruit='kiwi', rating=3 }
+];
+
+favoriteFruits = fruitArray.filter( function( item ){
+     return item.rating >= 3;
+} );
+systemOutput( favoriteFruits );
+```
 
 ## Delayed Execution
 
