@@ -6,7 +6,7 @@ What is nothingness? Is there nothingness only in outer space? If a tree falls i
 
 ## Usage
 
-We can use the `isNull()` method to evaulate for nothingness and we can event create a `null` value with a `javaCast( "null", "" )` function call or in lucee you can use the `nullValue()` function.  However, please note that the `null` keyword is coming to CFML in the near distant future.
+We can use the `isNull()` method in CFML to evaulate for nothingness and we can event create a `null` value with a `javaCast( "null", "" )` function call or in Lucee you can use the `nullValue()` function as well.  However, please note that the `null` keyword is coming to CFML in the near distant future.
 
 If you have three eggs, eat three eggs, then you might think you have "nothing", but in terms of eggs you have "0". Zero is something, it’s a number, and it’s not nothing.
 
