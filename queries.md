@@ -6,4 +6,9 @@ In modern times, we have many more ways to query the database and defining datas
 
 ## What is a query?
 
-A query is a request to a database. It returns ```query object``` containing a **recordset** and other information. The query can ask for information from the database, write new data to the database, update existing information in the database, or delete records from the database. ```cfquery``` passes SQL statements to the ```datasource```. The ```datasource``` is set in the ColdFusion administrator.
+A query is a request to a database. It returns a CFML `query` object containing a **recordset** and other metadata information about the query. The query can ask for information from the database, write new data to the database, update existing information in the database, or delete records from the database. This can be done in several ways:
+
+* Using the `cfquery` tag or function construct. (https://cfdocs.org/cfquery)
+* Using the `queryExecute()` function. (https://cfdocs.org/queryexecute)
+
+```cfquery``` passes SQL statements to the ```datasource```. The ```datasource``` is set in the ColdFusion administrator.
