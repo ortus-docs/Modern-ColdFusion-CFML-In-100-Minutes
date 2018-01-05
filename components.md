@@ -2,11 +2,11 @@
 
 **ColdFusion (CFML) is object-oriented**
 
-CFML is an Object-Oriented programming language which means that all the things we interact with inside the virtual machine are objects, which in our case we will call Components (CFCs). Objects hold data, called **properties**, and they can perform actions, called **methods **or **functions**.
+CFML is an Object-Oriented programming language which means that all the things we interact with inside the virtual machine are objects, which in our case we will call Components (CFCs). Objects can hold data, called **properties**, and they can perform actions, called **methods **or **functions**.
 
 > Remember that objects are not only data but data + behavior.
 
-For an example of an object, think about **you **as a human being. You have attributes like height, weight, and eye color. You have methods like walk, run, wash dishes, and daydream. Different kinds of objects have different properties and functions.
+For an example of an object, think about **you ** as a human being. You have attributes like height, weight, and eye color. You have methods like walk, run, wash dishes, and daydream. Different kinds of objects have different properties and functions.
 
 ## Classes and Instances
 
