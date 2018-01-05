@@ -134,6 +134,12 @@ The `component` construct can also have many attributes or name-value pairs that
 * `persistent` - Makes the object a Hibernate Entity which can be fine tuned through a slew of other attributes.
 * `serializable` - Whether the component can be serialized into a string/binary format or not. Default is `true`.
 
+```java
+component accessors="true" serializable="false"{
+
+}
+```
+
 ## Properties
 
 Properties are a way to create attributes/data for your object, which can also adhere to inheritance rules.  In CFML, they can also be used to describe further capabilities for RESTFul/SOAP web services and Hibernate ORM.  If `accessors` are enabled, CFML will track those properties in the `variables` scope according to their name and create automatic getter and setter methods for those properties. (https://cfdocs.org/cfproperty)
