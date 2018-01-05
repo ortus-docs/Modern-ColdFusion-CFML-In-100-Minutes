@@ -172,6 +172,19 @@ The `property` construct can also have different name-value pair attributes that
 * `setter` - Generate a setter method or not, defaults to true
 * `getter` - Generate a getter method or not, defaults to true
 
+Please note that in CFML you can also declare these attributes via annotations in the comments section, weird, I know!
+
+```java
+/**
+* The user age
+* @type numeric
+* @default 0
+*/
+property name="age"
+```
+
+
+
 ## Functions
 
 Functions are the way to interact with objects, with no functions we have no object-oriented behaviors, no abstractions and no encapsulation.  Functions have an automatic return type of `any` which means it can return any type of variable back to a user.  They also can take in _ANY_ amount of arguments, which don't event have to be defined in the function signature. WOWZA!
