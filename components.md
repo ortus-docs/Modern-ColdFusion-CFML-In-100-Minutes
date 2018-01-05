@@ -207,6 +207,10 @@ which it is defined
 - `package` - Available only to the component that declares the
 method, components that extend the component, or any
 other components in the package
+- `remote` - Available to a locally or remotely executing page
+or component method, or a remote client through a URL,
+Flash, or a web service. To publish the function as a
+web service, this option is required.
 
 
 
