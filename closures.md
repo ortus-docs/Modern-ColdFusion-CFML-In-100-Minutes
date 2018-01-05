@@ -66,6 +66,8 @@ favoriteFruits = fruitArray.filter( function( item ){
 systemOutput( favoriteFruits );
 ```
 
+Please note that you can construct your very own functional member functions on your objects and generate very functional custom DSL (Domain Specific Languages) by being creative.
+
 ## Delayed Execution
 
 Another big advantage of leveraging closures for functional programming is that closures are the blueprint of a function and are not executed until you want to. Meaning they are useful for delaying execution and great for design patterns like: observer, filters, iterators and much more.
