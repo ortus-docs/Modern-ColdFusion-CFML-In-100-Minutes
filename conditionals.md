@@ -95,3 +95,11 @@ for( i in [ 5, 7, 8, 9 ] ){
 Lastly, when total is 9, it goes:" Is it "true" that 9 is less than 7?
 
 No. Next, is it true that 9 is equal to 7? No. Next, is it true that 9 is equal to 8? No. Since none of those are true, execute the else and print the line `Hot! Hot! Hot!`.
+
+An `if` block has:
+
+* One `if` statement whose instructions are executed only if the statement is **true**
+* Zero or more `else if` statements whose instructions are executed only if the statement is **true**
+* Zero or one `else` statement whose instructions are executed if no if nor else if statements were **true**
+
+Only one section of the if / else if / else structure can have its instructions run. If the if is true, for instance, CFML will never look at the else if. Once one block executes, that’s it.
