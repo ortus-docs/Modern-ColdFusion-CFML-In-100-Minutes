@@ -10,3 +10,13 @@ A query is a request to a database. It returns a CFML `query` object containing 
 
 * Using the `cfquery` tag or function construct. (https://cfdocs.org/cfquery)
 * Using the `queryExecute()` function. (https://cfdocs.org/queryexecute)
+
+```
+<cfquery name = "getBreakfastItems" datasource="pantry"> 
+ SELECT QUANTITY, ITEM 
+ FROM CUPBOARD 
+ ORDER BY ITEM 
+</cfquery> 
+```
+
+> **Info** On Lucee, the `datasource` can even be defined inline.
