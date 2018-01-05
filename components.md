@@ -212,5 +212,10 @@ or component method, or a remote client through a URL,
 Flash, or a web service. To publish the function as a
 web service, this option is required.
 
+Another interesting tidbit in CFML is that the visibility determines where the function will exist within the scope of the CFC.  Remember that functions in CFML are objects themselves.  They can be added, removed, renamed even at runtime thanks to CFML being a dynamic language.
 
+- `public,remote` - The function reference is placed in both the `this` and `variables` scope
+- `private,package` - The function reference is placed in the `variables` scope
+
+Does this mean, that I can programmatically change an object at runtime by injecting (mixing) in new methods, or removing methods, or even renaming them? HECK YES SIREE BOB!  This is the beauty of the dynamic language, you can manipulate object instances at runtime.
 
