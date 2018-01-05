@@ -161,3 +161,9 @@ result = var?.key?.otherKey ?: "";
 
 The hook operator (`?`) along with the dot operator (`.`) is known as safe navigation operator(`?.`). The safe navigation operator makes sure that if the variable used before the operator is not defined or java `null`, then instead of throwing an error, the operator returns `undefined` for that particular access.
 
+
+## Switch, Case, & Default
+
+Another situation that involves conditional logic is when a single variable or expression that can have a variety of values and different statements or functions need to be executed depending on what that value is. One way of handling this situation is with a switch / case / default block.
+
+Much like how the if statement marks the start of an if block and contains one or more else if statements and perhaps one (and only one) else statement, the switch statement marks the start of a switch block and can contain multiple case statements and perhaps one (and only one) default statement. The main difference is that switch / case / default can only evaluate the resulting value of a single variable or expression, while the if / else if / else block lets you evaluate the true or false result of different variables or expressions throughout the block.
