@@ -92,7 +92,7 @@ function setValue( required val ){
  variables.value = arguments.val;
  return this;
 }
-
+```
 
 ### Component Scopes
 
