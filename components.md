@@ -48,10 +48,14 @@ Let's check out an example of a simple Component:
   
  }
  ``` 
- 
-* See https://en.wikipedia.org/wiki/Class_(computer_programming)
-* See https://en.wikipedia.org/wiki/Instance_(computer_science)
-* See http://www.learncfinaweek.com/week1/OOP/
+
+Please check out the following articles:
+
+* https://en.wikipedia.org/wiki/Class_(computer_programming)
+* https://en.wikipedia.org/wiki/Instance_(computer_science)
+* https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)
+* https://en.wikipedia.org/wiki/God_object
+* http://www.learncfinaweek.com/week1/OOP/
 
 ### Notes of Interest
  
