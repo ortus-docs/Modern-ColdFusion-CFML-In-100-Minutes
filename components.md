@@ -222,7 +222,7 @@ Does this mean, that I can programmatically change an object at runtime by injec
 
 ### Function Attributes
 
-The `function` construct can also have many attributes or name-value pairs that will give it some extra functionality for according to CFML engine.  You can find all of them here: https://cfdocs.org/cffunction. Below are the most common ones:
+The `function` construct can also have many attributes or name-value pairs that will give it some extra functionality according to CFML engine.  You can find all of them here: https://cfdocs.org/cffunction. Below are the most common ones:
 
 * `accessors` - Enables automatic getters/setters for properties
 * `extends` - Provides inheritance via the path of the Component (CFC)
