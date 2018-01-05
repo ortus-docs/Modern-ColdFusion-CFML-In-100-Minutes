@@ -41,3 +41,36 @@ Also integers can be evaluated as **true** or **false**. In ColdFusion, **0 (zer
 
 <cfif 0>I am false so will not show</cfif>
 ```
+
+## If, Else If, & Else
+
+Why do we have conditional statements? Most often its to control conditional instructions, especially `if` / `else if` / `else` expressions. Let's write an example by adding a method to our **PersonalChef** class:
+
+
+```java
+component accessors=true{
+
+	property name="status";
+
+	function init(){
+		status = "The water is not boiling yet.";
+
+		return this;
+	}
+
+	function water_boiling( numeric minutes ){
+		if( arguments.minutes < 7 ){
+			this.status = "The water is not boiling yet.";
+		} else if ( arguments.minutes == 7 ){
+			this.status = "It's just barely boiling.";
+		} else if ( arguments.minutes == 8 ){
+			this.status = "It's boiling!";
+		} else {
+			this.status = "Hot! Hot! Hot!";
+		}
+
+		return this;
+	}
+
+}
+```
