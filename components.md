@@ -32,8 +32,9 @@ In Object-Oriented programming we define classes which are abstract descriptions
   /**
   * Constructor
   */
-  function init(){
-  
+  function init( required name ){
+   variables.name = arguments.name;
+   
    return this;
   }
   
