@@ -102,4 +102,4 @@ An `if` block has:
 * Zero or more `else if` statements whose instructions are executed only if the statement is **true**
 * Zero or one `else` statement whose instructions are executed if no `if` nor `else if` statements were **true**
 
-Only one section of the if / else if / else structure can have its instructions run. If the if is true, for instance, CFML will never look at the else if. Once one block executes, that’s it.
+Only one section of the `if / else if / else` structure can have its instructions run. If the if is true, for instance, CFML will never look at the else if. Once one block executes, that’s it.
