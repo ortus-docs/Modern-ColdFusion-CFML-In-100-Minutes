@@ -96,12 +96,12 @@ qItems = q.execute().getResult();
 
 queryExecute(
  "select quantity, item from cupboard where item_id = :itemID"
- { itemID = arguments.itemID }
+ { itemID = { value=arguments.itemID, cfsqltype="cf_sql_varchar", list=true } }
 );
 
 queryExecute(
  "select quantity, item from cupboard where item_id = ?"
- [ arguments.itemID ]
+ [ { value=arguments.itemID, cfsqltype="cf_sql_varchar", list=true } ]
 );
 
 ```
