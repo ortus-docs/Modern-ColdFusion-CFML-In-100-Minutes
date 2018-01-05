@@ -219,3 +219,35 @@ Another interesting tidbit in CFML is that the visibility determines where the f
 
 Does this mean, that I can programmatically change an object at runtime by injecting (mixing) in new methods, or removing methods, or even renaming them? HECK YES SIREE BOB!  This is the beauty of the dynamic language, you can manipulate object instances at runtime.
 
+
+### Function Attributes
+
+The `function` construct can also have many attributes or name-value pairs that will give it some extra functionality for according to CFML engine.  You can find all of them here: https://cfdocs.org/cffunction. Below are the most common ones:
+
+* `accessors` - Enables automatic getters/setters for properties
+* `extends` - Provides inheritance via the path of the Component (CFC)
+* `implements` - Names of the interfaces it implements
+* `persistent` - Makes the object a Hibernate Entity which can be fine tuned through a slew of other attributes.
+* `serializable` - Whether the component can be serialized into a string/binary format or not. Default is `true`.
+
+```java
+component accessors="true" serializable="false" extends="BaseUser"{
+
+}
+```
+
+Please note that in CFML you can also declare these attributes via annotations in the comments section, weird, I know!
+
+```java
+/**
+* My User
+* @extends BaseUser
+* @accessors true
+* @serializable true
+*/
+component{
+
+}
+```
+
+
