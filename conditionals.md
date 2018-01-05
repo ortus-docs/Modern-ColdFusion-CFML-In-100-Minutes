@@ -94,4 +94,4 @@ for( i in [ 5, 7, 8, 9 ] ){
 
 Lastly, when total is 9, it goes:" Is it "true" that 9 is less than 7?
 
-No. Next, is it true that 9 is equal to 7? No. Next, is it true that 9 is equal to 8? No. Since none of those are true, execute the else and print the line Hot! Hot! Hot!.
+No. Next, is it true that 9 is equal to 7? No. Next, is it true that 9 is equal to 8? No. Since none of those are true, execute the else and print the line `Hot! Hot! Hot!`.
