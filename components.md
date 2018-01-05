@@ -332,4 +332,22 @@ function init( required wirebox ){
 }
 ```
 
+### Function Returns
+
+CFML functions will use the `return` keyword to return a value from the function.  A function can be marked `void` in its return type to denote that it does **not** return any value.  However, if a function has no return type or `any` and you do not return explicitly a value, then the function will automatically return `null`.
+
+```
+void function nada(){
+ // I do stuff, but return nothing
+}
+
+function nada(){
+ // I do stuff, but also do not return anything
+}
+
+function add( a, b ){
+ return a + b;
+}
+```
+
 
