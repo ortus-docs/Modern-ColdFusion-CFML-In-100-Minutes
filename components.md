@@ -224,14 +224,13 @@ Does this mean, that I can programmatically change an object at runtime by injec
 
 The `function` construct can also have many attributes or name-value pairs that will give it some extra functionality according to CFML engine.  You can find all of them here: https://cfdocs.org/cffunction. Below are the most common ones:
 
-* `accessors` - Enables automatic getters/setters for properties
-* `extends` - Provides inheritance via the path of the Component (CFC)
-* `implements` - Names of the interfaces it implements
-* `persistent` - Makes the object a Hibernate Entity which can be fine tuned through a slew of other attributes.
-* `serializable` - Whether the component can be serialized into a string/binary format or not. Default is `true`.
+* `output` - Will this function send content to the output stream. Try avoiding this to `true` unless you are building libraries of some type, else you are breaking encapsulation
+* `description` - A short text description of the function a part from the hint
+* `returnFormat` - Format to return for remote callers
+ 
 
 ```java
-component accessors="true" serializable="false" extends="BaseUser"{
+function hello() description="" returnFormat=""{
 
 }
 ```
