@@ -1,6 +1,6 @@
 # Summary
 
-## Introduction
+## Intro
 
 * [Introduction](README.md)
 * [History](history.md)
@@ -24,17 +24,14 @@
 * [Closures & Lambdas](closures.md)
 * [Includes](includes.md)
 * [Application.cfc](applicationcfc.md)
-* [Files](files.md)
 * [HTTP Calls](http-calls.md)
 
 ## Extra Credit
 
-* Object Orientation
+* [Object Orientation](object-orientation.md)
 * [MVC](mvc.md)
 * [Dependency Injection](dependency-injection.md)
 * [Testing](testing.md)
 * [ORM](orm.md)
 * [Docker + CFML](docker-+-cfml.md)
-
-
 
