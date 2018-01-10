@@ -11,10 +11,10 @@ You can use the `<!---` and `--->` Syntax to comment within a CFML template. Thi
 ```html
 
 HTML Comment
-<!-- I am an HTML Comment-->
+<!-- I am an HTML Comment -->
 
 ColdFusion Comment
-<!---  I am a ColdFusion Comment--->
+<!---  I am a ColdFusion Comment --->
 
 ```
 
@@ -23,12 +23,12 @@ ColdFusion Comment
 If you are within a CFC or in a `<cfscript>` block you can use an alternate style for comments.  You can leverage `//` for single line comments and the following for multi-line comments:
 
 ```js
-/**
-* Multi 
-* Line
-* Comments
-* are
-* great!
+/*
+  Multi 
+  Line
+  Comments
+  are
+  great!
 */
 
 // Single line comment
