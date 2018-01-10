@@ -3,10 +3,10 @@
 In the CFML language, there are many persistence and visibility scopes that exist for variables to be placed in.  These are differentiated by context: in a CFC, in a function, tag, thread or in a template.  All CFML scopes are implemented as structures or hash maps of key-value name pairs. The default scope for variable storage is called `variables`.  Thus you can refer variables like this:
 
 ```js
-a = hello
-writeOutput( a )
+a = "hello";
+writeOutput( a );
 or 
-writeOutput( variables.a )
+writeOutput( variables.a );
 ```
 
 ## Persistence Scopes
