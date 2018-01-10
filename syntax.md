@@ -122,6 +122,7 @@ class Sample
 class Sample
     def hello
         "Hello, World!"
+    end
 end
 
 s = Sample.new
