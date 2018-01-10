@@ -97,7 +97,7 @@ meals.deleteAt( 4 );
 
 // Iterate
 meals.each( function( element, index) {
-   systemOutput( element & " " & index );
+   writeOutput( element & " " & index );
 } );
 
 // Filter an array
