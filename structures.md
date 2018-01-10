@@ -54,7 +54,7 @@ produce[ "apples" ] = 3;
 
 // I just ate one grape, let's reduce it
 produce[ "grapes" ] = 1; // or
-produce.grapes--
+produce.grapes--;
 ```
 
 > **Tip** You can use the `toString()` call on any structure to get a string representation of its keys+values: `produce.toString()`
