@@ -29,14 +29,14 @@ a.trim().len()
 ```
 
 ### Replace
-* The `Replace` instruction replaces occurrences of **substring1** in a string with **substring2**, in a specified scope. The search is case sensitive and the scope default is one. For instance, `Replace("Hello", "e", "")` would give you back **Hllo** after replacing the _first occurrence of e_, or `Replace("Good Morning!", "o", "e", "All")` would give you **Geed Merning!** 
+* The `Replace` instruction replaces occurrences of **substring1** in a string with **substring2**, in a specified scope. The search is case sensitive and the scope default is one. For instance, `Replace("Hello", "l", "")` would give you back **Helo** after replacing the _first occurrence of l_, or `Replace("Good Morning!", "o", "e", "All")` would give you **Geed Merning!** 
 
 ### RemoveChars 
 * Call `RemoveChars` to remove characters from a string. For instance, `RemoveChars("hello bob", 2, 5)` would give you back **hbob**. 
 
 ### Mid
  
-* The `mid` instruction extracts a substring from a string. For instance, I could call `Mid("Welcome to CFML Jumpstart",4,12)` and it would give you back: **come to CFML**.
+* The `mid` instruction extracts a substring from a string. For instance, I could call `Mid("Welcome to CFML Jumpstart", 4, 12)` and it would give you back: **come to CFML**.
 
 ### ListToArray
 
@@ -57,7 +57,7 @@ If you have 2 or more strings, you can concatenate them by using the `&` operato
 
 ```
 name = "Luis";
-a = "Hello " & name & " how are you today?"
+a = "Hello " & name & " how are you today?";
 ```
 
 ### Interpolating Strings
@@ -73,7 +73,7 @@ writeoutput( welcome );
 That's it! If you surround any **simple** variable with `#` hashes, CFML will interpret the variable.  Now try this with a complex variable and see what happens:
 
 ```js
-complex = [1,2,3]
+complex = [1,2,3];
 welcome = "Good morning #complex#, how are you today?";
 writeoutput( welcome );
 ```
