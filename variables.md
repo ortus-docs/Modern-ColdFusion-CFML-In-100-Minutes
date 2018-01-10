@@ -58,7 +58,7 @@ writeoutput( "Welcome to CFML: #a#" );
 
 Also note that using the `#` hashes for output on assignments can be reduntant:
 
-**Dont' do this**
+**Don't do this**
 ```js
 a = "hello luis";
 b = #a#;
