@@ -19,20 +19,10 @@ A query is a request to a database. It returns a CFML `query` object containing 
  ORDER BY ITEM 
 </cfquery> 
 
-// New script syntax
-var q = new Query( datasource="pantry" );
-q.setSQL( "
-SELECT QUANTITY, ITEM 
-FROM CUPBOARD
-ORDER BY ITEM
-" );
-// Execute it
-qItems = q.execute().getResult();  
-
-// Yet another script alternative
+// script syntax
 
 qItems = queryExecute( 
- sql = "SELECT QUANTITY, ITEM FROM CUPBOARD ORDER BY ITEM"
+ "SELECT QUANTITY, ITEM FROM CUPBOARD ORDER BY ITEM"
 );
 
 ```
@@ -81,19 +71,6 @@ As you can see, there are many ways to iterate over the query. Choose the approa
 Most of the time we won't have the luxury of simple queries, we will need user input in order to construct our queries.  Here is where you need to be extra careful as to not allow for SQL injection.  CFML has several ways to help you prevent SQL Injection whether using tags or script calls.  Levarage the `cfqueryparam` construct/tag (https://cfdocs.org/cfqueryparam) and always sanitize your input via the `encode` functions in CFML.
 
 ```java
-q = new Query(
- sql = "select quantity, item from cupboard where item_id = :itemID"
-);
-
-q.addParam( 
- name      = "itemID",
- cfsqltype = "CF_SQL_VARCHAR",
- value     = arguments.itemID,
- list      = true
-);
-
-qItems = q.execute().getResult(); 
-
 queryExecute(
  "select quantity, item from cupboard where item_id = :itemID"
  { itemID = { value=arguments.itemID, cfsqltype="cf_sql_varchar", list=true } }
