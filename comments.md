@@ -67,5 +67,7 @@ component extends="Base" implements="IHello" singleton{
 }
 ```
 
+----
+
 You can see some examples of advanced CFC documentation here: http://apidocs.ortussolutions.com.s3.amazonaws.com/coldbox/5.0.0/index.html
 
