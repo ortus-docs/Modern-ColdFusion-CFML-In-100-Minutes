@@ -8,6 +8,7 @@ Conditional statements evaluate to **true** or **false** only. The most common c
 a = 1;
 if( a == 1 )
 if( a > 2 )
+if( a < 2 )
 if( a != 2 )
 if( a >= 1 )
 if( a <= 1 )
@@ -16,7 +17,7 @@ if( a <= 1 )
 Some instructions return a `true` or `false`, so they're used in conditional statements, for example, `IsArray` which is `true` only when the variable is an "array". Structures have an instruction named `structKeyExists()` or `exists()` which returns `true` if a key is present in a structure.  Strings can also be used for conditional operations by checking the `.length()` member function.
 
 ```java
-a = [1,3]
+a = [1,3];
 
 if( isArray( a ) ){
     // work on the array
@@ -119,7 +120,7 @@ The way it works is that the `condition` is evaluated. If it is **true**, then t
 Please note that you can chain the `trueStatement` and the `falseStatement` into more tenrary operations.  However, don't abuse it as they will look ugly and just be very complex to debug.
 
 ```java
-( 1 == 1 ) ? systemOutput( "true" ) : systemOutput( "false" )
+( 1 == 1 ) ? systemOutput( "true" ) : systemOutput( "false" );
 ```
 
 The output of the above statement will be..... `true` of course!
