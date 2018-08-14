@@ -34,6 +34,19 @@ If you are within a CFC or in a `<cfscript>` block you can use an alternate styl
 // Single line comment
 ```
 
+## Script "Javadoc" style comments
+A multi-line block can affect the metadata of a `component` or `function` if the opening line contains 2 asterisks.  Also, for readability, some people will start each line of the comment with an asterisk.  The CF engines will parse out those starting asterisks and they will not appear in the component or the function metadata.
+
+```js
+	/**
+	* This is the hint for the function
+	*
+	* @param1 This is the hint for the param
+	*/
+	function myFunc( string param1 ){
+  }
+```
+
 ## CFDoc Style Comments
 
 In the CFML world you can write [JavaDoc](http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html) comments in what we call **CFDoc** comments.  We leverage the [DocBox](https://github.com/Ortus-Solutions/DocBox) library to generate documentation according to object metadata and comments.
