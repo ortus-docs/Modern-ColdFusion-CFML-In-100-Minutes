@@ -11,10 +11,10 @@ You can use the `<!---` and `--->` Syntax to comment within a CFML template. Thi
 ```html
 
 HTML Comment
-<!-- I am an HTML Comment-->
+<!-- I am an HTML Comment -->
 
 ColdFusion Comment
-<!---  I am a ColdFusion Comment--->
+<!---  I am a ColdFusion Comment --->
 
 ```
 
@@ -23,15 +23,28 @@ ColdFusion Comment
 If you are within a CFC or in a `<cfscript>` block you can use an alternate style for comments.  You can leverage `//` for single line comments and the following for multi-line comments:
 
 ```js
-/**
-* Multi 
-* Line
-* Comments
-* are
-* great!
+/*
+  Multi 
+  Line
+  Comments
+  are
+  great!
 */
 
 // Single line comment
+```
+
+## Script "Javadoc" style comments
+A multi-line block can affect the metadata of a `component` or `function` if the opening line contains 2 asterisks.  Also, for readability, some people will start each line of the comment with an asterisk.  The CF engines will parse out those starting asterisks and they will not appear in the component or the function metadata.
+
+```js
+	/**
+	* This is the hint for the function
+	*
+	* @param1 This is the hint for the param
+	*/
+	function myFunc( string param1 ){
+  }
 ```
 
 ## CFDoc Style Comments
