@@ -79,3 +79,7 @@ writeOutput( "Hello from CFML Land!" )
 
 Boom! We get a magical hello from the CommandBox REPL.
 
+{% hint style="success" %}
+**Tip**: Our REPL not only supports one line commands but also multi-line commands. Go ahead, try it!
+{% endhint %}
+
