@@ -4,9 +4,9 @@ This book is inspired by the original [Ruby in 100 minutes](http://tutorials.jum
 
 ## Ortus Solutions, Corp
 
-![](.gitbook/assets/ortus-medium.jpg)
+![](../.gitbook/assets/ortus-medium.jpg)
 
-This book has been written by Luis Majano and the [Ortus Solutions](https://www.ortussolutions.com) Development Team.
+This book has been written and extend by Luis Majano and the [Ortus Solutions](https://www.ortussolutions.com) Development Team.
 
 > Ortus Solutions is a company that focuses on building professional open source tools, custom applications and great websites! We're the team behind ColdBox, the de-facto enterprise CFML MVC Platform, TestBox, the CFML Testing and Behavior Driven Development \(BDD\) Framework, ContentBox, a highly modular and scalable Content Management System, CommandBox, the ColdFusion \(CFML\) CLI, package manager, etc, and many more - [https://www.ortussolutions.com/](https://www.ortussolutions.com/)
 
