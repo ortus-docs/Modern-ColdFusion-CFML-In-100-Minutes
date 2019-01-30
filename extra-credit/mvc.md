@@ -1,7 +1,3 @@
----
-description: Model View Controller
----
-
 # MVC
 
 ## Intro to MVC
@@ -57,7 +53,7 @@ Non-visual objects are easier to test than visual objects, in theory.  With the 
 
 The most important benefit that we can arise out of the MVC pattern, is the direction of the dependencies.  A view depends on its model data and controller, but the model itself does not depend on the view or controllers.  This is how you want to build your business logic, encapsulated and providing a good API.
 
-## Evolution of MVC Architecture {#coldbox-mvc}
+## Evolution of MVC Architecture <a id="coldbox-mvc"></a>
 
 There are many types of MVC architectures and hopefully the following diagrams can help you in the progression from spaghetti hell to the most complex MVC architecture using an [`ORM`](https://en.wikipedia.org/wiki/Object-relational_mapping) or Object Relational Mapper.
 
@@ -100,7 +96,7 @@ In this architecture approach we have replaced business objects for ORM entities
 We have even build a companion package for ColdBox called [**cborm**](https://github.com/coldbox-modules/cbox-cborm) that will help you build more pragmatic and enjoyable ORM applications.
 {% endhint %}
 
-## MVC Frameworks for ColdFusion \(CFML\) {#coldbox-mvc}
+## MVC Frameworks for ColdFusion \(CFML\) <a id="coldbox-mvc"></a>
 
 Here are our recommendations:
 
@@ -123,7 +119,7 @@ You can check out our quick learning guides below:
 * **Quick Start Guide:** [https://coldbox.ortusbooks.com/getting-started/getting-started-guide](https://coldbox.ortusbooks.com/getting-started/getting-started-guide)
 * **60 Minute Guide:** [https://coldbox.ortusbooks.com/for-newbies/60-minute-quick-start](https://coldbox.ortusbooks.com/for-newbies/60-minute-quick-start)
 
-## More Resources {#resources}
+## More Resources <a id="resources"></a>
 
 * ​[http://en.wikipedia.org/wiki/Domain\_model](http://en.wikipedia.org/wiki/Domain_model)​
 * ​[http://domaindrivendesign.org/](http://domaindrivendesign.org/)​

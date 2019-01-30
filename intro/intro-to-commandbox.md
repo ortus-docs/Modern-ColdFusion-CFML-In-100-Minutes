@@ -1,4 +1,4 @@
-# Intro to CommandBox
+# CommandBox CLI
 
 ![CommandBox CLI](../.gitbook/assets/commandboxlogo.png)
 

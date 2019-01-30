@@ -4,9 +4,9 @@
 
 ## Intro
 
-* [Introduction](intro/readme.md)
-* [History](intro/history.md)
-* [Intro to CommandBox](intro/intro-to-commandbox.md)
+* [Introduction](intro/intro.md)
+* [History of ColdFusion \(CFML\)](intro/history.md)
+* [CommandBox CLI](intro/intro-to-commandbox.md)
 * [Instructions & Interpreters](intro/instructions-and-interpreters.md)
 
 ## CFML Language
