@@ -86,6 +86,10 @@ cfform( name='myForm', acton='' ){
 }
 ```
 
+## Polyglot References
+
+As we now live in a world of polyglot developers, we have added a few references below to other languages so you can see the differences and similarities between CFML and other major languages in usage today.  Please note that this section is merely academic and to help developer from other language backgrounds to understand the intricacies of the ColdFusion \(CFML\) syntax.
+
 ### PHP Syntax
 
 #### myprogram.php
