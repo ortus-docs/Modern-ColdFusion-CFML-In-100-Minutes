@@ -5,7 +5,7 @@
 ## Intro
 
 * [Introduction](intro/intro.md)
-* [History of ColdFusion \(CFML\)](intro/history.md)
+* [What is ColdFusion \(CFML\)](intro/history.md)
 * [CommandBox CLI](intro/intro-to-commandbox.md)
 * [Instructions & Interpreters](intro/instructions-and-interpreters.md)
 

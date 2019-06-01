@@ -4,7 +4,7 @@ Comments are necessary and essential for any programming language. CFML is no di
 
 ## Tag Comments
 
-You can use the `<!---` and `--->` Syntax to comment within a CFML template. This is very similar to HTML comments but adding an extra `-` to demarcate it as a CFML comment.
+You can use the `<!---` and `--->` Syntax to comment within a CFML template \(`.cfm`\). This is very similar to HTML comments but adding an extra `-` to demarcate it as a CFML comment.
 
 ```markup
 HTML Comment
@@ -19,7 +19,19 @@ ColdFusion Comment
 If you are within a CFC or in a `<cfscript>` block you can use an alternate style for comments. You can leverage `//` for single line comments and the following for multi-line comments:
 
 ```javascript
-/*
+
+/**
+ * Constructor, called by your Application CFC
+ *
+ * @COLDBOX_CONFIG_FILE The override location of the config file
+ * @COLDBOX_APP_ROOT_PATH The location of the app on disk
+ * @COLDBOX_APP_KEY The key used in application scope for this application
+ * @COLDBOX_APP_MAPPING The application mapping override, only used for Flex/SOAP apps, this is auto-calculated
+ * @COLDBOX_FAIL_FAST By default if an app is reiniting and a request hits it, we will fail fast with a message. This can be a boolean indicator or a closure.
+ */
+
+
+/**
   Multi 
   Line
   Comments
@@ -36,10 +48,10 @@ A multi-line block can affect the metadata of a `component` or `function` if the
 
 ```javascript
     /**
-    * This is the hint for the function
-    *
-    * @param1 This is the hint for the param
-    */
+     * This is the hint for the function
+     *
+     * @param1 This is the hint for the param
+     */
     function myFunc( string param1 ){
   }
 ```
@@ -50,25 +62,30 @@ In the CFML world you can write [JavaDoc](http://www.oracle.com/technetwork/java
 
 ```javascript
 /**
-* This is my component
-* 
-* @author Luis Majano
-*/
+ * This is my component
+ * 
+ * @author Luis Majano
+ */
 component extends="Base" implements="IHello" singleton{
 
     /**
-    * The Settings
-    */
+     * The Settings
+     */
     property name="settings";
 
 
     /**
-    * Constructor
-    *
-    * @wirebox The Injector
-    * @wirebox.inject wirebox
-    */
-    function init( required wirebox ){
+     * Constructor
+     *
+     * @wirebox The Injector
+     * @wirebox.inject wirebox
+     * @vars The vars I need
+     * @vars.generic Array
+     *
+     * @return MyComponent
+     * @throws SomethingException
+     */
+    function init( required wirebox, required vars ){
         variables.wirebox = arguments.wirebox;
         return this;
     }
@@ -78,4 +95,12 @@ component extends="Base" implements="IHello" singleton{
 ```
 
 You can see some examples of advanced CFC documentation here: [http://apidocs.ortussolutions.com.s3.amazonaws.com/coldbox/5.0.0/index.html](http://apidocs.ortussolutions.com.s3.amazonaws.com/coldbox/5.0.0/index.html)
+
+{% hint style="success" %}
+**Tip**: VSCode has some great plugins for generating this type of documentation on your CFCs.  We recommend the following extensions:
+
+* **Align** - Helps align everything
+* **AutoCloseTag** - Helps close comment and well all tags
+* **DocumentThis** - Automatically generates detailed JSDoc, CFCDoc comments in TypeScript and JavaScript files.
+{% endhint %}
 

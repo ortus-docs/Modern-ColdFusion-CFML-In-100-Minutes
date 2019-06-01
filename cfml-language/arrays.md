@@ -43,7 +43,9 @@ If you asked the array for the element in position two you’d get back `Lunch`.
 
 Now, have you detected something funny with the ordering of the elements? Come on, look closer....... They start with `1` and not `0`, now isn't that funny. CFML is one of the few languages were array indexes start at `1` and not `0`. So if you have a PHP, Ruby or Java background, remember that `1` is were you start.
 
-> **Hint** All CFML arrays in Adobe ColdFusion are passed by values, while in Lucee they are passed by reference. Please keep this in mind when working with arrays and passing them to functions. There is also the `passby=reference|value` attribute to function arguments where you can decide if you want to pass by reference or value.
+{% hint style="info" %}
+All CFML arrays in Adobe ColdFusion are passed by values, while in Lucee they are passed by reference. Please keep this in mind when working with arrays and passing them to functions. There is also the passby=reference\|value attribute to function arguments where you can decide if you want to pass by reference or value.
+{% endhint %}
 
 ## Arrays in Code
 
@@ -61,13 +63,15 @@ Check it out:
 
 Please note that all member functions can also be used as traditional [array functions](https://cfdocs.org/array-functions). However, [member functions](https://cfdocs.org/member) do look so much better for readability.
 
-> **Tip** You can use the `toString()` call on any array to get a string representation of its values: `grid.toString()`
+{% hint style="success" %}
+**Tip:** You can use the toString\(\) call on any array to get a string representation of its values: grid.toString\(\)
+{% endhint %}
 
 ## Multi-Dimensional Arrays
 
 If you would like to create grids or matrix constructs you will have to create two-dimensional arrays. Basically giving you and x and y axis of data. You will do so using the `arrayNew( dimensions = max 3 )` method:
 
-```text
+```javascript
 grid = arrayNew( 2 );
 grid[ 1 ][ 1 ] = 'Hammer';
 grid[ 1 ][ 2 ] = 'Nail';
@@ -81,7 +85,7 @@ grid[ 1 ][ 2 ] = 'Screw';
 
 The best way to learn about using arrays is to check out the available [member functions](https://cfdocs.org/member) and [array functions](https://cfdocs.org/array-functions).
 
-```text
+```javascript
 // Sort an array
 meals.sort( "textnocase" );
 

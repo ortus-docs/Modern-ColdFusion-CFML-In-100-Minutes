@@ -28,7 +28,7 @@ hello();
 
 If we execute this template via CommandBox our output will be **luis**. Meaning the `display` closure has access to its surroundings in order to display the `name` variable. It can manipulate it, add to it, remove from it and more.
 
-## Returned Closures
+## Returned Closures/High-Order Functions
 
 We can also have a function return a closure that can leverage the function's variable environment.
 
@@ -121,7 +121,11 @@ if( isClosure( arguments.body ) ){
 
 ## Lambda Expressions \(Lucee Only\)
 
-At the moment, only the Lucee CFML engine supports lambda expressions, which basically are a shorthand notation for defining closures.
+At the moment, only the Lucee CFML engine supports lambda expressions, which basically are a shorthand notation for defining closures.  
+
+{% hint style="danger" %}
+Please note that they are not REAL lambdas or pure functions like in Java.  Pure functions are not supposed to interact with their environment and should have no side-effect on its surrounding.  However, in ColdFusion they are just implemented using the expression syntax not the semantic nature of pure functions.
+{% endhint %}
 
 Lambda expressions reduce much of the syntax around creating closures. In its simplest form, you can eliminate the `function` keyword, curly braces and `return` statement. Lambda expressions implicitly return the results of the expression body.
 

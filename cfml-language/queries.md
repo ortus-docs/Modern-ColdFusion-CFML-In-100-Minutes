@@ -11,7 +11,7 @@ A query is a request to a database. It returns a CFML `query` object containing 
 * Using the `cfquery` tag or function construct. \([https://cfdocs.org/cfquery](https://cfdocs.org/cfquery)\)
 * Using the `queryExecute()` function. \([https://cfdocs.org/queryexecute](https://cfdocs.org/queryexecute)\)
 
-```text
+```javascript
 // Tag syntax
 <cfquery name = "qItems" datasource="pantry"> 
  SELECT QUANTITY, ITEM 
@@ -40,7 +40,7 @@ The query object can be iterated on like a normal collection through a `for, cfl
 
 **In a Template**
 
-```text
+```javascript
 <cfoutput query = "qItems">
 There are #qItems.Quantity# #qItems.Item# in the pantry<br />
 </cfoutput>
