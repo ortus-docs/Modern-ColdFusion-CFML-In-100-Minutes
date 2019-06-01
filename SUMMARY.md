@@ -25,8 +25,11 @@
 * [Components, Properties, Functions](cfml-language/components.md)
 * [Closures & Lambdas](cfml-language/closures.md)
 * [Includes](cfml-language/includes.md)
-* [Application.cfc](cfml-language/applicationcfc.md)
-* [HTTP Calls](cfml-language/http-calls.md)
+
+## Rapid App Development
+
+* [Application.cfc](rapid-app-development/applicationcfc.md)
+* [HTTP Calls](rapid-app-development/http-calls.md)
 
 ## Extra Credit
 
