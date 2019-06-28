@@ -1,10 +1,10 @@
-# Introduction
+# Welcome
 
 This book is inspired by the original [Ruby in 100 minutes](http://tutorials.jumpstartlab.com/projects/ruby_in_100_minutes.html), [Mike Henke's work on CFML in 100 minutes](https://github.com/mhenke/CFML-in-100-minutes/wiki) and [Learn CF in a week series](http://www.learncfinaweek.com/). The purpose of this book is to jumpstart developers into the ColdFusion \(CFML\) programming language from a modern perspective and a focus on best practices, object orientation and tooling.
 
 ## Ortus Solutions, Corp
 
-![](../.gitbook/assets/ortus-medium.jpg)
+![](../../.gitbook/assets/ortus-medium.jpg)
 
 This book has been written and extend by Luis Majano and the [Ortus Solutions](https://www.ortussolutions.com) Development Team.
 

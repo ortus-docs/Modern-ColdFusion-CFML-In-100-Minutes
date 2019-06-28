@@ -4,7 +4,8 @@
 
 ## Intro
 
-* [Introduction](intro/intro.md)
+* [Welcome](intro/intro/README.md)
+  * [About This Book](intro/intro/about-this-book.md)
 * [What is ColdFusion \(CFML\)](intro/history.md)
 * [CommandBox CLI](intro/intro-to-commandbox.md)
 * [Instructions & Interpreters](intro/instructions-and-interpreters.md)
