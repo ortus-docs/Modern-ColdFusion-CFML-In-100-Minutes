@@ -5,6 +5,7 @@
 ## Intro
 
 * [Welcome](intro/intro/README.md)
+  * [Author](intro/intro/author.md)
   * [About This Book](intro/intro/about-this-book.md)
 * [What is ColdFusion \(CFML\)](intro/history.md)
 * [CommandBox CLI](intro/intro-to-commandbox.md)
