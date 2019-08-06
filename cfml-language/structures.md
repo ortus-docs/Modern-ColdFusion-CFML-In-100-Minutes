@@ -115,3 +115,20 @@ produce.each( function( key, value ){
 } );
 ```
 
+### Multi-Threaded Looping
+
+As of now only Lucee allows you to leverage the `each()` operations in a multi-threaded fashion.  The `structEach()` or `each()` functions allows for a `parallel` and `maxThreads` arguments so the iteration can happen concurrently on as many `maxThreads` as supported by your JVM.
+
+```java
+structEach( struct, callback, parallel:boolean, maxThreads:numeric );
+each( collection, callback, parallel:boolean, maxThreads:numeric );
+```
+
+This is incredibly awesome as now you callback will be called concurrently!  However, please note that once you enter concurrency land, you should shiver and tremble.  Thread concurrency will be of the utmost importance and you must make sure that var scoping is done correctly and that appropriate locking strategies are in place.
+
+```java
+myStruct.each( function( key, value ){
+   myservice.process( value );
+}, true, 20 );
+```
+

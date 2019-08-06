@@ -54,7 +54,7 @@ Can be used in any context, used for persisting variables for a period of time.
 
 ## **Evaluating Unscoped Variables**
 
-If you use a variable name without a scope prefix, ColdFusion checks the scopes in the following order to find the variable:
+If you use a variable name **without** a scope prefix, ColdFusion checks the scopes in the following order to find the variable:
 
 1. Local \(function-local, UDFs and CFCs only\)
 2. Arguments
@@ -70,6 +70,6 @@ If you use a variable name without a scope prefix, ColdFusion checks the scopes 
 12. Client
 
 {% hint style="danger" %}
-Because ColdFusion must search for variables when you do not specify the scope, you can improve performance by specifying the scope for all variables.
+Because ColdFusion must search for variables when you do not specify the scope, you can improve performance by specifying the scope for all variables. It can also help you avoid nasty lookups or unexpected results.
 {% endhint %}
 

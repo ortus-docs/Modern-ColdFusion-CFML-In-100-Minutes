@@ -13,7 +13,7 @@ Luis has a passion for Jesus, tennis, golf, volleyball and anything electronic. 
 * He played volleyball in the Salvadorean National Team at the tender age of 17
 * The Lord of the Rings and The Hobbit is something he reads every 5 years. \(Geek!\)
 * His first ever computer was a Texas Instrument TI-86 that his parents gave him in 1986. After some time digesting his very first BASIC book, he had written his own tic-tac-toe game at the age of 9. \(Extra geek!\)
-* He has a geek love for circuits, microcontrollers and overall embedded systems.
+* He has a geek love for circuits, micro-controllers and overall embedded systems.
 * He has of late \(during old age\) become a fan of organic gardening.
 
 > Keep Jesus number one in your life and in your heart. I did and it changed my life from desolation, defeat and failure to an abundant life full of love, thankfulness, joy and overwhelming peace. As this world breathes failure and fear upon any life, Jesus brings power, love and a sound mind to everybody!

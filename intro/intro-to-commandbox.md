@@ -91,7 +91,7 @@ sudo apt-get update && sudo apt-get install commandbox
 
 Add the following to: `/etc/yum.repos.d/commandbox.repo`
 
-```text
+```bash
 [CommandBox]
 name=CommandBox $releasever - $basearch
 failovermethod=priority

@@ -24,21 +24,26 @@
 * [Queries](cfml-language/queries.md)
 * [Conditionals](cfml-language/conditionals.md)
 * [Null & Nothingness](cfml-language/null-and-nothingness.md)
-* [Components, Properties, Functions](cfml-language/components.md)
+* [Components](cfml-language/components/README.md)
+  * [Properties](cfml-language/components/properties.md)
+  * [Functions](cfml-language/components/functions.md)
+  * [Static Constructs](cfml-language/components/static-constructs.md)
+  * [Final Constructs](cfml-language/components/final-constructs.md)
+  * [Abstract Constructs](cfml-language/components/abstract-constructs.md)
+  * [Interfaces](cfml-language/components/interfaces.md)
 * [Closures & Lambdas](cfml-language/closures.md)
 * [Includes](cfml-language/includes.md)
 
-## Rapid App Development
+## Advanced Topics
 
-* [Application.cfc](rapid-app-development/applicationcfc.md)
-* [HTTP Calls](rapid-app-development/http-calls.md)
+* [Application.cfc](advanced-topics/applicationcfc.md)
+* [File Handling](advanced-topics/file-handling.md)
+* [HTTP Calls](advanced-topics/http-calls.md)
+* [Locking](advanced-topics/locking.md)
+* [Asynchronous Programming](advanced-topics/asynchronous-programming.md)
 
 ## Extra Credit
 
-* [Object Orientation](extra-credit/object-orientation.md)
 * [MVC](extra-credit/mvc.md)
 * [Dependency Injection](extra-credit/dependency-injection.md)
-* [Testing](extra-credit/testing.md)
-* [ORM](extra-credit/orm.md)
-* [Docker + CFML](extra-credit/docker-+-cfml.md)
 

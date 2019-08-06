@@ -2,7 +2,7 @@
 
 CFML became famous in its infancy with how easy it was to query databases with a simple `cfquery` tag. No ceremony, just a plain datasource definition in the administrator and we could query the database with ease.
 
-In modern times, we have many more ways to query the database and defining datasources can occur not only in the admin but in our application's `Application.cfc` or even define it at runtime. See [Application.cfc](../rapid-app-development/applicationcfc.md) for more information.
+In modern times, we have many more ways to query the database and defining datasources can occur not only in the admin but in our application's `Application.cfc` or even define it at runtime. See [Application.cfc](../advanced-topics/applicationcfc.md) for more information.
 
 ## What is a query?
 
@@ -64,6 +64,23 @@ for( var i = 1; i lte qItems.recordCount; i++ ){
 ```
 
 As you can see, there are many ways to iterate over the query. Choose the approach that suits your needs.
+
+### Multi-Threaded Looping
+
+As of now only Lucee allows you to leverage the `each()` operations in a multi-threaded fashion.  The `queryEach()` or `each()` functions allows for a `parallel` and `maxThreads` arguments so the iteration can happen concurrently on as many `maxThreads` as supported by your JVM.
+
+```java
+queryEach( array, callback, parallel:boolean, maxThreads:numeric );
+each( collection, callback, parallel:boolean, maxThreads:numeric );
+```
+
+This is incredibly awesome as now you callback will be called concurrently!  However, please note that once you enter concurrency land, you should shiver and tremble.  Thread concurrency will be of the utmost importance and you must make sure that var scoping is done correctly and that appropriate locking strategies are in place.
+
+```java
+myquery.each( function( row ){
+   myservice.process( row );
+}, true, 20 );
+```
 
 ## Using Input
 

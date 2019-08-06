@@ -151,3 +151,20 @@ cfloop( from=1, to=meals.len(), index=x ){
 }
 ```
 
+### Multi-Threaded Looping
+
+As of now only Lucee allows you to leverage the `each()` operations in a multi-threaded fashion.  The `arrayEach()` or `each()` functions allows for a `parallel` and `maxThreads` arguments so the iteration can happen concurrently on as many `maxThreads` as supported by your JVM.
+
+```java
+arrayEach( array, callback, parallel:boolean, maxThreads:numeric );
+each( collection, callback, parallel:boolean, maxThreads:numeric );
+```
+
+This is incredibly awesome as now you callback will be called concurrently!  However, please note that once you enter concurrency land, you should shiver and tremble.  Thread concurrency will be of the utmost importance and you must make sure that var scoping is done correctly and that appropriate locking strategies are in place.
+
+```java
+myArray.each( function( item ){
+   myservice.process( item );
+}, true, 20 );
+```
+
