@@ -24,6 +24,7 @@
 * [Queries](cfml-language/queries.md)
 * [Conditionals](cfml-language/conditionals.md)
 * [Null & Nothingness](cfml-language/null-and-nothingness.md)
+* [Exception Management](cfml-language/exception-management.md)
 * [Components](cfml-language/components/README.md)
   * [Properties](cfml-language/components/properties.md)
   * [Functions](cfml-language/components/functions.md)
