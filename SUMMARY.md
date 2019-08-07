@@ -39,7 +39,7 @@
 
 * [Application.cfc](advanced-topics/applicationcfc.md)
 * [File Handling](advanced-topics/file-handling.md)
-* [HTTP Calls](advanced-topics/http-calls.md)
+* [HTTP/S Calls](advanced-topics/http-calls.md)
 * [Locking](advanced-topics/locking.md)
 * [Asynchronous Programming](advanced-topics/asynchronous-programming.md)
 
