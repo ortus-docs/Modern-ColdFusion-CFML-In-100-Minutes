@@ -18,6 +18,7 @@
 * [Variables](cfml-language/variables.md)
 * [Variable Scopes](cfml-language/variable-scopes.md)
 * [Strings](cfml-language/strings.md)
+* [JSON](cfml-language/json.md)
 * [Numbers](cfml-language/numbers.md)
 * [Arrays](cfml-language/arrays.md)
 * [Structures](cfml-language/structures.md)
