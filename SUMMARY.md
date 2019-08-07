@@ -34,14 +34,15 @@
   * [Abstract Constructs](cfml-language/components/abstract-constructs.md)
   * [Interfaces](cfml-language/components/interfaces.md)
 * [Closures & Lambdas](cfml-language/closures.md)
+* [Code Locking](cfml-language/locking.md)
 * [Includes](cfml-language/includes.md)
 
 ## Advanced Topics
 
 * [Application.cfc](advanced-topics/applicationcfc.md)
 * [File Handling](advanced-topics/file-handling.md)
+* [Image Manipulation](advanced-topics/image-manipulation.md)
 * [HTTP/S Calls](advanced-topics/http-calls.md)
-* [Locking](advanced-topics/locking.md)
 * [Asynchronous Programming](advanced-topics/asynchronous-programming.md)
 
 ## Extra Credit
