@@ -37,16 +37,20 @@
 * [Code Locking](cfml-language/locking.md)
 * [Includes](cfml-language/includes.md)
 
-## Advanced Topics
+## Beyond The 100
 
-* [Application.cfc](advanced-topics/applicationcfc.md)
-* [File Handling](advanced-topics/file-handling.md)
-* [Image Manipulation](advanced-topics/image-manipulation.md)
-* [HTTP/S Calls](advanced-topics/http-calls.md)
-* [Asynchronous Programming](advanced-topics/asynchronous-programming.md)
+* [Application.cfc](beyond-the-100/applicationcfc.md)
+* [File Handling](beyond-the-100/file-handling.md)
+* [Image Manipulation](beyond-the-100/image-manipulation.md)
+* [HTTP/S Calls](beyond-the-100/http-calls.md)
+* [Sending Emails](beyond-the-100/sending-emails.md)
+* [Asynchronous Programming](beyond-the-100/asynchronous-programming.md)
+* [Java Integration](beyond-the-100/java-integration.md)
+* [Beyond The Language](beyond-the-100/beyond-the-language.md)
 
 ## Extra Credit
 
 * [MVC](extra-credit/mvc.md)
 * [Dependency Injection](extra-credit/dependency-injection.md)
+* [Security Guide](extra-credit/security-guide.md)
 
