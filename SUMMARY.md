@@ -39,6 +39,7 @@
 
 ## Beyond The 100
 
+* [Beyond The 100](beyond-the-100/beyond-the-language.md)
 * [Application.cfc](beyond-the-100/applicationcfc.md)
 * [File Handling](beyond-the-100/file-handling.md)
 * [Image Manipulation](beyond-the-100/image-manipulation.md)
@@ -46,7 +47,6 @@
 * [Sending Emails](beyond-the-100/sending-emails.md)
 * [Asynchronous Programming](beyond-the-100/asynchronous-programming.md)
 * [Java Integration](beyond-the-100/java-integration.md)
-* [Beyond The Language](beyond-the-100/beyond-the-language.md)
 
 ## Extra Credit
 

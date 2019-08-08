@@ -2,7 +2,17 @@
 
 CFML became famous in its infancy with how easy it was to query databases with a simple `cfquery` tag. No ceremony, just a plain datasource definition in the administrator and we could query the database with ease.
 
-In modern times, we have many more ways to query the database and defining datasources can occur not only in the admin but in our application's `Application.cfc` or even define it at runtime. See [Application.cfc](../beyond-the-100/applicationcfc.md) for more information.
+In modern times, we have many more ways to query the database and defining datasources can occur not only in the admin but in our application's `Application.cfc` or even define it at runtime or even within the query constructs. See [Application.cfc](../beyond-the-100/applicationcfc.md) for more information.
+
+## What is a Datasource?
+
+A datasource is a **named** connection to a specific database with specified credentials.  You can define an infinite amount of datasources in your CFML applications in the following locations:
+
+* Global ColdFusion Engine Administrator
+* The `Application.cfc`, which will dictate the datasources for that specific ColdFusion application
+* Inline in `cfquery` or `queryexecute` calls
+
+The datasource is then used to control the connection pool to such database and allow for the ColdFusion engine to execute JDBC calls.
 
 ## What is a query?
 
@@ -24,15 +34,107 @@ A query is a request to a database. It returns a CFML `query` object containing 
 qItems = queryExecute( 
  "SELECT QUANTITY, ITEM FROM CUPBOARD ORDER BY ITEM"
 );
+
+// Lucee datasource inline definition
+queryExecute(
+  "SELECT * FROM Employees WHERE empid = ? AND country = ?", // sql
+  [ 1, "USA" ], // params
+  { // options
+    datasource : {
+      class : "com.microsoft.sqlserver.jdbc.SQLServerDriver",
+      connectionString : "jdbc:sqlserver://#getSystemSetting("DB_CONNECTIONSTRING")#",
+      username : getSystemSetting("DB_USER"),
+      password : getSystemSetting("DB_PASSWORD")
+    }
+  }
+)
 ```
 
-> **Info** on Lucee, the `datasource` can even be defined inline.
+{% hint style="info" %}
+If you are using **Lucee**, the datasource can even be defined inline. So instead of giving the name of the datasource it can be a struct definition of the datasource you want to connect to.
+{% endhint %}
 
-Please note that when using the `Query` object, you can pass many attributes into the constructor, chain and much more. Please see the docs for further syntax options: [https://helpx.adobe.com/coldfusion/cfml-reference/script-functions-implemented-as-cfcs/query.html](https://helpx.adobe.com/coldfusion/cfml-reference/script-functions-implemented-as-cfcs/query.html). You can also omit the `datasouce` completely from query calls and CFML will use the one defined in `Application.cfc` as the default datasource connection.
+## Default Datasource
+
+You can also omit the `datasource` completely from query calls and CFML will use the one defined in `Application.cfc`  as the default datasource connection. This is a great way to encapsulate the datasource in a single location.  However, we all know that there could be some applications with multiple-datasources, that's ok, at least you can have one by default.
+
+{% code-tabs %}
+{% code-tabs-item title="Application.cfc" %}
+```java
+component{
+    this.name = "myApp";
+    
+    // Default Datasource Name
+    this.datasource = "pantry";
+    
+}
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+## Defining Datasources
+
+If you want to use the ColdFusion Engine's administrators for registering datasources, you will have to visit each of the administrator's interfaces and follow their wizards.
+
+### ColdFusion Engine Administrator
+
+{% embed url="https://docs.lucee.org/guides/cookbooks/datasource-define-datasource.html" %}
+
+{% embed url="https://helpx.adobe.com/coldfusion/configuring-administering/data-source-management-for-coldfusion.html" %}
+
+### Application.cfc
+
+You can also define the datasources in the `Application.cfc`, which is sometimes our preferred approach as the connections are versioned controlled.  You will do this by defining a struct called `this.datasources`.  Each **key** will be the name of the datasource to register and the **value** of each key a struct of configuration information for the datasource. However, we recommend that you setup environment variables in order to NOT store your passwords in plain-text in your source code.
 
 ```java
-this.datasource = "pantry";
+component{
+    
+    this.datasources = {
+        // Adobe Driver Approach
+        mysql = {
+            database : "mysql",
+            host : "localhost",
+            port : "3306",
+            driver : "MySQL",
+            username : "root",
+            password : "mysql",
+            options : value
+        },
+        
+        // Adobe url approach
+        mysql2 = {
+            driver : "mysql",
+            url : "jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&useLegacyDatetimeCode=true",
+            username : "",
+            password : ""
+        },
+        
+        // Shorthand Lucee Approach
+        myLuceeDNS = {
+            class : "com.mysql.jdbc.Driver",
+            connectionString : "jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&useLegacyDatetimeCode=true",
+            username : "",
+            password : "" 
+        },
+        
+        // Long Lucee Approach
+        myLuceeDNS = {
+            type : "mysql",
+            database : "mysql",
+            host : "localhost",
+            port : "3306",
+            username : "",
+            password : "",
+            options : value
+        }
+    };
+
+}
 ```
+
+{% hint style="success" %}
+For the inline approach, you will just use the struct definition as you see in the `Application.cfc` above and pass it into the `cfquery` or `queryexecute` call.
+{% endhint %}
 
 ## Displaying Results
 
@@ -84,21 +186,55 @@ myquery.each( function( row ){
 
 ## Using Input
 
-Most of the time we won't have the luxury of simple queries, we will need user input in order to construct our queries. Here is where you need to be extra careful as to not allow for SQL injection. CFML has several ways to help you prevent SQL Injection whether using tags or script calls. Levarage the `cfqueryparam` construct/tag \([https://cfdocs.org/cfqueryparam](https://cfdocs.org/cfqueryparam)\) and always sanitize your input via the `encode` functions in CFML.
+Most of the time we won't have the luxury of simple queries, we will need user input in order to construct our queries. Here is where you need to be extra careful as to not allow for SQL injection. CFML has several ways to help you prevent SQL Injection whether using tags or script calls. Leverage the `cfqueryparam` construct/tag \([https://cfdocs.org/cfqueryparam](https://cfdocs.org/cfqueryparam)\) and always sanitize your input via the `encode` functions in CFML.
 
 ```java
+// Named variable holder
 queryExecute(
  "select quantity, item from cupboard where item_id = :itemID"
- { itemID = { value=arguments.itemID, cfsqltype="cf_sql_varchar", list=true } }
+ { itemID = { value=arguments.itemID, cfsqltype="numeric", list=true } }
 );
 
+// Positional placeholder
 queryExecute(
  "select quantity, item from cupboard where item_id = ?"
- [ { value=arguments.itemID, cfsqltype="cf_sql_varchar", list=true } ]
+ [ { value=arguments.itemID, cfsqltype="varchar", list=true, null=false } ]
 );
 ```
 
-You can use the `:varname` notation in your SQL construct to denote a variable place holder or a `?` to denote a positional placeholder.
+You can use the `:varname` notation in your SQL construct to denote a **variable** place holder or a `?` to denote a **positional** placeholder.  The `cfqueryparam` tag or the inline `cfsqltype` construct will bind the value to a specific database type in order to avoid SQL injection and to further the database explain plan via types.  The available SQL binding types are:
+
+* `bigint`
+* `bit`
+* `char`
+* `blob`
+* `clob`
+* `nclob`
+* `date`
+* `decimal`
+* `double`
+* `float`
+* `idstamp`
+* `integer`
+* `longvarchar`
+* `longnvarchar`
+* `money`
+* `money4`
+* `nchar`
+* `nvarchar`
+* `numeric`
+* `real`
+* `refcursor`
+* `smallint`
+* `sqlxml`
+* `time`
+* `timestamp`
+* `tinyint`
+* `varchar`
+
+{% hint style="warning" %}
+Please note that the types can be prefixed with `cf_sql_{type}` or just used as `{type}`.  
+{% endhint %}
 
 ## Query Methods
 
@@ -172,9 +308,13 @@ subUsers = queryExecute( "select * from users", {}, { dbtype="query" } );
 writedump( subUsers );
 ```
 
+Please note that using query of queries can be quite slow.  An alternative approach is to use the modern `queryFilter()` operations to actually filter out the necessary data from a query, or `querySort()`, etc.
+
 ## Returning Arrays of Structs or Struct of Structs
 
-In the Lucee CFML engine \(coming soon to Adobe\), you can also determine the return type of database queries to be something other than the CFML query object. You can choose array of structs or struct of structs. This is fantastic for modern applications that rely on rich Javascript frameworks and producing JSON.
+In the Lucee CFML engine \(coming soon to Adobe\), you can also determine the return type of database queries to be something other than the CFML query object. You can choose array of structs or struct of structs. This is fantastic for modern applications that rely on rich JavaScript frameworks and producing JSON.
+
+This is achieved by passing the `returntype` attribute within the query options or just an attribute of the cfquery tag \([https://cfdocs.org/cfquery](https://cfdocs.org/cfquery)\)
 
 ```java
 users = queryNew( "firstname", "varchar", [{"firstname":"Han"}] );
