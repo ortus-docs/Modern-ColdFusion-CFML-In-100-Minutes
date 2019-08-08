@@ -22,7 +22,7 @@
 * [Numbers](cfml-language/numbers.md)
 * [Arrays](cfml-language/arrays.md)
 * [Structures](cfml-language/structures.md)
-* [Queries](cfml-language/queries.md)
+* [Database Queries](cfml-language/queries.md)
 * [Conditionals](cfml-language/conditionals.md)
 * [Null & Nothingness](cfml-language/null-and-nothingness.md)
 * [Exception Management](cfml-language/exception-management.md)

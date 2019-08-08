@@ -1,8 +1,12 @@
-# Queries
+# Database Queries
 
-CFML became famous in its infancy with how easy it was to query databases with a simple `cfquery` tag. No ceremony, just a plain datasource definition in the administrator and we could query the database with ease.
+CFML became famous in its infancy with how easy it was to query databases with a simple `cfquery` tag, no verbose ceremonious coding. No ceremony, just a plain datasource definition in the administrator and we could query the database with ease.
 
-In modern times, we have many more ways to query the database and defining datasources can occur not only in the admin but in our application's `Application.cfc` or even define it at runtime or even within the query constructs. See [Application.cfc](../beyond-the-100/applicationcfc.md) for more information.
+In modern times, we have many more ways to query the database and defining datasources can occur not only in the admin but in our application's `Application.cfc` or even define it at runtime or even within the query constructs themselves.
+
+{% hint style="info" %}
+See [Application.cfc](../beyond-the-100/applicationcfc.md) for more information on how to leverage it for web development.
+{% endhint %}
 
 ## What is a Datasource?
 
@@ -12,7 +16,7 @@ A datasource is a **named** connection to a specific database with specified cre
 * The `Application.cfc`, which will dictate the datasources for that specific ColdFusion application
 * Inline in `cfquery` or `queryexecute` calls
 
-The datasource is then used to control the connection pool to such database and allow for the ColdFusion engine to execute JDBC calls.
+The datasource is then used to control the connection pool to such database and allow for the ColdFusion engine to execute JDBC calls against it.
 
 ## What is a query?
 
@@ -56,7 +60,7 @@ If you are using **Lucee**, the datasource can even be defined inline. So instea
 
 ## Default Datasource
 
-You can also omit the `datasource` completely from query calls and CFML will use the one defined in `Application.cfc`  as the default datasource connection. This is a great way to encapsulate the datasource in a single location.  However, we all know that there could be some applications with multiple-datasources, that's ok, at least you can have one by default.
+You can also omit the `datasource` completely from query calls and CFML will use the one defined in `Application.cfc`  as the **default** datasource connection. This is a great way to encapsulate the datasource in a single location.  However, we all know that there could be some applications with multiple datasources, that's ok, at least you can have one by default.
 
 {% code-tabs %}
 {% code-tabs-item title="Application.cfc" %}
@@ -84,7 +88,7 @@ If you want to use the ColdFusion Engine's administrators for registering dataso
 
 ### Application.cfc
 
-You can also define the datasources in the `Application.cfc`, which is sometimes our preferred approach as the connections are versioned controlled.  You will do this by defining a struct called `this.datasources`.  Each **key** will be the name of the datasource to register and the **value** of each key a struct of configuration information for the datasource. However, we recommend that you setup environment variables in order to NOT store your passwords in plain-text in your source code.
+You can also define the datasources in the `Application.cfc`, which is sometimes our preferred approach as the connections are versioned controlled and more visible than in the admin.  You will do this by defining a struct called `this.datasources`.  Each **key** will be the name of the datasource to register and the **value** of each key a struct of configuration information for the datasource. However, we recommend that you setup environment variables in order to NOT store your passwords in plain-text in your source code.
 
 ```java
 component{
@@ -135,6 +139,63 @@ component{
 {% hint style="success" %}
 For the inline approach, you will just use the struct definition as you see in the `Application.cfc` above and pass it into the `cfquery` or `queryexecute` call.
 {% endhint %}
+
+### Portable Datasources
+
+You can also make your datasources portable from application to application or CFML engine to engine by using our [CFConfig](https://cfconfig.ortusbooks.com/) project.  CFConfig gives you the ability to manage most every setting that shows up in the web administrator, but instead of logging into a web interface, you can mange it from the command line by hand or as part of a scripted server setup. You can seamless transfer config for all the following:
+
+* CF Mappings
+* Datasources
+* Mail servers
+* Request, session, or application timeouts
+* Licensing information \(for Adobe\)
+* Passwords
+
+  -Template caching settings
+
+  -Basically any settings in the web based administrator
+
+You can easily place a `.cfconfig.json` in the web root of your project and if you start up a CommandBox server on any CFML engine, CFConfig will transfer the configuration to the engine's innards:
+
+{% code-tabs %}
+{% code-tabs-item title=".cfconfig.json" %}
+```java
+{
+	"requestTimeoutEnabled":true,
+    "whitespaceManagement":"white-space-pref",
+	"requestTimeout":"0,0,5,0",
+	"cacheDefaultObject":"coldbox",
+    "caches":{
+        "coldbox":{
+            "storage":"true",
+            "type":"RAM",
+            "custom":{
+                "timeToIdleSeconds":"1800",
+                "timeToLiveSeconds":"3600"
+            },
+            "class":"lucee.runtime.cache.ram.RamCache",
+            "readOnly":"false"
+        }
+    },
+	"datasources" : {
+		 "coldbox":{
+			 "host":"${DB_HOST}",
+			 "dbdriver":"${DB_DRIVER}",
+			 "database":"${DB_DATABASE}",
+			 "dsn":"jdbc:mysql://{host}:{port}/{database}",
+			 "custom":"useUnicode=true&characterEncoding=UTF-8&useLegacyDatetimeCode=true&autoReconnect=true",
+			 "port":"${DB_PORT}",
+			 "class":"${DB_CLASS}",
+			 "username":"${DB_USER}",
+			 "password":"${DB_PASSWORD}",
+			 "connectionLimit":"100",
+			 "connectionTimeout":"1"
+		 }
+	}
+}
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ## Displaying Results
 
