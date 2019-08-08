@@ -35,6 +35,7 @@
   * [Interfaces](cfml-language/components/interfaces.md)
 * [Closures & Lambdas](cfml-language/closures.md)
 * [Code Locking](cfml-language/locking.md)
+* [Threading](cfml-language/threading.md)
 * [Includes](cfml-language/includes.md)
 * [Java Integration](cfml-language/java-integration.md)
 
