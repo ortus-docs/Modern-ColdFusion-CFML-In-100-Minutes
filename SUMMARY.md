@@ -36,6 +36,7 @@
 * [Closures & Lambdas](cfml-language/closures.md)
 * [Code Locking](cfml-language/locking.md)
 * [Includes](cfml-language/includes.md)
+* [Java Integration](cfml-language/java-integration.md)
 
 ## Beyond The 100
 
@@ -46,7 +47,6 @@
 * [HTTP/S Calls](beyond-the-100/http-calls.md)
 * [Sending Emails](beyond-the-100/sending-emails.md)
 * [Asynchronous Programming](beyond-the-100/asynchronous-programming.md)
-* [Java Integration](beyond-the-100/java-integration.md)
 
 ## Extra Credit
 
