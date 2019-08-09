@@ -1,14 +1,14 @@
 {
-    gitbook: ">=2.0.1",
-    pdf: {
-        margin: {
-            bottom: 56,
-            left: 25,
-            right: 25,
-            top: 56
+    "gitbook": ">=2.0.1",
+    "pdf": {
+        "margin": {
+            "bottom": 56,
+            "left": 25,
+            "right": 25,
+            "top": 56
         }
     },
-    plugins: [
+    "plugins": [
         "richquotes",
         "edit-link",
         "github",
@@ -17,22 +17,22 @@
         "collapsible-chapters",
         "anchors"
     ],
-    pluginsConfig: {
-        edit-link: {
-            base: "https://github.com/ortus-docs/Modern-ColdFusion-CFML-In-100-Minutes/tree/development",    
-            label: "Edit This Page"
+    "pluginsConfig": {
+        "edit-link": {
+            "base": "https://github.com/ortus-docs/Modern-ColdFusion-CFML-In-100-Minutes/tree/development",    
+            "label": "Edit This Page"
         },
-        github: {
-            url: "https://github.com/ortus-docs/Modern-ColdFusion-CFML-In-100-Minutes"
+        "github": {
+            "url": "https://github.com/ortus-docs/Modern-ColdFusion-CFML-In-100-Minutes"
         },
-        sitemap: {
-            hostname: "https://modern-cfml.ortusbooks.com"
+        "sitemap": {
+            "hostname": "https://modern-cfml.ortusbooks.com"
         }
     },
-    links: {
-        sharing: {
-            facebook: false,
-            twitter: false
+    "links": {
+        "sharing": {
+            "facebook": false,
+            "twitter": false
         }
     }
 }
