@@ -1,6 +1,6 @@
 # Code Locking
 
-Locking is an essential piece of software engineering.  There are occassions where shared resources must be locked in order to write to them or read from them.  This process of locking can be very simple or extremely complex.  Sometimes it can lead to deadlocks and serious concurrency issues.  Further to say, we will only cover basic usage of the locking constructs in CFML.
+Locking is an essential piece of software engineering.  There are occasions where shared resources must be locked in order to write to them or read from them.  This process of locking can be very simple or extremely complex.  Sometimes it can lead to deadlocks and serious concurrency issues.  Further to say, we will only cover basic usage of the locking constructs in CFML.
 
 {% hint style="success" %}
 You can find an in-depth article on locking here: [https://helpx.adobe.com/coldfusion/developing-applications/developing-cfml-applications/using-persistent-data-and-locking/locking-code-with-cflock.html](https://helpx.adobe.com/coldfusion/developing-applications/developing-cfml-applications/using-persistent-data-and-locking/locking-code-with-cflock.html)
