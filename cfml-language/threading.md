@@ -2,9 +2,11 @@
 
 CFML allows you create asynchronous threads so you can execute a body of code in a separate thread.  This is achieved via the `cfthread` tag/construct.  Threads are independent streams of execution, and multiple threads on a page can execute simultaneously and asynchronously, letting you perform asynchronous processing in CFML. CFML code within the `cfthread` tag body executes on a separate thread while the page request thread continues processing without waiting for the `cfthread` body to finish.  You can allow the thread body to continue executing in the background or you can wait for it to finish.
 
-This approach is very very simplistic, if you want more control of your asynchronous programming aspects then we can move into leverage CFML Future's via the `runAsync()` function. Please see our [Asynchronous Programming ](../beyond-the-100/asynchronous-programming.md)section.
+This approach is very very simplistic, if you want more control of your asynchronous programming aspects then we can move into leveraging CFML Future's via the `runAsync()` function or parallel Java streams using the [cbStreams](https://www.forgebox.io/view/cbStreams) project. Please see our [Asynchronous Programming ](../beyond-the-100/asynchronous-programming.md)section for information on advanced asynchronous programming.
 
 {% embed url="https://helpx.adobe.com/coldfusion/developing-applications/developing-cfml-applications/using-coldfusion-threads/creating-and-managing-coldfusion-threads.html" %}
+
+{% embed url="https://helpx.adobe.com/coldfusion/developing-applications/developing-cfml-applications/using-coldfusion-threads/working-with-threads.html" %}
 
 ### A Fair Warning
 
