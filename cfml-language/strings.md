@@ -58,7 +58,7 @@ Combining and interpolating strings is part of any programming language and an i
 
 If you have 2 or more strings, you can concatenate them by using the `&` operator:
 
-```text
+```javascript
 name = "Luis";
 a = "Hello " & name & " how are you today?";
 ```
@@ -67,7 +67,7 @@ a = "Hello " & name & " how are you today?";
 
 Interpolating is where we stick a string within another string. In CFML we use the `#` hashes to output a variable to the stream in context. This means we can interpolate into any string:
 
-```text
+```javascript
 name = "luis";
 welcome = "Good morning #name#, how are you today?";
 writeoutput( welcome );
