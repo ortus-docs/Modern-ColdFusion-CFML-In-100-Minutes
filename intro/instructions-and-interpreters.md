@@ -45,7 +45,7 @@ This is the durable way to write ColdFusion code because you save your instructi
 
 We might create a file named `hello.cfm` like this:
 
-```javascript
+```markup
 <cfoutput>Hello from CFML Land!</cfoutput>
 ```
 
