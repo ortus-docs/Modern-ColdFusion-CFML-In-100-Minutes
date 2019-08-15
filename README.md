@@ -2,7 +2,7 @@
 
 Welcome to the wonderful world of dynamic programming with ColdFusion \(CFML\).  The purpose of this book is to jump start developers into the ColdFusion \(CFML\) programming language from a **MODERN** perspective and a focus on best practices, object orientation and tooling.  ColdFusion is not the same as it was 20 years ago, yes it's more than 20 years old! 
 
-It's dynamic, vibrant, modern, fluent, and functional!  Let's begin our adventure into the world of **MODERN** ColdFusion \(CFML\).
+It's dynamic, vibrant, modern, fluent, and functional!  Let's begin our adventure into the world of **MODERN** ColdFusion &lt;CFML&gt;.
 
 ## Support Open Source
 
