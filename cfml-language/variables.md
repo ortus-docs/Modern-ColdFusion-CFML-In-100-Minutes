@@ -18,7 +18,9 @@ Open up the CommandBox Shell and go into **REPL** mode by typing `repl`. Every t
 
 As you can see, we can create strings, numerics, arrays, structs and so much more. No need for types or special assignments.
 
-> **Hint** The CommandBox REPL is based on a Lucee 4.5 server, that is why semi-colons are optional and the default syntax is script and not tags.
+{% hint style="success" %}
+The CommandBox REPL is based on a Lucee 5 server, that is why semi-colons are optional and the default syntax is script and not tags.
+{% endhint %}
 
 ## Case Insensitive
 
@@ -31,7 +33,7 @@ writeOutput( A );
 
 ## Naming Requirements
 
-Most CFML variables have a few requirements imposed by the VM
+Most CFML variables have a few requirements imposed by the Virtual Machine \(VM\)
 
 * Must begin with a letter, underscore, or Unicode currency symbol.
 * Can contain any number of letters, numbers, underscore characters, and Unicode currency symbols.
@@ -89,7 +91,9 @@ writeDump( var=arrayOfORM, top=5 );abort;
 
 CFML Engines also allow you to turn on/off a debugging template that shows up at the bottom of requests when running in server mode. You can activate this debugging by logging in to the appropriate engine administrator and look for the **debugging** section. Turn it on and debug like a champ.
 
-> **Important** Adobe Engines have a very evil setting called _Report Execution Times_, make sure it is always turned **OFF**. If you use it with any application that leverages Components, it will slow down your application tremendously.
+{% hint style="danger" %}
+**Important:** Adobe Engines have a very evil setting called _Report Execution Times_, make sure it is always turned **OFF**. If you use it with any application that leverages Components, it will slow down your application tremendously.
+{% endhint %}
 
 ## Paraming Variables
 
@@ -105,7 +109,9 @@ or
 param myVariable = "luis"
 ```
 
-> **Hint** You can even assign types to param variables and much more. Check out the docs for it: [https://cfdocs.org/cfparam](https://cfdocs.org/cfparam)
+{% hint style="success" %}
+You can even assign types to parameterize variables and much more. Check out the docs for it: [https://cfdocs.org/cfparam](https://cfdocs.org/cfparam)
+{% endhint %}
 
 ## Checking For Existence
 

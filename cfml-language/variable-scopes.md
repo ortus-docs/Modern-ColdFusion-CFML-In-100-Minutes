@@ -63,13 +63,13 @@ If you use a variable name **without** a scope prefix, ColdFusion checks the sco
 5. Thread
 6. Variables
 7. CGI
-8. Cffile
+8. CFFILE
 9. URL
 10. Form
 11. Cookie
 12. Client
 
 {% hint style="danger" %}
-Because ColdFusion must search for variables when you do not specify the scope, you can improve performance by specifying the scope for all variables. It can also help you avoid nasty lookups or unexpected results.
+**IMPORTANT**: Because ColdFusion must search for variables when you do not specify the scope, you can improve performance by specifying the scope for all variables. It can also help you avoid nasty lookups or unexpected results.
 {% endhint %}
 

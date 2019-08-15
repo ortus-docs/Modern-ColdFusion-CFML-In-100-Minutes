@@ -91,6 +91,8 @@ sudo apt-get update && sudo apt-get install commandbox
 
 Add the following to: `/etc/yum.repos.d/commandbox.repo`
 
+{% code-tabs %}
+{% code-tabs-item title="/etc/yum.repos.d/commandbox.repo" %}
 ```bash
 [CommandBox]
 name=CommandBox $releasever - $basearch
@@ -100,6 +102,8 @@ enabled=1
 metadata_expire=7d
 gpgcheck=0
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 Then run a `sudo yum install commandbox` and be up and running
 

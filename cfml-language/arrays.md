@@ -79,7 +79,9 @@ grid[ 2 ][ 1 ] = 'Screwdriver';
 grid[ 1 ][ 2 ] = 'Screw';
 ```
 
-> **Tip** CFML only supports of two three dimensional arrays, so you can easily represent x, y and z axis.
+{% hint style="success" %}
+**Tip:** CFML only supports of two three dimensional arrays, so you can easily represent x, y and z axis.
+{% endhint %}
 
 ## Common Methods
 

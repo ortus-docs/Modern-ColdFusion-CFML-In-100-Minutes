@@ -136,7 +136,9 @@ myName = userName ?: "Anonymous";
 
 If `userName` does not exist or evaluates to `null` then the default value of the `myName` will be assigned the right part of the `?:` elvis operator -&gt; `Anonymous`
 
-> **Warning** The elvis operator is incredibly flawed in Adobe ColdFusion 10-11 and Lucee 4.5. Just avoid using it if you are using those versions. Unfortunate but true.
+{% hint style="warning" %}
+**Warning:** The elvis operator is incredibly flawed in Adobe ColdFusion 10-11-2016 and Lucee 4.5. Just avoid using it if you are using those versions. Unfortunate but true.
+{% endhint %}
 
 ## Safe Navigation Operator
 

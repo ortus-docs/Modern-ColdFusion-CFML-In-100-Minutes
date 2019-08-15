@@ -10,7 +10,7 @@ In Lucee server you can actually reference characters in a string stream via the
 
 ```javascript
 name = "luis";
-writeoutput( name[1] ) => will produce l
+writeoutput( name[ 1 ] ) => will produce l
 ```
 
 ## Common String Functions

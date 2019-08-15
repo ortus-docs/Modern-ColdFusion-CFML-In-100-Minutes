@@ -168,7 +168,9 @@ values = [ 1, 2 ];
 calculator.add( argumentCollection=values );
 ```
 
-> Please also note that you can add a-la-carte metadata or name-value pairs to each argument inline or via annotations like we have seen above.
+{% hint style="success" %}
+**Tip:** Please also note that you can add a-la-carte metadata or name-value pairs to each argument inline or via annotations like we have seen above.
+{% endhint %}
 
 **example with annotations**
 

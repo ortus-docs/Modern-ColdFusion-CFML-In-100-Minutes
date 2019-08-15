@@ -4,7 +4,9 @@
 
 CFML is an Object-Oriented programming language which means that all the things we interact with inside the virtual machine are objects, which in our case we will call Components \(CFCs\). Objects can hold data, called **properties**, and they can perform actions, called **methods** or **functions,** they can inherit from other objects, they can implement interfaces, they can contain metadata, and even act as RESTFul webservices.
 
-> Remember that objects are not only data but data + behavior.
+{% hint style="info" %}
+Remember that objects are not only data but data + behavior.
+{% endhint %}
 
 For an example of an object, think about **you** as a human being. You have properties/attributes like height, weight, and eye color. You have functions/methods like walk, run, wash dishes, and daydream. Different kinds of objects have different properties and functions. Some might even just be a collection of functions \(utility/static/service objects\) or what are referred to as stateless objects, there is no instance data that they represent.
 

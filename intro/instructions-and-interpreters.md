@@ -28,7 +28,7 @@ Running via CommandBox in the command line will leverage the Lucee 5x CFML engin
 
 ColdFusion is a dynamic language for the JVM, thus it runs in a full JDK/JRE context. It also provides you with hooks into the Java virtual machine. Meaning you can create and use Java objects natively in CFML. You can even create dynamic proxies and implement Java interfaces natively. Almost **Any** Java library or program can be class loaded and executed in CFML. For further reading check out the [Java Integration Guide](https://cfdocs.org/java): [https://cfdocs.org/java](https://cfdocs.org/java)
 
-```javascript
+```java
 currentFile = createObject( "java", "java.io.File" ).init( getCurrentTemplatePath() );
 writeOutput( currentFile.lastModified() );
 ```
@@ -45,9 +45,13 @@ This is the durable way to write ColdFusion code because you save your instructi
 
 We might create a file named `hello.cfm` like this:
 
+{% code-tabs %}
+{% code-tabs-item title="hello.cfm" %}
 ```markup
 <cfoutput>Hello from CFML Land!</cfoutput>
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 Then we could run the program like this `box hello.cfm` and get the following result:
 
@@ -71,9 +75,13 @@ Please note that the REPL in CommandBox opens in **script** mode and not in **ta
 
 For now, let's type the equivalent in Script syntax:
 
+{% code-tabs %}
+{% code-tabs-item title="hello.cfm" %}
 ```javascript
 writeOutput( "Hello from CFML Land!" )
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ![CommandBox](../.gitbook/assets/repl-hello.png)
 

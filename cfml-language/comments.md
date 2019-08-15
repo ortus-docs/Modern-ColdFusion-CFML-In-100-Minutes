@@ -18,7 +18,7 @@ ColdFusion Comment
 
 If you are within a CFC or in a `<cfscript>` block you can use an alternate style for comments. You can leverage `//` for single line comments and the following for multi-line comments:
 
-```javascript
+```java
 
 /**
  * Constructor, called by your Application CFC
@@ -56,11 +56,13 @@ A multi-line block can affect the metadata of a `component` or `function` if the
   }
 ```
 
-## CFDoc Style Comments
+## CFCDoc Style Comments
 
-In the CFML world you can write [JavaDoc](http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html) comments in what we call **CFDoc** comments. We leverage the [DocBox](https://github.com/Ortus-Solutions/DocBox) library to generate documentation according to object metadata and comments.
+In the CFML world you can write [JavaDoc](http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html) comments in what we call **CFCDoc** comments. We leverage the [DocBox](https://github.com/Ortus-Solutions/DocBox) library to generate documentation according to object metadata and comments.
 
-```javascript
+{% code-tabs %}
+{% code-tabs-item title="MyAwesome.cfc" %}
+```java
 /**
  * This is my component
  * 
@@ -93,6 +95,8 @@ component extends="Base" implements="IHello" singleton{
 
 }
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 You can see some examples of advanced CFC documentation here: [http://apidocs.ortussolutions.com.s3.amazonaws.com/coldbox/5.0.0/index.html](http://apidocs.ortussolutions.com.s3.amazonaws.com/coldbox/5.0.0/index.html)
 

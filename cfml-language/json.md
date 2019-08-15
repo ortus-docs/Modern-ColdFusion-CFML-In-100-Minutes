@@ -42,7 +42,7 @@ The core functions that deal with JSON are:
       <td style="text-align:left">
         <p><code>serializeJson( </code>
         </p>
-        <p><code>  data, </code>
+        <p><code>  data,</code>
         </p>
         <p><code>  serializeQueryByColumns, </code>
         </p>

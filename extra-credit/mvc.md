@@ -64,11 +64,15 @@ There are many types of MVC architectures and hopefully the following diagrams c
   
 As you can see from the spaghetti hell diagram above, everything is linear and can become extremely convoluted.  Tracking bugs are difficult, maintenance suffers and reusability is not efficient.  Everything is in the same bowl of soup.
 
+---
+
 ### MVC
 
 ![](../.gitbook/assets/mvc.png)
 
 With the introduction of MVC we can hack away our spaghetti hell and at least have three distinct and separate layers of logic.  Ahh much better.  However, we can get even more complex.
+
+---
 
 ### MVC Plus
 
@@ -76,12 +80,16 @@ With the introduction of MVC we can hack away our spaghetti hell and at least ha
 
 MVC Plus shows us how you can further partition your model layer into more layers.  We can identify now a layer of service CFCs and data access object CFCs.  The main transportation of data between these layers by default is implied to be ColdFusion Query objects.
 
+---
+
 ### MVC Plus Objects
 
 ![MVC Plus Objects](../.gitbook/assets/mvc-plus-objects.png)
 
   
 In this architecture approach, we have replaced \(mostly\) queries as our data structure of preference and converted to the usage of business objects.  We are approaching a more object oriented architectural style.  Remember that data is just data, objects are data plus behavior.  We can encapsulate more features and abstract more behavior into actual objects now, which we could not do with queries.
+
+---
 
 ### MVC Plus ORM
 
@@ -95,6 +103,8 @@ In this architecture approach we have replaced business objects for ORM entities
 
 We have even build a companion package for ColdBox called [**cborm**](https://github.com/coldbox-modules/cbox-cborm) that will help you build more pragmatic and enjoyable ORM applications.
 {% endhint %}
+
+---
 
 ## MVC Frameworks for ColdFusion \(CFML\) <a id="coldbox-mvc"></a>
 

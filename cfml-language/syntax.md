@@ -27,24 +27,34 @@ We might have a file named _myprogram.cfm_ and _Sample.cfc_ like this:
 
 **myprogram.cfm**
 
+{% code-tabs %}
+{% code-tabs-item title="myprogram.cfm" %}
 ```markup
 <cfset s = new Sample()>
 <cfoutput>#s.hello()#</cfoutput>
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ### Script Syntax
 
 **myprogram.cfm**
 
-```javascript
+{% code-tabs %}
+{% code-tabs-item title="myprogram.cfm" %}
+```java
 <cfscript>
     s = new Sample();
     writeOutput( s.hello() );
 </cfscript>
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 **Sample.cfc**
 
+{% code-tabs %}
+{% code-tabs-item title="Sample.cfc" %}
 ```javascript
 component{
 
@@ -54,9 +64,13 @@ component{
 
 }
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 Please note that no types and not even any visibility scopes you might be used to are present. ColdFusion can infer variable types \(Lucee\) as well. However, please note that you can fully leverage types if you like:
 
+{% code-tabs %}
+{% code-tabs-item title="Sample.cfc" %}
 ```javascript
 component{
 
@@ -66,8 +80,12 @@ component{
 
 }
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
-> **Hint** By default the return type of every function and/or argument is `any`. Thus, it can be determined at runtime as a dynamic variable.
+{% hint style="success" %}
+By default the return type of every function and/or argument is **any**. Thus, it can be determined at runtime as a dynamic variable.
+{% endhint %}
 
 ### Semi-Colons
 
@@ -94,6 +112,8 @@ As we now live in a world of polyglot developers, we have added a few references
 
 #### myprogram.php
 
+{% code-tabs %}
+{% code-tabs-item title="myprogram.php" %}
 ```php
 <?php
     require("Sample.php");
@@ -101,9 +121,13 @@ As we now live in a world of polyglot developers, we have added a few references
     echo $s->hello();
 ?>
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 #### Sample.php
 
+{% code-tabs %}
+{% code-tabs-item title="Sample.php" %}
 ```php
 <?php
 class Sample
@@ -114,11 +138,15 @@ class Sample
 }
 ?>
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ### Ruby Syntax
 
 #### myprogram.rb
 
+{% code-tabs %}
+{% code-tabs-item title="myprogram.rb" %}
 ```ruby
 class Sample
     def hello
@@ -129,11 +157,15 @@ end
 s = Sample.new
 puts s.hello
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ### Java Syntax
 
 #### MyProgram.java
 
+{% code-tabs %}
+{% code-tabs-item title="MyProgram.java" %}
 ```java
 public class MyProgram {
 
@@ -147,6 +179,8 @@ public class MyProgram {
 
 }
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ## Coding Standards
 
