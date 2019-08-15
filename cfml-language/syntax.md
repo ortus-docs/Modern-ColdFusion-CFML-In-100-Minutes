@@ -15,7 +15,9 @@ CFML includes a set of instructions you use in pages \(`.cfm`\) or components \(
 
 CFML also gives you a pre-set of defined [tags](https://cfdocs.org/tags) and [functions](https://cfdocs.org/functions) available to you in any type of file you write your code in. These tags and functions allows you to extend the typical language constructs with many modern capabilities from database interaction to PDF generation.
 
-> **Hint** Please note that the CFML built-in functions are also `first-class` functions so they can be passed around as arguments to other functions or closures.
+{% hint style="success" %}
+**Tip:** Please note that the CFML built-in functions are also first-class functions so they can be passed around as arguments to other functions or closures.
+{% endhint %}
 
 ## Exploring Behavior
 
@@ -140,6 +142,8 @@ class Sample
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
+
+---
 
 ### Ruby Syntax
 

@@ -76,6 +76,8 @@ component{
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
+---
+
 ## Defining Datasources
 
 If you want to use the ColdFusion Engine's administrators for registering datasources, you will have to visit each of the administrator's interfaces and follow their wizards.
@@ -90,9 +92,10 @@ If you want to use the ColdFusion Engine's administrators for registering dataso
 
 You can also define the datasources in the `Application.cfc`, which is sometimes our preferred approach as the connections are versioned controlled and more visible than in the admin.  You will do this by defining a struct called `this.datasources`.  Each **key** will be the name of the datasource to register and the **value** of each key a struct of configuration information for the datasource. However, we recommend that you setup environment variables in order to NOT store your passwords in plain-text in your source code.
 
+{% code-tabs %}
+{% code-tabs-item title="Application.cfc" %}
 ```java
 component{
-    
     this.datasources = {
         // Adobe Driver Approach
         mysql = {
@@ -104,7 +107,6 @@ component{
             password : "mysql",
             options : value
         },
-        
         // Adobe url approach
         mysql2 = {
             driver : "mysql",
@@ -112,7 +114,6 @@ component{
             username : "",
             password : ""
         },
-        
         // Shorthand Lucee Approach
         myLuceeDNS = {
             class : "com.mysql.jdbc.Driver",
@@ -120,7 +121,6 @@ component{
             username : "",
             password : "" 
         },
-        
         // Long Lucee Approach
         myLuceeDNS = {
             type : "mysql",
@@ -128,13 +128,13 @@ component{
             host : "localhost",
             port : "3306",
             username : "",
-            password : "",
-            options : value
+            password : ""
         }
     };
-
 }
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 {% hint style="success" %}
 For the inline approach, you will just use the struct definition as you see in the `Application.cfc` above and pass it into the `cfquery` or `queryexecute` call.

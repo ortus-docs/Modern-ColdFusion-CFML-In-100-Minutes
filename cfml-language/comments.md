@@ -98,6 +98,8 @@ component extends="Base" implements="IHello" singleton{
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
+---
+
 You can see some examples of advanced CFC documentation here: [http://apidocs.ortussolutions.com.s3.amazonaws.com/coldbox/5.0.0/index.html](http://apidocs.ortussolutions.com.s3.amazonaws.com/coldbox/5.0.0/index.html)
 
 {% hint style="success" %}
