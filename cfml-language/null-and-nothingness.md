@@ -2,7 +2,7 @@
 
 What is nothingness? Is there nothingness only in outer space? If a tree falls in the forest and nobody is there to listen, does it make a sound? Starting to see the point? Does nothing really mean nothing? To be or not to be? OK, I think we are going in a philosophical tangent, so let's get back to our geekiness:
 
-`null` is Java's way to refer to "nothingness.", something that does not exist and has no value. In CFML, we also use `null` even though the `null` keyword is yet to be introduced into the language.
+`null` is Java's way to refer to "nothingness.", something that does not exist and has no value.  Support for the`null`keyword itself was introduced as an option in ColdFusion 2018 (as discussed in [this blog post](https://coldfusion.adobe.com/2018/07/null-support-in-coldfusion-2018/)) and has existed as an option in Lucee (as discussed in [this guide](https://docs.lucee.org/guides/cookbooks/NullSupport.html)).
 
 ## Usage
 
