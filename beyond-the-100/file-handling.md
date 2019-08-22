@@ -85,7 +85,7 @@ If you want to read or manipulate large files we would recommend that you levera
 ```java
 stream = streamBuilder.new().ofFile( absolutePath );
 try{
-    work on the stream of lines of files and close it in the finally block;
+    //work on the stream of lines of files and close it in the finally block
 } finally{
     stream.close();
 }

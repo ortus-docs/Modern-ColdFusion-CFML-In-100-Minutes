@@ -126,21 +126,21 @@ You can verify if variables exist in many different ways. The next section showc
 
 ```javascript
 // Notice the variable name is in quotes
-if( isDefined( "myVariable" ){
+if( isDefined( "myVariable" ) ){
     writeOutput( myVariable );
 } else {
     writeOutput( "Not Defined!" );
 }
 
 // Notice that the variable is NOT in quotes
-if( isNull( myVariable ){
+if( isNull( myVariable ) ){
     writeOutput( myVariable );
 } else {
     writeOutput( "Not Defined!" );
 }
 
 // What is this variables scopes???
-if( structKeyExists( variables, "myVariable" ){
+if( structKeyExists( variables, "myVariable" ) ){
     writeOutput( myVariable );
 } else {
     writeOutput( "Not Defined!" );

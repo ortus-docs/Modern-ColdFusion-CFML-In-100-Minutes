@@ -55,10 +55,10 @@ Let's check out an example of a simple Component, `User.cfc`
 
 Please check out the following articles:
 
-* [https://en.wikipedia.org/wiki/Class\_\(computer\_programming](https://en.wikipedia.org/wiki/Class_%28computer_programming)\)
-* [https://en.wikipedia.org/wiki/Instance\_\(computer\_science](https://en.wikipedia.org/wiki/Instance_%28computer_science)\)
-* [https://en.wikipedia.org/wiki/Encapsulation\_\(computer\_programming](https://en.wikipedia.org/wiki/Encapsulation_%28computer_programming)\)
-* [https://en.wikipedia.org/wiki/Abstraction\_\(software\_engineering](https://en.wikipedia.org/wiki/Abstraction_%28software_engineering)\)
+* [https://en.wikipedia.org/wiki/Class\_\(computer\_programming\)](https://en.wikipedia.org/wiki/Class_%28computer_programming%29)
+* [https://en.wikipedia.org/wiki/Instance\_\(computer\_science\)](https://en.wikipedia.org/wiki/Instance_%28computer_science%29)
+* [https://en.wikipedia.org/wiki/Encapsulation\_\(computer\_programming\)](https://en.wikipedia.org/wiki/Encapsulation_%28computer_programming%29)
+* [https://en.wikipedia.org/wiki/Abstraction\_\(software\_engineering\)](https://en.wikipedia.org/wiki/Abstraction_%28software_engineering%29)
 * [https://en.wikipedia.org/wiki/God\_object](https://en.wikipedia.org/wiki/God_object)
 * [http://www.learncfinaweek.com/week1/OOP/](http://www.learncfinaweek.com/week1/OOP/)
 * [https://en.wikipedia.org/wiki/Mutator\_method](https://en.wikipedia.org/wiki/Mutator_method)
@@ -125,7 +125,7 @@ obj
  .setValue( 'otherValue' );
 ```
 
-By default when using the `new Object()` operator, the Object's `init()` function will be called for you automatically.  If you use the `createObject()` then the `ini()` is NOT called automatically for you, you will call it explicitly.
+By default when using the `new Object()` operator, the Object's `init()` function will be called for you automatically.  If you use the `createObject()` then the `init()` is NOT called automatically for you, you will call it explicitly.
 
 ```java
 // Implicit Constructor

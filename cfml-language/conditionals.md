@@ -14,7 +14,7 @@ if( a >= 1 )
 if( a <= 1 )
 ```
 
-Some instructions return a `true` or `false`, so they're used in conditional statements, for example, `IsArray` which is `true` only when the variable is an "array". Structures have an instruction named `structKeyExists()` or `exists()` which returns `true` if a key is present in a structure. Strings can also be used for conditional operations by checking the `.length()` member function.
+Some instructions return a `true` or `false`, so they're used in conditional statements, for example, `IsArray` which is `true` only when the variable is an "array". Structures have an instruction named `structKeyExists()` or `keyExists()` which returns `true` if a key is present in a structure. Strings can also be used for conditional operations by checking the `.length()` member function.
 
 ```java
 a = [1,3];

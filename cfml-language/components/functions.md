@@ -14,7 +14,7 @@ You can find all the different features of functions in the docs: [https://cfdoc
 /**
  * Hints
  */
-{access} {modifier:static|final|abstract} {returnType} function {name}() {attributes}{}
+{access} {modifier:static|final|abstract} {returnType} function {name}({attributes}){}
 ```
 
 ### **Examples**

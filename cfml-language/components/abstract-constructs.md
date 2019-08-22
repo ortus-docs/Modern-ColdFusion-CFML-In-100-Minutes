@@ -58,7 +58,7 @@ abstract component implements="IAnimal"{
 
 ## Abstract Functions
 
-As you can see from the example above, abstract functions can be defined ONLY in an abstract component.  These functions are demarcated as abstract so inherited components can implement them.  You can have as many abstract functions in your abstract component and you can also have as many concrete functions as well:
+As you can see from the example above, abstract functions can be defined ONLY in an abstract component.  These functions are demarcated as abstract so inherited components can implement them.  You can have many abstract functions in your abstract component and you can also have many concrete functions as well:
 
 {% code-tabs %}
 {% code-tabs-item title="AbstractLogger.cfc" %}

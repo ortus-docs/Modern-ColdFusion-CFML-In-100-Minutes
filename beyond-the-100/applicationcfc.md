@@ -89,7 +89,7 @@ The [ColdBox HMVC Framework](https://www.coldbox.org) builds heavily on top of t
 
 ColdFusion differs from other Java web languages in the sense that there is one Java context application deployed \(The CFML Engine\) with many servlet definitions, but you can create many ColdFusion applications within the running context.  All you need is to demarcate them with the `Application.cfc`, with a unique name which defines the separate ColdFusion applications.  **Anything in that directory and sub-directories will be considered part of the application.**
 
-Your ColdFusion application is nothing more but a memory space reservation using the `this.name` property as the unique name for it.  It can contain the variables scopes like `application`, `session`, and `client` which are unique per this reservation name. This way two ColdFusion applications can have different persistence variable scopes and can even be embedded between each other:
+Your ColdFusion application is nothing more than a memory space reservation using the `this.name` property as the unique name for it.  It can contain the variables scopes like `application`, `session`, and `client` which are unique per this reservation name. This way two ColdFusion applications can have different persistence variable scopes and can even be embedded between each other:
 
 ```text
 + webroot
