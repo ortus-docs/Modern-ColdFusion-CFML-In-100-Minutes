@@ -6,7 +6,7 @@ It's dynamic, vibrant, modern, fluent, and functional! Let's begin our adventure
 
 ## Support Open Source
 
-This book is available free of charge [online](https://modern-cfml.ortusbooks.com) and commercially as a [downloadable or printed book](https://www.ortussolutions.com/learn/coldfusion). Your support goes a long way to help not only the development of this book, but future book endeavors and all the open source projects that we work on. To support us please consider becoming our patron at [patreon.com/ortussolutions](https://patreon.com/ortussolution) for as little as $10/month.
+This book is available free of charge [online](https://modern-cfml.ortusbooks.com) and commercially as a [downloadable or printed book](https://www.ortussolutions.com/learn/coldfusion). Your support goes a long way to help not only the development of this book, but future book endeavors and all the open source projects that we work on. To support us please consider becoming our patron at [patreon.com/ortussolutions](https://patreon.com/ortussolutions) for as little as $10/month.
 
 ## Ortus Solutions, Corp
 
