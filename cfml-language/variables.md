@@ -57,7 +57,7 @@ a = "Hola Luis";
 writeoutput( "Welcome to CFML: #a#" );
 ```
 
-Also note that using the `#` hashes for output on assignments can be reduntant:
+Also note that using the `#` hashes for output on assignments can be redundant:
 
 **Don't do this**
 
@@ -106,7 +106,7 @@ CFML allows you to set default values for variables in case you use a variable a
 or
 
 ```javascript
-param myVariable = "luis"
+param myVariable = "luis";
 ```
 
 {% hint style="success" %}
