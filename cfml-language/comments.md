@@ -21,7 +21,7 @@ If you are within a CFC or in a `<cfscript>` block you can use an alternate styl
 ```java
 
 /**
- * Constructor, called by your Application CFC
+ * Multi-line Javadoc style comment
  *
  * @COLDBOX_CONFIG_FILE The override location of the config file
  * @COLDBOX_APP_ROOT_PATH The location of the app on disk
@@ -31,7 +31,7 @@ If you are within a CFC or in a `<cfscript>` block you can use an alternate styl
  */
 
 
-/**
+/*
   Multi 
   Line
   Comments
