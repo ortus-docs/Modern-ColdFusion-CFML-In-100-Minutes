@@ -1,6 +1,6 @@
 # Functions
 
-Functions are the way to interact with objects, with no functions we have no object-oriented behaviors, no [abstractions](https://en.wikipedia.org/wiki/Abstraction) and no [encapsulation](https://en.wikipedia.org/wiki/Encapsulation_%28computer_programming%29). Functions have an automatic return type of `any` which means it can return any type of variable back to a user and an automatic visibility scope of `public`. They also can take in _ANY_ amount of arguments, which don't event have to be defined in the function signature. WOWZA!
+Functions are the way to interact with objects, with no functions we have no object-oriented behaviors, no [abstractions](https://en.wikipedia.org/wiki/Abstraction) and no [encapsulation](https://en.wikipedia.org/wiki/Encapsulation_%28computer_programming%29). Functions have an automatic return type of `any` which means it can return any type of variable back to a user and an automatic visibility scope of `public`. They also can take in _ANY_ amount of arguments, which don't even have to be defined in the function signature. WOWZA!
 
 Functions in CFML are also first-class object citizens.  Meaning that each function can be addressed like an object.  They can be even deleted, renamed or even injected at runtime.  This is one of the most powerful qualities of the CFML dynamic language.  You can at runtime manipulate objects and their functions.
 
