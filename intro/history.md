@@ -27,7 +27,7 @@ The best way for discovering the methods, tags and functionality of the ColdFusi
 There are many flavors of IDE's but here are our recommendations.
 
 * [Sublime 3](https://www.sublimetext.com/3)
-* [Vistual Studio Code](https://code.visualstudio.com/)
+* [Visual Studio Code](https://code.visualstudio.com/)
 * [Adobe ColdFusion Builder](http://www.adobe.com/products/coldfusion-builder.html)
 * [Atom Editor](https://atom.io/)
 * [IntelliJ](https://www.jetbrains.com/idea/)
