@@ -13,7 +13,7 @@ writeDump( result )
 You can use ANY http method in the `cfhttp` calls, the default is a `GET` operation.
 {% endhint %}
 
-As you can see from the example above, you can pass parameters to the HTTP request by using the child `cfhttpaparam` construct.  This parameter can be of many different types: `header, body, xml, cgi, file, url, formfield, cookie` depending on the requirements of the http endpoint.
+As you can see from the example above, you can pass parameters to the HTTP request by using the child `cfhttpparam` construct.  This parameter can be of many different types: `header, body, xml, cgi, file, url, formfield, cookie` depending on the requirements of the http endpoint.
 
 ## The Result Structure
 
