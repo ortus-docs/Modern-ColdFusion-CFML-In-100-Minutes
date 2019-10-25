@@ -253,13 +253,13 @@ Most of the time we won't have the luxury of simple queries, we will need user i
 // Named variable holder
 queryExecute(
  "select quantity, item from cupboard where item_id = :itemID"
- { itemID = { value=arguments.itemID, cfsqltype="numeric", list=true } }
+ { itemID = { value=arguments.itemID, cfsqltype="numeric" } }
 );
 
 // Positional placeholder
 queryExecute(
  "select quantity, item from cupboard where item_id = ?"
- [ { value=arguments.itemID, cfsqltype="varchar", list=true, null=false } ]
+ [ { value=arguments.itemID, cfsqltype="varchar" } ]
 );
 ```
 
