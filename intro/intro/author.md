@@ -12,7 +12,7 @@ Luis has a passion for Jesus, tennis, golf, volleyball and anything electronic. 
 
 * He played volleyball in the Salvadorean National Team at the tender age of 17
 * The Lord of the Rings and The Hobbit is something he reads every 5 years. \(Geek!\)
-* His first ever computer was a Texas Instrument TI-86 that his parents gave him in 1986. After some time digesting his very first BASIC book, he had written his own tic-tac-toe game at the age of 9. \(Extra geek!\)
+* His first ever computer was a Texas Instruments TI-86 that his parents gave him in 1986. After some time digesting his very first BASIC book, he had written his own tic-tac-toe game at the age of 9. \(Extra geek!\)
 * He has a geek love for circuits, micro-controllers and overall embedded systems.
 * He has of late \(during old age\) become a fan of organic gardening.
 
