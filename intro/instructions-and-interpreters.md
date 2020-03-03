@@ -69,7 +69,7 @@ When you run `box hello.cfm` you’re actually loading the CFML instruction set 
 
 ## CommandBox REPL
 
-CommandBox sports a ColdFusion **R**ead **E**val **P**rint **L**oop interface or most commonly know as **REPL**. The REPL is like a programming calculator, input in output out. It will execute ColdFusion instructions and give you feedback on syntax and results. To start a REPL we must go into the CommandBox shell by typing just `box` or opening the `box` binary.
+CommandBox sports a ColdFusion **R**ead **E**val **P**rint **L**oop interface or most commonly known as **REPL**. The REPL is like a programming calculator, input in output out. It will execute ColdFusion instructions and give you feedback on syntax and results. To start a REPL we must go into the CommandBox shell by typing just `box` or opening the `box` binary.
 
 Once in the CommandBox prompt type `repl` and you will be placed in REPL mode:
 
