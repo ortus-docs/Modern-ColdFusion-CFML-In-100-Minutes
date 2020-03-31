@@ -22,7 +22,7 @@ Please note that once you get into concurrency you will start to get many headac
 
 Here are some utility functions to assist with logging:
 
-* `systemOutput( obj, addNewLine:boolean, doErrorStream:boolean)` - Writes the given text or complex objects to the output or error stream.  Complex objects are outputted as JSON. [https://cfdocs.org/systemoutput](https://cfdocs.org/systemoutput)
+* `systemOutput( obj, addNewLine:boolean, doErrorStream:boolean)` - Writes the given text or complex objects to the output or error stream.  Complex objects are outputted as JSON. (Lucee-only) [https://cfdocs.org/systemoutput](https://cfdocs.org/systemoutput)
 * `cfdump( var="text", output="console" )` - Send the variables to the output console, even complex variables. Complex objects are outputted as JSON. [https://cfdocs.org/cfdump](https://cfdocs.org/cfdump)
 * `cflog( text, log, file, type ) or writeLog()` - Leverage the ColdFusion engine's logging facilities to send typed messages. [https://cfdocs.org/cflog](https://cfdocs.org/cflog) 
 
