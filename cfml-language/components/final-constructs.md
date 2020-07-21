@@ -28,7 +28,7 @@ Unlike `abstract` a function can be `final` even if the component is not `final`
 
 ## Final Functions
 
-Functions within a component can also be declared as `final`.  Final methods cannot be override by sub-components.   Final methods can be used to limit the extent to which sub-components redefine the behavior of the parent classes. 
+Functions within a component can also be declared as `final`.  Final methods cannot be overridden by sub-components.   Final methods can be used to limit the extent to which sub-components redefine the behavior of the parent classes. 
 
 ```java
 component BaseUtil{
