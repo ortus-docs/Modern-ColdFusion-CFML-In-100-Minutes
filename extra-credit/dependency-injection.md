@@ -189,7 +189,7 @@ WireBox is part of the ColdBox HMVC framework, so you can leverage DI/AOP out of
 wirebox = new wirebox.system.ioc.Injector();
 
 // Create it with a configuration Binder
-wirebox new wirebox.system.ioc.Injector( "myBinderPath" );
+wirebox = new wirebox.system.ioc.Injector( "myBinderPath" );
 
 // Get an object
 wirebox.getInstance( "MyService" );
