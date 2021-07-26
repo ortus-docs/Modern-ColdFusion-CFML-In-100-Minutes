@@ -26,10 +26,21 @@ The CommandBox REPL is based on a Lucee 5 server, that is why semi-colons are op
 
 CFML is a case-insensitive language. Meaning if you create a variable `a` and reference it as `A` they are the same. This can be a very big gotcha for developers coming from languages like Java or JavaScript. However, as best practice, we would recommend to **ALWAYS** use the same case as when you define the variable:
 
+
+**Don't do this**
+
 ```javascript
 a = "Hola Luis";
 writeOutput( A );
 ```
+
+**Do this**
+
+```javascript
+a = "Hola Luis";
+writeOutput( a );
+```
+
 
 ## Naming Requirements
 
