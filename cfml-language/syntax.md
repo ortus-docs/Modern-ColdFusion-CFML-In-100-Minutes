@@ -91,7 +91,7 @@ By default the return type of every function and/or argument is **any**. Thus, i
 
 ### Semi-Colons
 
-Please note that semi-colons are used to demarcate line endings in CFML `;`. However, the Lucee Server engine can treat semi-colons as optional, while Adobe ColdFusion does not. Be worrisome about it, we would recommend you **always** use them to remain compatible between engines. Also note the CommandBox REPL does NOT require semi-colons.
+Please note that semi-colons are used to demarcate line endings in CFML `;`. However, the Lucee Server engine and ColdFusion 2018 and above treat semi-colons as optional, while Adobe ColdFusion 2016 or below does not. We would recommend you **always** use them to remain compatible between engines. Also note the CommandBox REPL does NOT require semi-colons.
 
 ### Tags In Script
 
