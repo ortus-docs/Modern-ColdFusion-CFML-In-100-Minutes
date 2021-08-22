@@ -21,7 +21,7 @@ The ColdFusion engine will convert your markup into byte code and feed it into t
 You can run any ColdFusion script in any Adobe or Lucee server or in the command line with CommandBox.
 
 {% hint style="info" %}
-Running via CommandBox in the command line will leverage the Lucee 5x CFML engine by default.
+Running via CommandBox in the command line will leverage the Lucee 5x CFML engine by default, but it can be configured easily to run Adobe Coldfusion (ACF), or indeed different versions of either Lucee or ACF. 
 {% endhint %}
 
 ## Java Integration
