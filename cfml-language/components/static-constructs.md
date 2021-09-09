@@ -21,12 +21,12 @@ The static constructor is execute once before the component is loaded for the fi
 {% code-tabs %}
 {% code-tabs-item title="FunkyCalculator.cfc" %}
 ```java
-component MyFunkyCalculator{
+component {
     
     // Static Constructor
     static {
-        CACHE_KEY : "luis",
-        multiplier : 4
+        static.CACHE_KEY = "luis"
+        static.multiplier = 4
     }
 
 }
@@ -41,12 +41,12 @@ Static methods can be used without an instance of the component and can also acc
 {% code-tabs %}
 {% code-tabs-item title="FunkyCalculator.cfc" %}
 ```java
-component MyFunkyCalculator{
+component {
     
     // Static Constructor
     static {
-        CACHE_KEY : "luis",
-        multiplier : 4
+        static.CACHE_KEY = "luis"
+        static.multiplier = 4
     }
     
     
