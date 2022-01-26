@@ -6,7 +6,7 @@ What is nothingness? Is there nothingness only in outer space? If a tree falls i
 
 ## Usage
 
-We can use the `isNull()` method in CFML to evaluate for nothingness and we can even create a `null` value with a `javaCast( "null", "" )` function call or in Lucee you can use the `nullValue()` function as well. However, please note that the `null` keyword is coming to CFML in the near future.
+Use the `isNull()` method to evaluate for nothingness and use the `null` keyword to create a null value (ACF 2018+, Lucee 4.1+). In previous versions, use the function call `javaCast( "null", "" )` for ACF or in Lucee you can use the `nullValue()` function. Take note that in Adobe CF 2018+ you must enable the setting. 
 
 ## In Practice
 
