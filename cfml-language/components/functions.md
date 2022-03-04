@@ -82,11 +82,11 @@ Does this mean, that I can programmatically change an object at runtime by injec
 
 Function modifiers allows you to declare special behaviors to functions, from `static` availability to `final` and `abstract` declarations.  The supported modifiers for CFML functions by CFML engine are the following:
 
-| Modifier | Lucee 5+ | Adobe 2016 | Adobe 2018 |
-| ---: | :---: | :---: | :---: |
-| `static` | Yes | No | No |
-| `final` | Yes | No | Yes |
-| `abstract` | Yes | No | Yes |
+| Modifier | Lucee 5+ | Adobe 2016 | Adobe 2018 | Adobe 2021 |
+| ---: | :---: | :---: | :---: | :---: |
+| `static` | Yes | No | No | Yes |
+| `final` | Yes | No | Yes | Yes |
+| `abstract` | Yes | No | Yes | Yes |
 
 We have created a section for each of these types, so you can read more about the modifiers:
 
