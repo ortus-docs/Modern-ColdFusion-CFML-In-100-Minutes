@@ -1,7 +1,5 @@
 # Static Constructs
 
-In CFML only the Lucee engine supports the [static](https://en.wikipedia.org/wiki/Method_%28computer_programming%29#Static_methods) keyword, hopefully Adobe will support it soon.  
-
 ### What is static?  
 
 In CFML, a static variable is a variable of a component that isn’t associated with an **instance** of a component. Instead, the variable belongs to the component definition itself. As a result, you can access the static variable without first creating the component instance.  
