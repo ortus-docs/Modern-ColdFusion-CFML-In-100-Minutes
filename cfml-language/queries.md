@@ -10,7 +10,7 @@ See [Application.cfc](../beyond-the-100/applicationcfc.md) for more information 
 
 ## What is a Datasource?
 
-A datasource is a **named** connection to a specific database with specified credentials.  You can define an infinite amount of datasources in your CFML applications in the following locations:
+A datasource is a **named** connection to a specific database with specified credentials. You can define an infinite amount of datasources in your CFML applications in the following locations:
 
 * Global ColdFusion Engine Administrator
 * The `Application.cfc`, which will dictate the datasources for that specific ColdFusion application
@@ -22,8 +22,8 @@ The datasource is then used to control the connection pool to such database and 
 
 A query is a request to a database. It returns a CFML `query` object containing a **recordset** and other metadata information about the query. The query can ask for information from the database, write new data to the database, update existing information in the database, or delete records from the database. This can be done in several ways:
 
-* Using the `cfquery` tag or function construct. \([https://cfdocs.org/cfquery](https://cfdocs.org/cfquery)\)
-* Using the `queryExecute()` function. \([https://cfdocs.org/queryexecute](https://cfdocs.org/queryexecute)\)
+* Using the `cfquery` tag or function construct. ([https://cfdocs.org/cfquery](https://cfdocs.org/cfquery))
+* Using the `queryExecute()` function. ([https://cfdocs.org/queryexecute](https://cfdocs.org/queryexecute))
 
 ```javascript
 // Tag syntax
@@ -60,23 +60,19 @@ If you are using **Lucee**, the datasource can even be defined inline. So instea
 
 ## Default Datasource
 
-You can also omit the `datasource` completely from query calls and CFML will use the one defined in `Application.cfc`  as the **default** datasource connection. This is a great way to encapsulate the datasource in a single location.  However, we all know that there could be some applications with multiple datasources, that's ok, at least you can have one by default.
+You can also omit the `datasource` completely from query calls and CFML will use the one defined in `Application.cfc` as the **default** datasource connection. This is a great way to encapsulate the datasource in a single location. However, we all know that there could be some applications with multiple datasources, that's ok, at least you can have one by default.
 
-{% code-tabs %}
-{% code-tabs-item title="Application.cfc" %}
+{% code title="Application.cfc" %}
 ```java
 component{
     this.name = "myApp";
-    
+
     // Default Datasource Name
     this.datasource = "pantry";
-    
+
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
-
----
+{% endcode %}
 
 ## Defining Datasources
 
@@ -90,10 +86,9 @@ If you want to use the ColdFusion Engine's administrators for registering dataso
 
 ### Application.cfc
 
-You can also define the datasources in the `Application.cfc`, which is sometimes our preferred approach as the connections are versioned controlled and more visible than in the admin.  You will do this by defining a struct called `this.datasources`.  Each **key** will be the name of the datasource to register and the **value** of each key a struct of configuration information for the datasource. However, we recommend that you setup environment variables in order to NOT store your passwords in plain-text in your source code.
+You can also define the datasources in the `Application.cfc`, which is sometimes our preferred approach as the connections are versioned controlled and more visible than in the admin. You will do this by defining a struct called `this.datasources`. Each **key** will be the name of the datasource to register and the **value** of each key a struct of configuration information for the datasource. However, we recommend that you setup environment variables in order to NOT store your passwords in plain-text in your source code.
 
-{% code-tabs %}
-{% code-tabs-item title="Application.cfc" %}
+{% code title="Application.cfc" %}
 ```java
 component{
     this.datasources = {
@@ -133,8 +128,7 @@ component{
     };
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 {% hint style="success" %}
 For the inline approach, you will just use the struct definition as you see in the `Application.cfc` above and pass it into the `cfquery` or `queryexecute` call.
@@ -142,29 +136,28 @@ For the inline approach, you will just use the struct definition as you see in t
 
 ### Portable Datasources
 
-You can also make your datasources portable from application to application or CFML engine to engine by using our [CFConfig](https://cfconfig.ortusbooks.com/) project.  CFConfig gives you the ability to manage most every setting that shows up in the web administrator, but instead of logging into a web interface, you can mange it from the command line by hand or as part of a scripted server setup. You can seamless transfer config for all the following:
+You can also make your datasources portable from application to application or CFML engine to engine by using our [CFConfig](https://cfconfig.ortusbooks.com/) project. CFConfig gives you the ability to manage most every setting that shows up in the web administrator, but instead of logging into a web interface, you can mange it from the command line by hand or as part of a scripted server setup. You can seamless transfer config for all the following:
 
 * CF Mappings
 * Datasources
 * Mail servers
 * Request, session, or application timeouts
-* Licensing information \(for Adobe\)
-* Passwords
+* Licensing information (for Adobe)
+*   Passwords
 
-  -Template caching settings
+    \-Template caching settings
 
-  -Basically any settings in the web based administrator
+    \-Basically any settings in the web based administrator
 
 You can easily place a `.cfconfig.json` in the web root of your project and if you start up a CommandBox server on any CFML engine, CFConfig will transfer the configuration to the engine's innards:
 
-{% code-tabs %}
-{% code-tabs-item title=".cfconfig.json" %}
+{% code title=".cfconfig.json" %}
 ```java
 {
-	"requestTimeoutEnabled":true,
+    "requestTimeoutEnabled":true,
     "whitespaceManagement":"white-space-pref",
-	"requestTimeout":"0,0,5,0",
-	"cacheDefaultObject":"coldbox",
+    "requestTimeout":"0,0,5,0",
+    "cacheDefaultObject":"coldbox",
     "caches":{
         "coldbox":{
             "storage":"true",
@@ -177,25 +170,24 @@ You can easily place a `.cfconfig.json` in the web root of your project and if y
             "readOnly":"false"
         }
     },
-	"datasources" : {
-		 "coldbox":{
-			 "host":"${DB_HOST}",
-			 "dbdriver":"${DB_DRIVER}",
-			 "database":"${DB_DATABASE}",
-			 "dsn":"jdbc:mysql://{host}:{port}/{database}",
-			 "custom":"useUnicode=true&characterEncoding=UTF-8&useLegacyDatetimeCode=true&autoReconnect=true",
-			 "port":"${DB_PORT}",
-			 "class":"${DB_CLASS}",
-			 "username":"${DB_USER}",
-			 "password":"${DB_PASSWORD}",
-			 "connectionLimit":"100",
-			 "connectionTimeout":"1"
-		 }
-	}
+    "datasources" : {
+         "coldbox":{
+             "host":"${DB_HOST}",
+             "dbdriver":"${DB_DRIVER}",
+             "database":"${DB_DATABASE}",
+             "dsn":"jdbc:mysql://{host}:{port}/{database}",
+             "custom":"useUnicode=true&characterEncoding=UTF-8&useLegacyDatetimeCode=true&autoReconnect=true",
+             "port":"${DB_PORT}",
+             "class":"${DB_CLASS}",
+             "username":"${DB_USER}",
+             "password":"${DB_PASSWORD}",
+             "connectionLimit":"100",
+             "connectionTimeout":"1"
+         }
+    }
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ## Displaying Results
 
@@ -230,14 +222,14 @@ As you can see, there are many ways to iterate over the query. Choose the approa
 
 ### Multi-Threaded Looping
 
-As of now only Lucee allows you to leverage the `each()` operations in a multi-threaded fashion.  The `queryEach()` or `each()` functions allows for a `parallel` and `maxThreads` arguments so the iteration can happen concurrently on as many `maxThreads` as supported by your JVM.
+As of now only Lucee allows you to leverage the `each()` operations in a multi-threaded fashion. The `queryEach()` or `each()` functions allows for a `parallel` and `maxThreads` arguments so the iteration can happen concurrently on as many `maxThreads` as supported by your JVM.
 
 ```java
 queryEach( array, callback, parallel:boolean, maxThreads:numeric );
 each( collection, callback, parallel:boolean, maxThreads:numeric );
 ```
 
-This is incredibly awesome as now you callback will be called concurrently!  However, please note that once you enter concurrency land, you should shiver and tremble.  Thread concurrency will be of the utmost importance and you must make sure that var scoping is done correctly and that appropriate locking strategies are in place.
+This is incredibly awesome as now you callback will be called concurrently! However, please note that once you enter concurrency land, you should shiver and tremble. Thread concurrency will be of the utmost importance and you must make sure that var scoping is done correctly and that appropriate locking strategies are in place.
 
 ```java
 myquery.each( function( row ){
@@ -247,7 +239,7 @@ myquery.each( function( row ){
 
 ## Using Input
 
-Most of the time we won't have the luxury of simple queries, we will need user input in order to construct our queries. Here is where you need to be extra careful as to not allow for SQL injection. CFML has several ways to help you prevent SQL Injection whether using tags or script calls. Leverage the `cfqueryparam` construct/tag \([https://cfdocs.org/cfqueryparam](https://cfdocs.org/cfqueryparam)\) and always sanitize your input via the `encode` functions in CFML.
+Most of the time we won't have the luxury of simple queries, we will need user input in order to construct our queries. Here is where you need to be extra careful as to not allow for SQL injection. CFML has several ways to help you prevent SQL Injection whether using tags or script calls. Leverage the `cfqueryparam` construct/tag ([https://cfdocs.org/cfqueryparam](https://cfdocs.org/cfqueryparam)) and always sanitize your input via the `encode` functions in CFML.
 
 ```java
 // Named variable holder
@@ -263,7 +255,7 @@ queryExecute(
 );
 ```
 
-You can use the `:varname` notation in your SQL construct to denote a **variable** place holder or a `?` to denote a **positional** placeholder.  The `cfqueryparam` tag or the inline `cfsqltype` construct will bind the value to a specific database type in order to avoid SQL injection and to further the database explain plan via types.  The available SQL binding types are:
+You can use the `:varname` notation in your SQL construct to denote a **variable** place holder or a `?` to denote a **positional** placeholder. The `cfqueryparam` tag or the inline `cfsqltype` construct will bind the value to a specific database type in order to avoid SQL injection and to further the database explain plan via types. The available SQL binding types are:
 
 * `bigint`
 * `bit`
@@ -294,40 +286,40 @@ You can use the `:varname` notation in your SQL construct to denote a **variable
 * `varchar`
 
 {% hint style="warning" %}
-Please note that the types can be prefixed with `cf_sql_{type}` or just used as `{type}`.  
+Please note that the types can be prefixed with `cf_sql_{type}` or just used as `{type}`.
 {% endhint %}
 
 ## Query Methods
 
-There are also several query methods available in CFML that can help you manage queries but also create them on the fly \([https://cfdocs.org/query-functions](https://cfdocs.org/query-functions)\). Please note that you can also use chaining and member functions as well.
+There are also several query methods available in CFML that can help you manage queries but also create them on the fly ([https://cfdocs.org/query-functions](https://cfdocs.org/query-functions)). Please note that you can also use chaining and member functions as well.
 
-* queryNew\(\)
-* queryAddRow\(\)
-* queryAddColumn\(\)
-* queryColumnArray\(\)
-* queryColumnCount\(\)
-* queryColumnData\(\)
-* queryColumnExists\(\)
-* queryColumnList\(\)
-* queryCurrentRow\(\)
-* queryDeleteColumn\(\)
-* queryDeleteRow\(\)
-* queryEach\(\)
-* queryEvery\(\)
-* queryFilter\(\)
-* queryGetCell\(\)
-* queryGetResult\(\)
-* queryGetRow\(\)
-* queryMap\(\)
-* queryRecordCount\(\)
-* queryReduce\(\)
-* queryRowData\(\)
-* querySetCell\(\)
-* querySlice\(\)
-* querySome\(\)
-* querySort\(\)
-* quotedValueList\(\)
-* valueList\(\)
+* queryNew()
+* queryAddRow()
+* queryAddColumn()
+* queryColumnArray()
+* queryColumnCount()
+* queryColumnData()
+* queryColumnExists()
+* queryColumnList()
+* queryCurrentRow()
+* queryDeleteColumn()
+* queryDeleteRow()
+* queryEach()
+* queryEvery()
+* queryFilter()
+* queryGetCell()
+* queryGetResult()
+* queryGetRow()
+* queryMap()
+* queryRecordCount()
+* queryReduce()
+* queryRowData()
+* querySetCell()
+* querySlice()
+* querySome()
+* querySort()
+* quotedValueList()
+* valueList()
 
 ## Building Queries
 
@@ -369,13 +361,13 @@ subUsers = queryExecute( "select * from users", {}, { dbtype="query" } );
 writedump( subUsers );
 ```
 
-Please note that using query of queries can be quite slow.  An alternative approach is to use the modern `queryFilter()` operations to actually filter out the necessary data from a query, or `querySort()`, etc.
+Please note that using query of queries can be quite slow. An alternative approach is to use the modern `queryFilter()` operations to actually filter out the necessary data from a query, or `querySort()`, etc.
 
 ## Returning Arrays of Structs or Struct of Structs
 
-In the Lucee CFML engine \(coming soon to Adobe\), you can also determine the return type of database queries to be something other than the CFML query object. You can choose array of structs or struct of structs. This is fantastic for modern applications that rely on rich JavaScript frameworks and producing JSON.
+In the Lucee CFML engine (coming soon to Adobe), you can also determine the return type of database queries to be something other than the CFML query object. You can choose array of structs or struct of structs. This is fantastic for modern applications that rely on rich JavaScript frameworks and producing JSON.
 
-This is achieved by passing the `returntype` attribute within the query options or just an attribute of the cfquery tag \([https://cfdocs.org/cfquery](https://cfdocs.org/cfquery)\)
+This is achieved by passing the `returntype` attribute within the query options or just an attribute of the cfquery tag ([https://cfdocs.org/cfquery](https://cfdocs.org/cfquery))
 
 ```java
 users = queryNew( "firstname", "varchar", [{"firstname":"Han"}] );
@@ -389,9 +381,9 @@ writedump( subUsers );
 
 ## QB = Query Builder
 
-We have created a fantastic module to deal with queries in a fluent and elegant manner. We call it **QB** short for query builder \([https://www.forgebox.io/view/qb](https://www.forgebox.io/view/qb)\). You can install it using CommandBox into your application by just saying:
+We have created a fantastic module to deal with queries in a fluent and elegant manner. We call it **QB** short for query builder ([https://www.forgebox.io/view/qb](https://www.forgebox.io/view/qb)). You can install it using CommandBox into your application by just saying:
 
-```text
+```
 box install qb
 ```
 
@@ -411,4 +403,3 @@ q = query.from( 'posts' )
 ```
 
 You can find all the documentation in our Ortus Books docs: [http://qb.ortusbooks.com/](http://qb.ortusbooks.com/)
-

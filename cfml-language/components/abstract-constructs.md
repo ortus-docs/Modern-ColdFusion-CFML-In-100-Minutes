@@ -1,6 +1,6 @@
 # Abstract Constructs
 
-The abstract constructs can be both used in Lucee and Adobe 2018.  The main goal of abstraction is to handle complexities by hiding/encapsulating unnecessary details from other users.  Abstraction is implemented in most languages by defining a class that has methods, properties & constructors.  
+The abstract constructs can be both used in Lucee and Adobe 2018.  The main goal of abstraction is to handle complexities by hiding/encapsulating unnecessary details from other users.  Abstraction is implemented in most languages by defining a class that has methods, properties & constructors. &#x20;
 
 Abstract will allow you to define two contexts of operation:
 
@@ -13,16 +13,15 @@ Abstract will allow you to define two contexts of operation:
 
 An abstract component allows you to make a template or blueprint for a component that will be eventually inherited from, so the inheriting class doesn't have to implement all of the methods.  Therefore, abstract classes cannot be instantiated but only extended.
 
-Abstract classes can have both abstract and concrete methods defined within it.  Abstract methods have no body, they are just declared, much like interfaces.  Usually, you would do this to satisfy an interface declaration.  In my years of experience, abstract classes usually go hand in hand with interfaces and usually implement [strategy patterns](https://en.wikipedia.org/wiki/Strategy_pattern).
+Abstract classes can have both abstract and concrete methods defined within it.  Abstract methods have no body, they are just declared, much like interfaces.  Usually, you would do this to satisfy an interface declaration.  In my years of experience, abstract classes usually go hand in hand with interfaces and usually implement [strategy patterns](https://en.wikipedia.org/wiki/Strategy\_pattern).
 
 We would suggest that if you define abstract components that you add the prefix `Abstract` to the component name as best practice: `AbstractAnimal, AbstractLogger, AbstractPerson`. This goes a long way to help with readability and standards.
 
 {% hint style="info" %}
-In an inheritance hierarchy the first non-abstract class should implement **all** the abstract methods. 
+In an inheritance hierarchy the first non-abstract class should implement **all** the abstract methods.&#x20;
 {% endhint %}
 
-{% code-tabs %}
-{% code-tabs-item title="AbstractAnimal.cfc" %}
+{% code title="AbstractAnimal.cfc" %}
 ```java
 /**
  * An abstract animal class
@@ -53,15 +52,13 @@ abstract component implements="IAnimal"{
 	
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ## Abstract Functions
 
 As you can see from the example above, abstract functions can be defined ONLY in an abstract component.  These functions are demarcated as abstract so inherited components can implement them.  You can have many abstract functions in your abstract component and you can also have many concrete functions as well:
 
-{% code-tabs %}
-{% code-tabs-item title="AbstractLogger.cfc" %}
+{% code title="AbstractLogger.cfc" %}
 ```java
 abstract component implements="ILogger"{
    
@@ -121,12 +118,9 @@ abstract component implements="ILogger"{
             
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 {% hint style="info" %}
 Only **abstract** components can contain **abstract** functions.
 {% endhint %}
-
-
 

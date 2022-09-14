@@ -4,7 +4,7 @@ Comments are necessary and essential for any programming language. CFML is no di
 
 ## Tag Comments
 
-You can use the `<!---` and `--->` Syntax to comment within a CFML template \(`.cfm`\). This is very similar to HTML comments but adding an extra `-` to demarcate it as a CFML comment.
+You can use the `<!---` and `--->` Syntax to comment within a CFML template (`.cfm`). This is very similar to HTML comments but adding an extra `-` to demarcate it as a CFML comment.
 
 ```markup
 HTML Comment
@@ -19,7 +19,6 @@ ColdFusion Comment
 If you are within a CFC or in a `<cfscript>` block you can use an alternate style for comments. You can leverage `//` for single line comments and the following for multi-line comments:
 
 ```java
-
 /**
  * Multi-line Javadoc style comment
  *
@@ -60,8 +59,7 @@ A multi-line block can affect the metadata of a `component` or `function` if the
 
 In the CFML world you can write [JavaDoc](http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html) comments in what we call **CFCDoc** comments. We leverage the [DocBox](https://github.com/Ortus-Solutions/DocBox) library to generate documentation according to object metadata and comments.
 
-{% code-tabs %}
-{% code-tabs-item title="MyAwesome.cfc" %}
+{% code title="MyAwesome.cfc" %}
 ```java
 /**
  * This is my component
@@ -95,18 +93,14 @@ component extends="Base" implements="IHello" singleton{
 
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
-
----
+{% endcode %}
 
 You can see some examples of advanced CFC documentation here: [http://apidocs.ortussolutions.com.s3.amazonaws.com/coldbox/5.0.0/index.html](http://apidocs.ortussolutions.com.s3.amazonaws.com/coldbox/5.0.0/index.html)
 
 {% hint style="success" %}
-**Tip**: VSCode has some great plugins for generating this type of documentation on your CFCs.  We recommend the following extensions:
+**Tip**: VSCode has some great plugins for generating this type of documentation on your CFCs. We recommend the following extensions:
 
 * **Align** - Helps align everything
 * **AutoCloseTag** - Helps close comment and well all tags
 * **DocumentThis** - Automatically generates detailed JSDoc, CFCDoc comments in TypeScript and JavaScript files.
 {% endhint %}
-

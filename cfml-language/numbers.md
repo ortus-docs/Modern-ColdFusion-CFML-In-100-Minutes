@@ -1,6 +1,6 @@
 # Numbers
 
-There are two basic kinds of numbers: **integers** \(whole numbers\) and **floats** \(have a decimal point\). Internally, each CFML engine treats them in their own way. However, all we must know is how to operate them with typical math operators: `+`, `-`, `*`, `/`. However, there are many Java mathematical member functions and [mathematical functions](https://cfdocs.org/math-functions) available to you in CFML.
+There are two basic kinds of numbers: **integers** (whole numbers) and **floats** (have a decimal point). Internally, each CFML engine treats them in their own way. However, all we must know is how to operate them with typical math operators: `+`, `-`, `*`, `/`. However, there are many Java mathematical member functions and [mathematical functions](https://cfdocs.org/math-functions) available to you in CFML.
 
 {% hint style="success" %}
 **Tip:** If you are dealing with currency or tracking precision, please read about `precisionEvaluate()` to represent big numbers and precision results: [https://cfdocs.org/precisionevaluate](https://cfdocs.org/precisionevaluate)
@@ -60,11 +60,10 @@ while( i <= 10 ){
 }
 ```
 
----
+\---
 
 {% hint style="info" %}
 Please note that the syntax varies from tag to script, so refer to the docs for subtle differences. Please also note that you can iterate over structures, arrays, queries and objects in CFML as well; we will see this in later sections.
 
 See https://cfdocs.org/cfloop, https://cfdocs.org/cfwhile for more information
 {% endhint %}
-

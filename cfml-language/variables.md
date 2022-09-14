@@ -14,7 +14,7 @@ Please note that assignments are evaluated from right to left instead of traditi
 
 Open up the CommandBox Shell and go into **REPL** mode by typing `repl`. Every time you assign a value to a variable, the CommandBox REPL will output or echo the variable for you. Please note that in REPL mode the termination for a line of code is omitted. A line terminator in ColdFusion is the `;`.
 
-![](../.gitbook/assets/variables.png)
+![](../assets/variables.png)
 
 As you can see, we can create strings, numerics, arrays, structs and so much more. No need for types or special assignments.
 
@@ -25,7 +25,6 @@ The CommandBox REPL is based on a Lucee 5 server, that is why semi-colons are op
 ## Case Insensitive
 
 CFML is a case-insensitive language. Meaning if you create a variable `a` and reference it as `A` they are the same. This can be a very big gotcha for developers coming from languages like Java or JavaScript. However, as best practice, we would recommend to **ALWAYS** use the same case as when you define the variable:
-
 
 **Don't do this**
 
@@ -41,10 +40,9 @@ a = "Hola Luis";
 writeOutput( a );
 ```
 
-
 ## Naming Requirements
 
-Most CFML variables have a few requirements imposed by the Virtual Machine \(VM\)
+Most CFML variables have a few requirements imposed by the Virtual Machine (VM)
 
 * Must begin with a letter, underscore, or Unicode currency symbol.
 * Can contain any number of letters, numbers, underscore characters, and Unicode currency symbols.
@@ -55,7 +53,7 @@ Most CFML variables have a few requirements imposed by the Virtual Machine \(VM\
 
 You can also create a variable with one type and then switch it to another dynamically:
 
-![](../.gitbook/assets/flexible-typing.png)
+![](../assets/flexible-typing.png)
 
 As you can see, the last equality wins! In this case, `a` is now an array.
 
@@ -128,10 +126,9 @@ You can even assign types to parameterize variables and much more. Check out the
 
 You can verify if variables exist in many different ways. The next section showcases how variables are stored in visibility and persistence scopes which are all structures or hash maps in Java terms. Meaning you can leverage structure operations for checking for existence and much more. Below are several ways to verify variable existence:
 
-* `isDefined()` - Evaluates a string value to determine whether the variable
+*   `isDefined()` - Evaluates a string value to determine whether the variable
 
-  named in it exists.  
-
+    named in it exists.
 * `isNull()` - Returns `true` if the specified object is null, else `false`.
 * `structKeyExists( key, value )` - Verifies if the specified key variable exists in a structure.
 
@@ -218,4 +215,3 @@ Please see [https://cfdocs.org/member](https://cfdocs.org/member) for further in
 ## Naming Coding Standards
 
 At [Ortus Solutions](https://www.ortussolutions.com) we have developed a set of development standards for many languages. You can find our [ColdFusion standards](https://github.com/Ortus-Solutions/coding-standards/blob/master/coldfusion.md) here: [https://github.com/Ortus-Solutions/coding-standards/blob/master/coldfusion.md](https://github.com/Ortus-Solutions/coding-standards/blob/master/coldfusion.md)
-

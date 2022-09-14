@@ -28,7 +28,7 @@ produce = {
 **Tip** Please note that `=` sign and `:` are interchangeable in CFML. So you can use any to define your structures.
 {% endhint %}
 
-Since CFML is a case-insensitive language, the structure defined above will store the keys all in uppercase. If you want the exact casing to be preserved in the structure, then surround the keys with quotes \(`"`\).
+Since CFML is a case-insensitive language, the structure defined above will store the keys all in uppercase. If you want the exact casing to be preserved in the structure, then surround the keys with quotes (`"`).
 
 ```javascript
 produce = {
@@ -66,7 +66,7 @@ produce.grapes--;
 **Tip** You can use the `toString()` call on any structure to get a string representation of its keys+values: `produce.toString()`
 {% endhint %}
 
-## StructNew\(\) Types
+## StructNew() Types
 
 You can also declare new structures via the `structNew()` function. This just basically assigns a struct to a variable. You will then be responsible for filling that structure out with data.
 
@@ -95,7 +95,7 @@ Once you create structures you can use them in many funky ways. Please check out
 
 As you can see, there are many cool methods from detecting keys, values, length, counts, etc. A very cool method is `keyArray()` which gives you the listing of keys as an array:
 
-![](../.gitbook/assets/screen-shot-2017-10-05-at-4.58.09-pm.png)
+![](<../assets/Screen Shot 2017-10-05 at 4.58.09 PM.png>)
 
 ## Looping Over Structures
 
@@ -131,4 +131,3 @@ myStruct.each( function( key, value ){
    myservice.process( value );
 }, true, 20 );
 ```
-

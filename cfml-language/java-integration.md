@@ -1,6 +1,6 @@
 # Java Integration
 
-CFML is compiled to [Java bytecode](https://en.wikipedia.org/wiki/Java_bytecode) and runs on the JVM.  This gives CFML a unique advantage that not only can you write CFML but you can also integrate with the running JDK libraries or any Java library you tell the engine to use.  This is great, because if there is something already written in Java, just drop it in and use it, well most of the time :\) Unless Jar loading hell occurs.
+CFML is compiled to [Java bytecode](https://en.wikipedia.org/wiki/Java\_bytecode) and runs on the JVM.  This gives CFML a unique advantage that not only can you write CFML but you can also integrate with the running JDK libraries or any Java library you tell the engine to use.  This is great, because if there is something already written in Java, just drop it in and use it, well most of the time :) Unless Jar loading hell occurs.
 
 {% hint style="info" %}
 CommandBox even allows you to install jar's from any endpoint into your projects: [https://commandbox.ortusbooks.com/package-management/code-endpoints/jar-via-http](https://commandbox.ortusbooks.com/package-management/code-endpoints/jar-via-http)
@@ -102,16 +102,15 @@ The `createObject( "java" )` method will look into the CFML engine's class loade
 
 This `Application.cfc` structure takes in 3 keys that will allow you to class load any jar/.class libraries into the running ColdFusion application:
 
-| Key | Description |
-| :--- | :--- |
-| `loadPaths` | An array of paths to the directories that contain Java classes or JAR files.You can also provide the path to a JAR or a class. If the paths are not resolved, an error occurs. |
-| `loadColdFusionClassPath` | Indicates whether to load the classes from the ColdFusion lib directory. The default value is false. |
-| `reloadOnChange` | Indicates whether to reload the updated classes and JARs dynamically, without restarting ColdFusion. The default value is false. |
-| `watchInterval` | Specifies the time interval in seconds after which to verify any change in the class files or JAR files. This attribute is applicable only if the reloadOnChange attribute is set to true. The default value is 60 seconds. |
-| `watchExtensions` | Specifies the extensions of the files to monitor for changes. By default, only `.class and .jar` files are monitored. |
+| Key                       | Description                                                                                                                                                                                                                 |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `loadPaths`               | An array of paths to the directories that contain Java classes or JAR files.You can also provide the path to a JAR or a class. If the paths are not resolved, an error occurs.                                              |
+| `loadColdFusionClassPath` | Indicates whether to load the classes from the ColdFusion lib directory. The default value is false.                                                                                                                        |
+| `reloadOnChange`          | Indicates whether to reload the updated classes and JARs dynamically, without restarting ColdFusion. The default value is false.                                                                                            |
+| `watchInterval`           | Specifies the time interval in seconds after which to verify any change in the class files or JAR files. This attribute is applicable only if the reloadOnChange attribute is set to true. The default value is 60 seconds. |
+| `watchExtensions`         | Specifies the extensions of the files to monitor for changes. By default, only `.class and .jar` files are monitored.                                                                                                       |
 
-{% code-tabs %}
-{% code-tabs-item title="Application.cfc" %}
+{% code title="Application.cfc" %}
 ```java
 component{
 
@@ -122,12 +121,11 @@ component{
 
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Once that is declared in your Application.cfc and you execute a `createobject()` with a class from those libraries, now ColdFusion will know about them and create them.
 
-### createObject\(\) Lucee Class Loading
+### createObject() Lucee Class Loading
 
 The other approach is to leverage the `createObject()` call to do class loading.  Please note that only Lucee supports this feature as of now.
 
@@ -142,7 +140,7 @@ createObject( "java", "org.apache.pdfbox.pdmodel.PDDocument", variables.LIB_PATH
 
 ## Dynamic Proxies
 
-Both ColdFusion engines also allows you to create dynamic proxies from existing ColdFusion Components \(CFCs\).  What this means is that a Dynamic proxy lets you pass ColdFusion components to Java objects. Java objects can work with the ColdFusion components seamlessly as if they are native Java objects by implementing the appropriate Java interfaces.  You can even use them to simulate Java lambdas as ColdFusion components.
+Both ColdFusion engines also allows you to create dynamic proxies from existing ColdFusion Components (CFCs).  What this means is that a Dynamic proxy lets you pass ColdFusion components to Java objects. Java objects can work with the ColdFusion components seamlessly as if they are native Java objects by implementing the appropriate Java interfaces.  You can even use them to simulate Java lambdas as ColdFusion components.
 
 ```java
 createDynamicProxy( cfc, interfaces )
@@ -187,5 +185,4 @@ component extends="BaseProxy"{
 }
 ```
 
-Basically your CFC must implement the appropriate methods the interface\(s\) tell you that it needs. After that, you CFC will be Javafyied and it can be used like native Java interface implementing objects!  Enjoy!
-
+Basically your CFC must implement the appropriate methods the interface(s) tell you that it needs. After that, you CFC will be Javafyied and it can be used like native Java interface implementing objects!  Enjoy!

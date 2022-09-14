@@ -1,30 +1,28 @@
 # CommandBox CLI
 
-![CommandBox CLI](../.gitbook/assets/commandboxlogo.png)
+![CommandBox CLI](../assets/CommandBoxLogo.png)
 
-CommandBox is an amalgamation of many different tools and borrows concepts from NPM, Grunt/Gulp, Maven, ANT,  Node and much more. Features include:
+CommandBox is an amalgamation of many different tools and borrows concepts from NPM, Grunt/Gulp, Maven, ANT, Node and much more. Features include:
 
-* True Command Line for ColdFusion \(CFML\)
+* True Command Line for ColdFusion (CFML)
 * Operation System integration for executing commands
-* Ability to create and execute commands built using ColdFusion \(CFML\)
+* Ability to create and execute commands built using ColdFusion (CFML)
 * ForgeBox integration for cloud package management and installations
 * ColdBox Platform, TestBox, and ContentBox CMS Integrations
 * Integrated servlet server with rewrite capabilities
 * Ability to create command recipes and execution
-* REPL \(Read-Evaluate-Print-Loop\) console for immediate ColdFusion
+*   REPL (Read-Evaluate-Print-Loop) console for immediate ColdFusion
 
-  \(CFML\) interaction
+    (CFML) interaction
+*   Ability to interact with user via CLI and create workflows and
 
-* Ability to interact with user via CLI and create workflows and
-
-  installers
-
+    installers
 * Ability to execute workflows and tasks
 * Built-in Help system
 
 ## Installation
 
-CommandBox is a Java-based executable that will run on most recent desktop operating systems \(Linux, Mac OS X, Windows\). Since it is a command line tool that uses a shell interface, it does not even require an operating system using a GUI. Below is a simple guideline to get you up and running, but an [in-depth guide](https://commandbox.ortusbooks.com/content/setup/) can be found here: 
+CommandBox is a Java-based executable that will run on most recent desktop operating systems (Linux, Mac OS X, Windows). Since it is a command line tool that uses a shell interface, it does not even require an operating system using a GUI. Below is a simple guideline to get you up and running, but an [in-depth guide](https://commandbox.ortusbooks.com/content/setup/) can be found here:
 
 {% embed url="https://commandbox.ortusbooks.com/setup/installation" %}
 
@@ -37,11 +35,11 @@ CommandBox is a Java-based executable that will run on most recent desktop opera
 
 ### Download
 
-If you already have a Java JRE installed level 1.7 or higher \(and set in your environment variables\) you can [download](http://www.ortussolutions.com/products/commandbox#download) the non-JRE version for your Operating System. If you don't have a JRE installed or aren't sure, we would recommend you [download](http://www.ortussolutions.com/products/commandbox#download) the version with a JRE included.
+If you already have a Java JRE installed level 1.7 or higher (and set in your environment variables) you can [download](http://www.ortussolutions.com/products/commandbox#download) the non-JRE version for your Operating System. If you don't have a JRE installed or aren't sure, we would recommend you [download](http://www.ortussolutions.com/products/commandbox#download) the version with a JRE included.
 
 Regardless of where you place the **box** binary, the first time you execute it, a `.CommandBox` folder will be created in your user's home directory and CommandBox will be extracted into that location. If you delete this directory, it will be replaced the next time the CommandBox executable is run.
 
-![CommandBox](../.gitbook/assets/commandbox-terminal.png)
+![CommandBox](../assets/commandbox-terminal.png)
 
 #### Windows
 
@@ -51,9 +49,9 @@ Unzip the executable **box.exe** and just double click on it to open the shell. 
 **Hint:** You can make the `box.exe` available in any Window's terminal by adding its location to the `PATH` system environment variable. See [http://www.computerhope.com/issues/ch000549.htm](http://www.computerhope.com/issues/ch000549.htm)
 {% endhint %}
 
-#### Homebrew \(Mac\)
+#### Homebrew (Mac)
 
-[Homebrew](http://brew.sh) is a great Mac package manager, it can easily install and keep your CommandBox installation up to date \(even binary releases\), just run the following for stable releases:
+[Homebrew](http://brew.sh) is a great Mac package manager, it can easily install and keep your CommandBox installation up to date (even binary releases), just run the following for stable releases:
 
 ```bash
 brew install commandbox
@@ -93,8 +91,6 @@ sudo apt-get update && sudo apt-get install commandbox
 
 Add the following to: `/etc/yum.repos.d/commandbox.repo`
 
-{% code-tabs %}
-{% code-tabs-item title="/etc/yum.repos.d/commandbox.repo" %}
 ```bash
 [CommandBox]
 name=CommandBox $releasever - $basearch
@@ -104,12 +100,9 @@ enabled=1
 metadata_expire=7d
 gpgcheck=0
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
 
 Then run a `sudo yum install commandbox` and be up and running
 
 ## Getting Started
 
 We have created a small [getting started guide](https://commandbox.ortusbooks.com/getting-started-guide) that will give you enough skills to move forward with any CommandBox development. You can find it here: [https://commandbox.ortusbooks.com/content/getting\_started\_guide.html](https://commandbox.ortusbooks.com/getting-started-guide)
-

@@ -4,11 +4,15 @@ We already covered basic threading in our core CFML section.  In this section we
 
 > A Future is an eventual result of an asynchronous operation.
 
-{% embed url="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html" caption="Java Future JDK \(Useful Reference\)" %}
+{% embed url="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Future.html" %}
+Java Future JDK (Useful Reference)
+{% endembed %}
 
-{% embed url="https://helpx.adobe.com/coldfusion/using/asynchronous-programming.html" caption="Adobe Guide on RunAsync\(\)" %}
+{% embed url="https://helpx.adobe.com/coldfusion/using/asynchronous-programming.html" %}
+Adobe Guide on RunAsync()
+{% endembed %}
 
-## runAsync\(\)
+## runAsync()
 
 This function returns a **Future** object, which is an eventual result of an asynchronous operation.  Basically a representation of what the operation will produce, well, in the future.  It takes in two arguments and returns a CFML Future object.
 
@@ -34,18 +38,18 @@ writeOutput(result);
 
 The return of the `runAsync()` function is a CFML Future, not a Java Future.  The Future Object has the following functions available:
 
-| Function | ReturnType | Description |
-| :--- | :--- | :--- |
-| `cancel()` | Boolean | Cancel the operation |
-| `complete( value )` | value | Sets a value to return from the future, usually from an empty future operation. |
-| `error( callback, timeout )` | Future | Register an error callback that will be called if the async operation fails or the timeout is reached |
-| `error( callback )` | Future | Register an error callback that will be called if the async operation fails |
-| `get()` | Any | The value of the async operation once it finalizes.  **Caution: This operation blocks until the async operation finalizes.** |
-| `get( timeout )` | Any | The value of the async operation with a timeout in milliseconds.  **Caution: This operation blocks until the async operation finalizes.** |
-| `isCancelled()` | Boolean | Verifies if the operation has been cancelled or not |
-| `isDone()` | Boolean | Verifies if the operation has finalized or not |
-| `then( callback )` | Future | Once the first callback operation has finalized, call this secondary callback with the value of the previous operation and return another Future |
-| `then( callback, timeout )` | Future | Once the first callback operation has finalized, call this secondary callback with the value of the previous operation and return another Future but with a timeout |
+| Function                     | ReturnType | Description                                                                                                                                                         |
+| ---------------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `cancel()`                   | Boolean    | Cancel the operation                                                                                                                                                |
+| `complete( value )`          | value      | Sets a value to return from the future, usually from an empty future operation.                                                                                     |
+| `error( callback, timeout )` | Future     | Register an error callback that will be called if the async operation fails or the timeout is reached                                                               |
+| `error( callback )`          | Future     | Register an error callback that will be called if the async operation fails                                                                                         |
+| `get()`                      | Any        | The value of the async operation once it finalizes.  **Caution: This operation blocks until the async operation finalizes.**                                        |
+| `get( timeout )`             | Any        | The value of the async operation with a timeout in milliseconds.  **Caution: This operation blocks until the async operation finalizes.**                           |
+| `isCancelled()`              | Boolean    | Verifies if the operation has been cancelled or not                                                                                                                 |
+| `isDone()`                   | Boolean    | Verifies if the operation has finalized or not                                                                                                                      |
+| `then( callback )`           | Future     | Once the first callback operation has finalized, call this secondary callback with the value of the previous operation and return another Future                    |
+| `then( callback, timeout )`  | Future     | Once the first callback operation has finalized, call this secondary callback with the value of the previous operation and return another Future but with a timeout |
 
 {% hint style="info" %}
 All timeouts are in milliseconds
@@ -66,4 +70,3 @@ writeOutput(result);
 ```
 
 You can mix and match the callback functions to create a nice asyncronous pipeline.  Just note that if you call the `get()` operation immediately that will BLOCK the execution until the async operation finalizes, which kinda defeats the purpose of the async operation.  If you do not want to block, then use the `then()` approach, where that callback will be called for you with the result of the async operation and then you can do your post-processing.  The alternative is to sit and poll the `isDone()` or `isCancelled()` operations, and YUCK!
-
