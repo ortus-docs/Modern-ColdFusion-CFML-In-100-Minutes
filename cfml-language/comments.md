@@ -1,3 +1,7 @@
+---
+description: You shall comment ALL your code!
+---
+
 # Comments
 
 Comments are necessary and essential for any programming language. CFML is no different with helping you add code comments in both script and tag syntax.
@@ -57,7 +61,7 @@ A multi-line block can affect the metadata of a `component` or `function` if the
 
 ## CFCDoc Style Comments
 
-In the CFML world you can write [JavaDoc](http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html) comments in what we call **CFCDoc** comments. We leverage the [DocBox](https://github.com/Ortus-Solutions/DocBox) library to generate documentation according to object metadata and comments.
+In the CFML world, you can write [JavaDoc](http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html) comments in what we call **CFCDoc** comments. We leverage the [DocBox](https://github.com/Ortus-Solutions/DocBox) library to generate documentation according to object metadata and comments.  Please check out the [annotating your code ](https://docbox.ortusbooks.com/getting-started/annotating-your-code)section in the DocBox documentation to get a feel for how to document your code: [https://docbox.ortusbooks.com/getting-started/annotating-your-code](https://docbox.ortusbooks.com/getting-started/annotating-your-code)
 
 {% code title="MyAwesome.cfc" %}
 ```java
@@ -95,7 +99,11 @@ component extends="Base" implements="IHello" singleton{
 ```
 {% endcode %}
 
-You can see some examples of advanced CFC documentation here: [http://apidocs.ortussolutions.com.s3.amazonaws.com/coldbox/5.0.0/index.html](http://apidocs.ortussolutions.com.s3.amazonaws.com/coldbox/5.0.0/index.html)
+{% embed url="https://docbox.ortusbooks.com/" %}
+Read about DocBox
+{% endembed %}
+
+You can see some examples of advanced CFC documentation here: [https://apidocs.ortussolutions.com/coldbox/current/](https://apidocs.ortussolutions.com/coldbox/current/)
 
 {% hint style="success" %}
 **Tip**: VSCode has some great plugins for generating this type of documentation on your CFCs. We recommend the following extensions:

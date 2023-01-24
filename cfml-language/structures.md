@@ -38,7 +38,7 @@ produce = {
 };
 ```
 
-![](../.gitbook/assets/screen-shot-2017-10-05-at-4.46.02-pm.png)
+![](<../.gitbook/assets/Screen Shot 2017-10-05 at 4.46.02 PM.png>)
 
 The _key_ is used as the address and the _value_ is the data at that address. Please note that the _value_ can be ANYTHING. It can be an array, an object, a simple value or even an embedded structure. It doesn't matter.
 
@@ -91,11 +91,11 @@ cache = structnew( 'soft' );
 
 Once you create structures you can use them in many funky ways. Please check out all the [structure functions](https://cfdocs.org/struct-functions) and all the structure modern [member functions](https://cfdocs.org/member) that are available to you.
 
-![](../.gitbook/assets/screen-shot-2017-10-05-at-4.57.20-pm.png)
+![](<../.gitbook/assets/Screen Shot 2017-10-05 at 4.57.20 PM.png>)
 
 As you can see, there are many cool methods from detecting keys, values, length, counts, etc. A very cool method is `keyArray()` which gives you the listing of keys as an array:
 
-![](<../assets/Screen Shot 2017-10-05 at 4.58.09 PM.png>)
+![](<../.gitbook/assets/Screen Shot 2017-10-05 at 4.58.09 PM.png>)
 
 ## Looping Over Structures
 

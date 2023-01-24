@@ -7,7 +7,7 @@
 * [Welcome](intro/intro/README.md)
   * [Author](intro/intro/author.md)
   * [About This Book](intro/intro/about-this-book.md)
-* [What is ColdFusion \(CFML\)](intro/history.md)
+* [What is ColdFusion (CFML)](intro/history.md)
 * [CommandBox CLI](intro/intro-to-commandbox.md)
 * [Instructions & Interpreters](intro/instructions-and-interpreters.md)
 
@@ -16,7 +16,9 @@
 * [Syntax](cfml-language/syntax.md)
 * [Comments](cfml-language/comments.md)
 * [Variables](cfml-language/variables.md)
+* [Null & Nothingness](cfml-language/null-and-nothingness.md)
 * [Variable Scopes](cfml-language/variable-scopes.md)
+* [Operators](cfml-language/operators.md)
 * [Strings](cfml-language/strings.md)
 * [JSON](cfml-language/json.md)
 * [Numbers](cfml-language/numbers.md)
@@ -24,7 +26,6 @@
 * [Structures](cfml-language/structures.md)
 * [Database Queries](cfml-language/queries.md)
 * [Conditionals](cfml-language/conditionals.md)
-* [Null & Nothingness](cfml-language/null-and-nothingness.md)
 * [Exception Management](cfml-language/exception-management.md)
 * [Components](cfml-language/components/README.md)
   * [Properties](cfml-language/components/properties.md)
@@ -54,4 +55,3 @@
 * [MVC](extra-credit/mvc.md)
 * [Dependency Injection](extra-credit/dependency-injection.md)
 * [Security Guide](extra-credit/security-guide.md)
-

@@ -7,7 +7,7 @@ Abstract will allow you to define two contexts of operation:
 1. Components
 2. Functions
 
-![](../../.gitbook/assets/abstract-class-vs-interface.png)
+![](../../.gitbook/assets/Abstract-Class-vs-Interface.png)
 
 ## Abstract Components
 
