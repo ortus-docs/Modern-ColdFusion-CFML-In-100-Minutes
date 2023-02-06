@@ -4,7 +4,7 @@ description: Operate all things++--==!^%/\
 
 # Operators
 
-**Operators** are the foundation of **any** programming language. Operators are symbols that help a programmer to perform specific mathematical, structuring, destructuring and logical computations on operands (variables or expressions).  We can categorize the CFML operators into the following categories:
+**Operators** are the foundation of **any** programming language. Operators are symbols that help a programmer to perform specific mathematical, structuring, destructuring, and logical computations on operands (variables or expressions).  We can categorize the CFML operators into the following categories:
 
 1. Arithmetic/Mathematical
 2. Assignment
@@ -110,18 +110,18 @@ Logical operators perform logic between values or values, usually denoting a `bo
 
 Comparison operators are used when comparing two values, expressions, or variables.  The return of a comparison is either `true` or `false`.
 
-| Operator                                             | Name                 | Description                                                                                                                               |
-| ---------------------------------------------------- | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| `eq,=`                                               | Equality             | True if `a eq b` or `a == b`                                                                                                              |
-| <p><code>neq, !=,</code><br><code>&#x3C;></code></p> | Not Equal            | The opposite of equality: `a neq b, a != b, a <> b`                                                                                       |
-| `===`                                                | Identity             | <p>Returns true if the operands are equal in value and in type.<br><code>2 === "2" // false</code><br><code>2 === 2   // true</code> </p> |
-| `!===`                                               | Negated Identity     | Same as the identity operator but negating the result.                                                                                    |
-| `gt,>`                                               | Greater than         | If the left operand is greater in value than the right operand                                                                            |
-| `gte, >=`                                            | Greater than o equal | If the left operand is greater than or equal in value than the right operand                                                              |
-| `lt, <`                                              | Less than            | If the left operand is less than in value than the right operand                                                                          |
-| `lte, <=`                                            | Less than or equal   | If the left operand is less than or equal in value than the right operand                                                                 |
-| `contains,ct`                                        | Contains             | <p>Returns true if the left operand contains the right one.<br><code>'hello' contains 'lo'</code></p>                                     |
-| `does not contain, nct`                              | Negated contains     | <p>Returns true if the left operand does NOT contain the right one.<br><code>'hello' contains 'pio'</code></p>                            |
+| Operator                                                              | Name                 | Description                                                                                                                               |
+| --------------------------------------------------------------------- | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| `eq,=`                                                                | Equality             | True if `a eq b` or `a == b`                                                                                                              |
+| <p><code>neq,</code> <br><code>!=,</code><br><code>&#x3C;></code></p> | Not Equal            | The opposite of equality: `a neq b, a != b, a <> b`                                                                                       |
+| `===`                                                                 | Identity             | <p>Returns true if the operands are equal in value and in type.<br><code>2 === "2" // false</code><br><code>2 === 2   // true</code> </p> |
+| `!===`                                                                | Negated Identity     | Same as the identity operator but negating the result.                                                                                    |
+| `gt,>`                                                                | Greater than         | If the left operand is greater in value than the right operand                                                                            |
+| `gte, >=`                                                             | Greater than o equal | If the left operand is greater than or equal in value than the right operand                                                              |
+| `lt, <`                                                               | Less than            | If the left operand is less than in value than the right operand                                                                          |
+| `lte, <=`                                                             | Less than or equal   | If the left operand is less than or equal in value than the right operand                                                                 |
+| `contains,ct`                                                         | Contains             | <p>Returns true if the left operand contains the right one.<br><code>'hello' contains 'lo'</code></p>                                     |
+| `does not contain, nct`                                               | Negated contains     | <p>Returns true if the left operand does NOT contain the right one.<br><code>'hello' contains 'pio'</code></p>                            |
 
 
 
@@ -187,8 +187,6 @@ results = ucase( "this is text " ) & toString( 12 + 50 )
 results = listener( 2 * 3, (result) => result + 1 )
 ```
 
-
-
 ## Collections Operators
 
 Many operators can work on collection objects like arrays, structs, and queries.  So let's start investigating them.
@@ -223,7 +221,7 @@ var mergedObject = { ...obj1, ...obj2 }
 mergedObject.append( obj1 ).append( obj2 )
 ```
 
-You can accomplish the result of the spread operator with a `append()` member function or function in a very elegant and user-friendly syntax.  It also allows you NOT to do chaining but inline expressions.
+You can accomplish the result of the spread operator with the `append()` member function or traditional function in a very elegant and user-friendly syntax.  It also allows you NOT to do chaining but inline expressions.
 
 The Spread syntax also allows an iterable such as an array expression or string, to be expanded in places where zero or more arguments (for function calls) are expected.  Here are some examples to help you understand this operator:
 
@@ -267,7 +265,29 @@ writeDump( mergedUsers )
 
 ### Rest Operator
 
+{% hint style="danger" %}
+Only available in ACF 2021+ and for function arguments
+{% endhint %}
 
+The Rest function operator is similar to Spread Operator but behaves oppositely. The spread syntax expands the iterable constructs into individual elements, and the Rest syntax collects and condenses them into a single construct, usually an array.  Please note that this operator only works on function arguments as of now.
 
+Imagine I need to create a function that takes in an unlimited number of Identifiers, so I can return all items that have that ID:
 
+```javascript
+function findById( ...ids ){
+}
+
+findById( 1 ) // ids is a single value of 1
+findById( 1, 23, 34, 456 ) // ids is an array of values
+```
+
+You can also combine them in functions with other arguments:
+
+```java
+function findById( entityName, ...ids ){
+}
+
+findById( "User", 1 ) // ids is a single value of 1
+findById( "Car", 1, 23, 34, 456 ) // ids is an array of values
+```
 
