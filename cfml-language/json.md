@@ -1,3 +1,7 @@
+---
+description: JSON all things!
+---
+
 # JSON
 
 CFML supports native JSON support via several key functions and some member functions.

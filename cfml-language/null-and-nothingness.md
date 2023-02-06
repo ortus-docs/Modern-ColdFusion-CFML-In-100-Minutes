@@ -57,7 +57,7 @@ You can create nulls in different ways in CFML. Let's explore these:
 
 ## In Practice
 
-If you have three eggs, eat three eggs, then you might think you have "nothing," but in terms of eggs you have "0". Zero is something, it’s a number, and it’s not nothing.
+If you have three eggs, and eat three eggs, then you might think you have "nothing," but in terms of eggs you have "0". Zero is something, it’s a number, and it’s not nothing.
 
 If you’re working with words and have a string like "hello" then delete the "h", "e", "l"s, and "o" you might think you’d end up with nothing, but you really have "" which is an empty string. It’s still something.
 
