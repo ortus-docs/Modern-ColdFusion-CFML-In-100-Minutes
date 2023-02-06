@@ -42,3 +42,10 @@ You can call the `deserializeJSON()` from any string literal:
 var deserializedData = myjsonString.deserializeJson();
 var data = '[]'.deserializeJson();
 ```
+
+You can also use the `toJson()` member function from any literal or scalar, but ONLY in Lucee:
+
+```javascript
+data = { name : "luis", date = now(), children = [1,2] }
+writeOutput( data.tojson() )
+```
