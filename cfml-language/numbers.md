@@ -32,7 +32,7 @@ b = 50.1;
 writeOutput( a * b );
 ```
 
-Also note that CFML will do the auto-casting for you when converting between integers and doubles.
+Also, note that CFML will do the auto-casting for you when converting between integers and doubles.
 
 ## Numeric Type
 
@@ -63,13 +63,31 @@ CFML offers tons of mathematical [operators](operators.md#arithmetic-operators) 
 | randRange         | round          | sgn            |
 | sin               | sqr            | tan            |
 
-## Casting
+## Casting/Parsing
 
-CFML also has the `toNumeric()` function that you can use to cast a value to a number using different [radixes](https://en.wikipedia.org/wiki/Radix).&#x20;
+CFML also has a `toNumeric()` function that you can use to cast a value to a number using different [radixes](https://en.wikipedia.org/wiki/Radix).&#x20;
+
+```java
+toNumeric( "29.5" )
+toNumeric( "FF0011", "hex" )
+toNumeric( "1010", "bin" )
+```
+
+The `parseNumber()` is also used to convert a string number into a numeral system ([https://cfdocs.org/parsenumber](https://cfdocs.org/parsenumber))
 
 {% hint style="info" %}
 In a [positional numeral system](https://en.wikipedia.org/wiki/Positional\_numeral\_system), the radix or base is the number of unique [digits](https://en.wikipedia.org/wiki/Numerical\_digit), including the digit zero, used to represent numbers. For example, for the [decimal system](https://en.wikipedia.org/wiki/Decimal) (the most common system in use today) the radix is ten, because it uses the ten digits from 0 through 9.
 {% endhint %}
+
+## Is it a number?
+
+CFML provides the `isNumeric()` function to determine if the passed value can be converted to a numeric value. &#x20;
+
+```java
+isNumeric( 23 ) // yes
+isNumeric( "twenty" ) // no
+isNumeric( 5e2 ) // yes
+```
 
 ## Repeating Instructions
 
