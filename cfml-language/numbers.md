@@ -1,6 +1,26 @@
+---
+description: Integers and floats to rule the world!
+---
+
 # Numbers
 
-There are two basic kinds of numbers: **integers** (whole numbers) and **floats** (have a decimal point). Internally, each CFML engine treats them in their own way. However, all we must know is how to operate them with typical math operators: `+`, `-`, `*`, `/`. However, there are many Java mathematical member functions and [mathematical functions](https://cfdocs.org/math-functions) available to you in CFML.
+There are two basic kinds of numbers in CFML: **integers** (whole numbers) and **floats** (have a decimal point). Internally, each CFML engine treats them uniquely and backs up each numerical value as a Java class: `java.lang.Double` or `java.lang.Integer`.
+
+| Type      | Size (bits) | Min Value             | Max Value               |
+| --------- | ----------- | --------------------- | ----------------------- |
+| `Integer` | 32          | -2,147,483,648 (-231) | 2,147,483,647 (231 - 1) |
+
+| Type     | Size (bits) | Significant Bits | Exponent Bits | Decimal Digits |
+| -------- | ----------- | ---------------- | ------------- | -------------- |
+| `Double` | 64          | 53               | 11            | 15-16          |
+
+{% hint style="danger" %}
+Lucee stores all numerical values as Doubles
+{% endhint %}
+
+{% hint style="danger" %}
+Adobe stores integers as Integer and floats as Doubles
+{% endhint %}
 
 {% hint style="success" %}
 **Tip:** If you are dealing with currency or tracking precision, please read about `precisionEvaluate()` to represent big numbers and precision results: [https://cfdocs.org/precisionevaluate](https://cfdocs.org/precisionevaluate)
@@ -12,38 +32,44 @@ b = 50.1;
 writeOutput( a * b );
 ```
 
-## Increment/Decrement
+Also note that CFML will do the auto-casting for you when converting between integers and doubles.
 
-CFML gives you two additional operators for working with numbers:
+## Numeric Type
 
-* `++` - Increment a number
-* `--` - Decrement a number
-
-It is also important to note that you can add these operators to the variables or numbers directly. You can also add them before the instruction and after the instruction with different effects:
-
-### After Operations
-
-If you add a `++,--` after the declaration, then CFML will use your number as is and once that operation is done, it will increment or decrement by 1 the value of the variable.
+Once we start looking at functions/closures and lambdas, you will see that you can also type the incoming arguments and results of functions.  You also won't need to type it with integer or float, just as `numeric:`
 
 ```javascript
-a = 1;
-writeOutput( a++ ); => 1
-writeOutput( a ); => 2
+numeric function add( numeric a, numeric b ){
+    return a + b;
+}
 ```
 
-As you can see from the example above, in line 2 the output will be still 1, but after that operation `a` will be incremented. So the next usage will reflect it. Same will go for the `--` operator used after operations.
+## Operators & Functions
 
-### Before Operations
+CFML offers tons of mathematical [operators](operators.md#arithmetic-operators) and functions: [https://cfdocs.org/math%2Dfunctions](https://cfdocs.org/math-functions)
 
-If you add a `++,--` before the declaration, then CFML will increment/decrement the number before the operation is used.
+| abs               | aCos           | arrayAvg       |
+| ----------------- | -------------- | -------------- |
+| arraySum          | aSin           | atn            |
+| bitAnd            | bitMaskClear   | bitMaskRead    |
+| bitMaskSet        | bitNot         | bitOr          |
+| bitSHLN           | bitSHRN        | bitXor         |
+| ceiling           | cos            | decrementValue |
+| expt              | fix            | floor          |
+| formatBaseN       | incrementValue | inputBaseN     |
+| int               | log            | log10          |
+| max               | min            | pi             |
+| precisionEvaluate | rand           | randomize      |
+| randRange         | round          | sgn            |
+| sin               | sqr            | tan            |
 
-```javascript
-a = 1;
-writeOutput( ++a ); => 2
-writeOutput( a ); => 2
-```
+## Casting
 
-As you can see from the example above, in line 2 the output will be now 2, as `a` was incremented before. Same will go for the `--` operator used before operations.
+CFML also has the `toNumeric()` function that you can use to cast a value to a number using different [radixes](https://en.wikipedia.org/wiki/Radix).&#x20;
+
+{% hint style="info" %}
+In a [positional numeral system](https://en.wikipedia.org/wiki/Positional\_numeral\_system), the radix or base is the number of unique [digits](https://en.wikipedia.org/wiki/Numerical\_digit), including the digit zero, used to represent numbers. For example, for the [decimal system](https://en.wikipedia.org/wiki/Decimal) (the most common system in use today) the radix is ten, because it uses the ten digits from 0 through 9.
+{% endhint %}
 
 ## Repeating Instructions
 
@@ -60,10 +86,8 @@ while( i <= 10 ){
 }
 ```
 
-\---
-
 {% hint style="info" %}
-Please note that the syntax varies from tag to script, so refer to the docs for subtle differences. Please also note that you can iterate over structures, arrays, queries and objects in CFML as well; we will see this in later sections.
+Please note that the syntax varies from tag to script, so refer to the docs for subtle differences. Please also note that you can iterate over structures, arrays, queries, and objects in CFML; we will see this in later sections.
 
-See https://cfdocs.org/cfloop, https://cfdocs.org/cfwhile for more information
+See [https://cfdocs.org/cfloop](https://cfdocs.org/cfloop), [https://cfdocs.org/cfwhile](https://cfdocs.org/cfwhile) for more information
 {% endhint %}
