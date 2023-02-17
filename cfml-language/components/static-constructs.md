@@ -1,5 +1,11 @@
 # Static Constructs
 
+{% hint style="danger" %}
+Adobe 2018 does not support static constructors.
+
+Lucee 5+, and Adobe 2021+ supports it.
+{% endhint %}
+
 ### What is static?
 
 In CFML, a static variable is a variable of a component that isn’t associated with an **instance** of a component. Instead, the variable belongs to the component definition itself. As a result, you can access the static variable without first creating the component instance.
