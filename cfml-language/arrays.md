@@ -1,3 +1,7 @@
+---
+description: An array is a data structure consisting of a collection of elements.
+---
+
 # Arrays
 
 Almost every programming language allows you to represent different types of collections. In CFML, we have three types of collections: arrays, [structures](structures.md), and [queries](queries.md).
@@ -44,7 +48,7 @@ If you asked the array for the element in position two, you’d get back `Lunch`
 Now, have you detected something funny with the ordering of the elements? Come on, look closer....... They start with `1` and not `0`, now isn't that funny. CFML is one of the few languages where array indexes start at `1` and not `0`. So if you have a PHP, Ruby, or Java background, remember that `1` is where you start.  Is this good or bad? Well, we will refrain from pointing fingers for now.
 
 {% hint style="info" %}
-All CFML arrays in Adobe ColdFusion are passed by values, while in Lucee, they are **passed by reference**. Please remember this when working with arrays and passing them to functions. There is also the `passby=reference|value` attribute to function arguments where you can decide if you want to pass by reference or value.
+All CFML arrays in Adobe ColdFusion are passed by values, while in Lucee, they are **passed by reference**. Please remember this when working with arrays and passing them to functions. There is also the `passby=reference|value` attribute to function arguments where you can decide whether to pass by reference or value.
 {% endhint %}
 
 ## Arrays in Code
@@ -134,7 +138,7 @@ CFML engines also allow you to create strongly typed arrays.  This is useful if 
 Syntax: arrayNew[ type ]( dimensions )
 ```
 
-This syntax will allow you to define that an array is of a certain type and also how many dimensions.
+This syntax will allow you to define that an array is of a certain type and how many dimensions.
 
 ```javascript
 // array of strings
@@ -161,6 +165,10 @@ numericArray = arraynew( 1, "Numeric" )
 // array of User CFCs
 aUsers = arraynew( 1, "User" )
 ```
+
+{% hint style="warning" %}
+Please note that the CFML engines will try to cast values automatically into the type defined by the array container.&#x20;
+{% endhint %}
 
 {% hint style="info" %}
 **Tip**: By default, all CFML arrays are _Unsynchronized_.  That means they are not thread-safe when accessing the data from multiple threads or shared scopes.
@@ -281,7 +289,7 @@ myArray.each( function( item ){
 }, true, 20 );
 ```
 
-Even though this approach to multi-threaded looping is easy, it is not performant and/or flexible.  Under the hood, the engines use a single thread executor for each execution, do not allow you to deal with exceptions, and if an exception occurs in an element processor, good luck; you will never know about it.  It can be very verbose and error-prone, but yes, it's easy.  You also don't control where the processing thread runs and are at the mercy of the engine. &#x20;
+Even though this approach to multi-threaded looping is easy, it is not performant and/or flexible.  Under the hood, the engines use a single thread executor for each execution, do not allow you to deal with exceptions, and if an exception occurs in an element processor, good luck; you will never know about it.  This approach can be verbose and error-prone, but it's easy.  You also don't control where the processing thread runs and are at the mercy of the engine. &#x20;
 
 ### ColdBox Futures Parallel Programming
 
