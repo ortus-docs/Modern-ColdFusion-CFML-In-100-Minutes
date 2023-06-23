@@ -122,6 +122,7 @@ if( isClosure( arguments.body ) ){
 ## Lambda Expressions \(Lucee Only\)
 
 At the moment, only the Lucee CFML engine supports lambda expressions, which basically are a shorthand notation for defining closures.  
+Update: [ColdFusion 2018 update 5 adds lambda expressions](https://helpx.adobe.com/coldfusion/developing-applications/the-cfml-programming-language/extending-coldfusion-pages-with-cfml-scripting/using-closures.html#lambda).
 
 {% hint style="danger" %}
 Please note that they are not REAL lambdas or pure functions like in Java.  Pure functions are not supposed to interact with their environment and should have no side-effect on its surrounding.  However, in ColdFusion they are just implemented using the expression syntax not the semantic nature of pure functions.
