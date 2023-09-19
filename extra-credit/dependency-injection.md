@@ -5,7 +5,7 @@
 
 **In ColdFusion, WireBox is the standard when it comes to Dependency Injection and Aspect Oriented Programming (AOP).**
 
-![](../.gitbook/assets/assets\_-LA-UVvsc-e1GVkiaPQ-\_-LA-Ud03e\_n2SeqLC9Ls\_-LA-UrvQwgjVsSA\_J5pT\_WireBox.png)
+![](../.gitbook/assets/assets\_-la-uvvsc-e1gvkiapq-\_-la-ud03e\_n2seqlc9ls\_-la-urvqwgjvssa\_j5pt\_wirebox.png)
 
 WireBox alleviates the need for custom object factories or manual object creation in your ColdFusion (CFML) applications. It provides a **standardized** approach to object **construction** and **assembling** that will make your code easier to adapt to changes, easier to [test, mock](https://testbox.ortusbooks.com) and extend.
 

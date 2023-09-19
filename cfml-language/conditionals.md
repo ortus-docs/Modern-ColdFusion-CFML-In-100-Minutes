@@ -2,7 +2,7 @@
 
 ## Operators
 
-Conditional statements evaluate to **true** or **false** only. The most common conditional operators are `==` \(equal\), `!=` \(not equal\), `>` \(greater than\), `>=` \(greater than or equal to\), `<` \(less than\), and `<=` \(less than or equal to\). You can also define the operators as abbreviations: `EQ, NEQ, GT, GTE, LT, and LTE`.
+Conditional statements evaluate to **true** or **false** only. The most common conditional operators are `==` (equal), `!=` (not equal), `>` (greater than), `>=` (greater than or equal to), `<` (less than), and `<=` (less than or equal to). You can also define the operators as abbreviations: `EQ, NEQ, GT, GTE, LT, and LTE`.
 
 ```java
 a = 1;
@@ -35,9 +35,9 @@ if( produce.keyExists( "grapes" ) ){
 }
 ```
 
-Also integers can be evaluated as **true** or **false**. In ColdFusion, **0 \(zero\)** is **false** and any other integers are **true**.
+Also integers can be evaluated as **true** or **false**. In ColdFusion, **0 (zero)** is **false** and any other integers are **true**.
 
-```text
+```
 <cfif 1>I am true so will show</cfif>
 
 <cfif -2>I am true so will show</cfif>
@@ -108,7 +108,7 @@ Only one section of the `if / else if / else` structure can have its instruction
 
 The ternary operator is a compact way to do an `if, else, else if` expression statements. It is very common in other languages and can be used for a more fluent expressive conditional expression.
 
-```text
+```
 ( condition ) ? trueStatement : falseStatement
 ```
 
@@ -134,7 +134,7 @@ For instance,
 myName = userName ?: "Anonymous";
 ```
 
-If `userName` does not exist or evaluates to `null` then the default value of the `myName` will be assigned the right part of the `?:` elvis operator -&gt; `Anonymous`
+If `userName` does not exist or evaluates to `null` then the default value of the `myName` will be assigned the right part of the `?:` elvis operator -> `Anonymous`
 
 {% hint style="warning" %}
 **Warning:** The elvis operator is incredibly flawed in Adobe ColdFusion 10-11-2016 and Lucee 4.5. Just avoid using it if you are using those versions. Unfortunate but true.
@@ -159,7 +159,7 @@ You can do things like this:
 result = var?.key?.otherKey ?: "";
 ```
 
-The hook operator \(`?`\) along with the dot operator \(`.`\) is known as safe navigation operator\(`?.`\). The safe navigation operator makes sure that if the variable used before the operator is not defined or java `null`, then instead of throwing an error, the operator returns `undefined` for that particular access.
+The hook operator (`?`) along with the dot operator (`.`) is known as safe navigation operator(`?.`). The safe navigation operator makes sure that if the variable used before the operator is not defined or java `null`, then instead of throwing an error, the operator returns `undefined` for that particular access.
 
 ## Switch, Case, & Default
 
@@ -178,7 +178,7 @@ switch( expression ){
 }
 ```
 
-Much like how the `if` statement marks the start of an `if` block and contains one or more `else if` statements and perhaps one \(and only one\) `else` statement, the `switch` statement marks the start of a `switch` block and can contain multiple `case` statements and perhaps one \(and only one\) `default` statement.
+Much like how the `if` statement marks the start of an `if` block and contains one or more `else if` statements and perhaps one (and only one) `else` statement, the `switch` statement marks the start of a `switch` block and can contain multiple `case` statements and perhaps one (and only one) `default` statement.
 
 The main difference is that `switch / case / default` can only evaluate the resulting value of a single variable or expression, while the `if / else if / else` block lets you evaluate the `true or false` result of different variables or expressions throughout the block.
 
@@ -212,7 +212,7 @@ Please note that you can create a body for the `case` statements with curly brac
 
 The `while( conditional )` expression allows you to execute a code block as many times as the `conditional` expression evaluates to **true**. This is a great way to work with queues, stacks or just simple evaluations.
 
-```text
+```cfscript
 testCondition = true;
 count = 0;
 while( testCondition ){
@@ -226,8 +226,7 @@ systemOutput( count );
 
 ## The `==` and `=` Common Mistake
 
-The \#1 mistake people encounter when writing conditional statements is the difference between `=` and `==`.
+The #1 mistake people encounter when writing conditional statements is the difference between `=` and `==`.
 
-* `=` is an assignment. It means "take what's on the right side and stick it into whatever is on the left side" \(or its telling not asking.\)
-* `==` is a question. It means "is the thing on the right equal to the thing on the left" \(or its asking not telling.\)
-
+* `=` is an assignment. It means "take what's on the right side and stick it into whatever is on the left side" (or its telling not asking.)
+* `==` is a question. It means "is the thing on the right equal to the thing on the left" (or its asking not telling.)

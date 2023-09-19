@@ -54,7 +54,7 @@ produce = {
 };
 ```
 
-![](<../.gitbook/assets/Screen Shot 2017-10-05 at 4.46.02 PM.png>)
+![](<../assets/Screen Shot 2017-10-05 at 4.46.02 PM.png>)
 
 The _key_ is the address, and the _value_ is the data at that address. Please note that the _value_ can be ANYTHING. It can be an array, an object, a simple value, or even an embedded structure. It doesn't matter.
 
@@ -166,7 +166,7 @@ writeOutput( "Do you have carrots? #produce.keyExists( 'carrots' )#" )
 
 In CFML, not only can you create case-insensitive unordered structures but also the following types using the `structNew()` function ([https://cfdocs.org/structnew](https://cfdocs.org/structnew))
 
-<table><thead><tr><th>Type</th><th data-type="checkbox">Adobe 2018</th><th data-type="checkbox">Adobe 2021</th><th data-type="checkbox">Lucee</th></tr></thead><tbody><tr><td><code>casesensitive</code></td><td>false</td><td>true</td><td>false</td></tr><tr><td><code>normal</code></td><td>true</td><td>true</td><td>true</td></tr><tr><td><code>ordered</code> or <code>linked</code></td><td>true</td><td>true</td><td>true</td></tr><tr><td><code>ordered-casesensitive</code></td><td>false</td><td>true</td><td>false</td></tr><tr><td><code>soft</code></td><td>false</td><td>false</td><td>true</td></tr><tr><td><code>synchronized</code></td><td>false</td><td>false</td><td>true</td></tr><tr><td><code>weak</code></td><td>false</td><td>false</td><td>true</td></tr></tbody></table>
+<table><thead><tr><th width="349">Type</th><th width="129.33333333333331" data-type="checkbox">Adobe 2018</th><th width="135" data-type="checkbox">Adobe 2021</th><th data-type="checkbox">Lucee</th></tr></thead><tbody><tr><td><code>casesensitive</code></td><td>false</td><td>true</td><td>false</td></tr><tr><td><code>normal</code></td><td>true</td><td>true</td><td>true</td></tr><tr><td><code>ordered</code> or <code>linked</code></td><td>true</td><td>true</td><td>true</td></tr><tr><td><code>ordered-casesensitive</code></td><td>false</td><td>true</td><td>false</td></tr><tr><td><code>soft</code></td><td>false</td><td>false</td><td>true</td></tr><tr><td><code>synchronized</code></td><td>false</td><td>false</td><td>true</td></tr><tr><td><code>weak</code></td><td>false</td><td>false</td><td>true</td></tr></tbody></table>
 
 Here is the signature for the `structnew()` function on Adobe engines:
 
@@ -212,11 +212,11 @@ myStruct = $[=]
 
 Once you create structures, you can use them in many funky ways. Please check out all the [structure functions](https://cfdocs.org/struct-functions) and all the structure modern [member functions](https://cfdocs.org/member) that are available to you.
 
-![](<../.gitbook/assets/Screen Shot 2017-10-05 at 4.57.20 PM.png>)
+![](<../assets/Screen Shot 2017-10-05 at 4.57.20 PM.png>)
 
 As you can see, there are many cool methods for detecting keys, values, lengths, counts, etc. A very cool method is `keyArray()` which gives you the listing of keys as an array:
 
-![](<../.gitbook/assets/Screen Shot 2017-10-05 at 4.58.09 PM.png>)
+![](<../assets/Screen Shot 2017-10-05 at 4.58.09 PM.png>)
 
 ## Looping Over Structures
 

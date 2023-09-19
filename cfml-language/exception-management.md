@@ -4,9 +4,9 @@
 
 The CFML language also provides you with a traditional approach to deal with error handling at the code block level.  This is usually a trio of constructs:
 
-* `try`: The try block allows you to demarcate the code to test if it fails or passes \([https://cfdocs.org/cftry](https://cfdocs.org/cftry)\)
-* `catch` : The catch block is executed when the try block fails \([https://cfdocs.org/cfcatch](https://cfdocs.org/cfcatch)\)
-* `finally` : The finally block executes no matter if the try fails or passes. It is guaranteed to always execute. \([https://cfdocs.org/cffinally](https://cfdocs.org/cffinally)\)
+* `try`: The try block allows you to demarcate the code to test if it fails or passes ([https://cfdocs.org/cftry](https://cfdocs.org/cftry))
+* `catch` : The catch block is executed when the try block fails ([https://cfdocs.org/cfcatch](https://cfdocs.org/cfcatch))
+* `finally` : The finally block executes no matter if the try fails or passes. It is guaranteed to always execute. ([https://cfdocs.org/cffinally](https://cfdocs.org/cffinally))
 
 Basically, a try and catch statement attempts some code. If the code fails, CFML will do whatever is in the exception to try to handle it without breaking. Of course, many different types of exceptions can occur, which should sometimes be handled in a different manner than the others.
 
@@ -49,9 +49,9 @@ Some of the exception types found in CFML are the following
 * `expression`: catches expression exceptions
 * `lock`: catches lock exceptions
 * `custom_type`: catches the specified custom exception type that is defined in a [cfthrow](https://cfdocs.org/cfthrow) tag
-*  `java.lang.Exception`: catches Java object exceptions
-*  `searchengine`: catches Verity search engine exceptions
-*  `any`: catches all exception types
+* &#x20;`java.lang.Exception`: catches Java object exceptions
+* &#x20;`searchengine`: catches Verity search engine exceptions
+* &#x20;`any`: catches all exception types
 
 ### Custom Exception Types
 
@@ -67,16 +67,16 @@ try{
 
 ## Throwing Exceptions
 
-Now that you have seen how to listen to exceptions, let's discover the `throw` or `cfthrow` constructs used to throw a developer-specific exception. \([https://cfdocs.org/cfthrow](https://cfdocs.org/cfthrow)\)
+Now that you have seen how to listen to exceptions, let's discover the `throw` or `cfthrow` constructs used to throw a developer-specific exception. ([https://cfdocs.org/cfthrow](https://cfdocs.org/cfthrow))
 
 The `throw()` function or tag has several attributes:
 
-* Type : A custom or CFML core type
-* Message : Describes the exception event
-* Detail : A detailed description of the event
-* errorCode : A custom error code 
-* extendedInfo : Custom extended information to send in the exception, can be anything
-* object : Mutually exclusive with the other attributes, usually another exception object or a raw Java exception type.
+* **Type** : A custom or CFML core type
+* **Message** : Describes the exception event
+* **Detail** : A detailed description of the event
+* **errorCode** : A custom error code&#x20;
+* **extendedInfo** : Custom extended information to send in the exception, can be anything
+* **object** : Mutually exclusive with the other attributes, usually another exception object or a raw Java exception type.
 
 ```java
 try {
@@ -90,7 +90,7 @@ try {
 
 ## Rethrowing Exceptions
 
-The `rethrow` or `cfrethrow` construct allows you to well, `rethrow` the active exception by preserving all of the exception information and types.  Usually you use `rethrow` within a catch block after you have done some type of operations on the incoming exception. \([https://cfdocs.org/cfrethrow](https://cfdocs.org/cfrethrow)\)
+The `rethrow` or `cfrethrow` construct allows you to well, `rethrow` the active exception by preserving all of the exception information and types.  Usually you use `rethrow` within a catch block after you have done some type of operations on the incoming exception. ([https://cfdocs.org/cfrethrow](https://cfdocs.org/cfrethrow))
 
 ```java
 try{
@@ -115,6 +115,4 @@ try{
 	rethrow;
 }
 ```
-
-
 

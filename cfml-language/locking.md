@@ -36,13 +36,7 @@ lock
 
 Here are the attributes to the `cflock` construct
 
-| Attribute | Type | Default | Description |
-| :--- | :--- | :--- | :--- |
-| `timeout` | numeric | `required` | Max length in seconds to wait to obtain the lock.  If lock is obtained, tag execution continues. Otherwise, behavior depends on throwOnTimeout attribute value. |
-| `scope` | string |  | Lock scope. Mutually exclusive with the `name` attribute. Only one request in the specified scope can execute the code within this tag \(or within any other cflock tag with the same lock scope scope\) at a time.  Values are: `application, request, server, session` |
-| `name` | string |  | Lock name. Mutually exclusive with the scope attribute.  Only one request can execute the code within a `cflock` tag  with a given name at a time. Cannot be an [empty](https://cfdocs.org/empty) string. |
-| `throwOnTimeout` | boolean | true | If true and a timeout is reached an exception is thrown, else it is ignored. |
-| `type` | string | exclusive | **readOnly**: lets more than one request read shared data. **exclusive**: lets one request read or write shared data. |
+<table data-header-hidden><thead><tr><th width="196">Attribute</th><th width="106">Type</th><th width="119">Default</th><th>Description</th></tr></thead><tbody><tr><td>Attribute</td><td>Type</td><td>Default</td><td>Description</td></tr><tr><td><code>timeout</code></td><td>numeric</td><td><code>required</code></td><td>Max length in seconds to wait to obtain the lock.  If lock is obtained, tag execution continues. Otherwise, behavior depends on throwOnTimeout attribute value.</td></tr><tr><td><code>scope</code></td><td>string</td><td></td><td>Lock scope. Mutually exclusive with the <code>name</code> attribute. Only one request in the specified scope can execute the code within this tag (or within any other cflock tag with the same lock scope scope) at a time.  Values are: <code>application, request, server, session</code></td></tr><tr><td><code>name</code></td><td>string</td><td></td><td>Lock name. Mutually exclusive with the scope attribute.  Only one request can execute the code within a <code>cflock</code> tag  with a given name at a time. Cannot be an <a href="https://cfdocs.org/empty">empty</a> string.</td></tr><tr><td><code>throwOnTimeout</code></td><td>boolean</td><td>true</td><td>If true and a timeout is reached an exception is thrown, else it is ignored.</td></tr><tr><td><code>type</code></td><td>string</td><td>exclusive</td><td><strong>readOnly</strong>: lets more than one request read shared data. <strong>exclusive</strong>: lets one request read or write shared data.</td></tr></tbody></table>
 
 {% hint style="danger" %}
 **Important**: Please note that when using named locks, the name is shared across the entire ColdFusion server, no matter the `cfapplication` it is under. Please be aware of it and use unique enough names. Lock names are global to a ColdFusion server. They are shared among applications and user sessions, but not clustered servers.
@@ -91,7 +85,7 @@ More information can be found here: [https://helpx.adobe.com/coldfusion/cfml-ref
 
 ## Race Conditions: Double Locking
 
-There will be cases where race conditions will exist and multiple threads will be waiting for access into a lock body construct. Furthermore, you will want that only ONE thread enters the body construct and does something and the rest get ignored. This is a race condition and it must be treated with a double lock approach. What this does is that it evaluated the condition of your body \(business logic\) and if available then enters the lock.
+There will be cases where race conditions will exist and multiple threads will be waiting for access into a lock body construct. Furthermore, you will want that only ONE thread enters the body construct and does something and the rest get ignored. This is a race condition and it must be treated with a double lock approach. What this does is that it evaluated the condition of your body (business logic) and if available then enters the lock.
 
 Let's do a simple example where you only want ONE thread to ever populate the cache with data and return it from a function. Let's see how NOT to do it first:
 
@@ -130,4 +124,3 @@ function loadData(){
     return myData;
 }
 ```
-

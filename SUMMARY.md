@@ -34,7 +34,7 @@
   * [Final Constructs](cfml-language/components/final-constructs.md)
   * [Abstract Constructs](cfml-language/components/abstract-constructs.md)
   * [Interfaces](cfml-language/components/interfaces.md)
-* [Closures & Lambdas](cfml-language/closures.md)
+* [Closures](cfml-language/closures.md)
 * [Code Locking](cfml-language/locking.md)
 * [Threading](cfml-language/threading.md)
 * [Includes](cfml-language/includes.md)

@@ -1,13 +1,13 @@
-# Closures & Lambdas
+# Closures
 
 > A closure is the combination of a function and the lexical environment within which that function was declared.
 
-Remember that functions \(UDFs\) in CFML are objects, closures are objects as well. So are closures and functions the same? The answer is yes and no. The main difference between a UDF and a closure is that closures have access to their lexical environment in which they are declared. Both functions and closures can be manipulated at runtime and can be passed around to other functions and closures or can be returned from other functions and closures. Phew!
+Remember that functions (UDFs) in CFML are objects, and closures are objects. So, are closures and functions the same? The answer is yes and no. The main difference between a UDF and a closure is that closures have access to the lexical environment in which they are declared. Both functions and closures can be manipulated at runtime and passed around to other functions and closures or returned from other functions and closures. Phew!
 
 A closure can be used in any of the following ways:
 
-* Defined inline without giving a name. 
-* They can be assigned to a variable, array item, struct, and variable scope. 
+* Defined inline without giving a name.
+* They can be assigned to a variable, array item, struct, and variable scope.
 * It can be returned directly from a function.
 
 ## Assigned Closures
@@ -26,7 +26,7 @@ function hello(){
 hello();
 ```
 
-If we execute this template via CommandBox our output will be **luis**. Meaning the `display` closure has access to its surroundings in order to display the `name` variable. It can manipulate it, add to it, remove from it and more.
+If we execute this template via CommandBox, our output will be **luis**. This means the `display` closure has access to its surroundings to display the `name` variable. It can manipulate it, add to it, remove from it, and more.
 
 ## Returned Closures/High-Order Functions
 
@@ -43,13 +43,13 @@ add = makeAdder( 1 );
 systemOutput( add( 2 ) );
 ```
 
-In this case the `makeAdder` creates a function that will add the passed in variable with another via a delay of execution. You can then execute the resultant closures `add` with another number to get your calculation of `3` in this case.
+In this case, the `makeAdder` creates a function that will add the passed-in variable with another via a delay of execution. You can then execute the resultant closures `add` with another number to get your calculation of `3` in this case.
 
 **Funky!!**
 
 ## Passed Closures
 
-CFML also has the concept of functional programming using several modern operations like `map(), reduce(), filter(), each(), etc` where you can pass closures into other functions for operating on different data structures.
+CFML also has the concept of functional programming using several modern operations, like `map(), reduce(), filter(), each(), etc` you can pass closures into other functions for operating on different data structures.
 
 ```java
 fruitArray = [
@@ -66,11 +66,11 @@ favoriteFruits = fruitArray.filter( function( item ){
 systemOutput( favoriteFruits );
 ```
 
-Please note that you can construct your very own functional member functions on your objects and generate very functional custom DSL \(Domain Specific Languages\) by being creative.
+Please note that you can construct your very own functional member functions on your objects and generate very functional custom DSL (Domain Specific Languages) by being creative.
 
 ## Delayed Execution
 
-Another big advantage of leveraging closures for functional programming is that closures are the blueprint of a function and are not executed until you want to. Meaning they are useful for delaying execution and great for design patterns like: observer, filters, iterators and much more.
+Another big advantage of leveraging closures for functional programming is that closures are the blueprint of a function and are not executed until you want to. They are useful for delaying execution and great for design patterns like observers, filters, iterators, and much more.
 
 ```java
 var observe = function( val ){
@@ -91,15 +91,11 @@ describe( "A spec suite", function(){
 
 ## Closure Scopes
 
-A closure retains a copy of variables visible at the time of its creation. The global variables \(like ColdFusion specific scopes\) and the local variables \(including declaring or outer function's local and arguments scope\) are retained at the time of a closure creation. Functions are static.
+A closure retains a copy of variables visible at its creation. The global variables (like ColdFusion specific scopes) and the local variables (including declaring or outer function's local and arguments scope) are retained at the time of a closure creation. Functions are static.
 
 The following details the scope of closure based on the way they are defined:
 
-| Scenario | Scope |
-| :--- | :--- |
-| In a CFC function | Closure argument scope, enclosing function local scope and argument scope, this scope, variable scope, and super scope |
-| In a CFM function | Closure argument scope, enclosing function local scope and argument scope, this scope, variable scope, and super scope |
-| As function argument | Closure argument scope, variable scope, and this scope and super scope \(if defined in CFC component\). |
+<table><thead><tr><th width="223">Scenario</th><th>Scope</th></tr></thead><tbody><tr><td>In a CFC function</td><td>Closure argument scope, enclosing function local scope and argument scope, this scope, variable scope, and super scope</td></tr><tr><td>In a CFM function</td><td>Closure argument scope, enclosing function local scope and argument scope, this scope, variable scope, and super scope</td></tr><tr><td>As function argument</td><td>Closure argument scope, variable scope, and this scope and super scope (if defined in CFC component).</td></tr></tbody></table>
 
 In a closure, the following is the order of search for an unscoped variable:
 
@@ -109,9 +105,9 @@ In a closure, the following is the order of search for an unscoped variable:
 * Owner function's `local` scope if available
 * ColdFusion built-in scope
 
-## isClosure\(\)
+## isClosure()
 
-CFML has a built in function called `isClosure()` that allows you to evaluate if a variable is a closure or not:
+CFML has a built-in function called `isClosure()` that allows you to evaluate if a variable is a closure or not:
 
 ```java
 if( isClosure( arguments.body ) ){
@@ -119,29 +115,28 @@ if( isClosure( arguments.body ) ){
 }
 ```
 
-## Lambda Expressions \(Lucee Only\)
+## Lambda Expressions or Arrow Functions
 
-At the moment, only the Lucee CFML engine supports lambda expressions, which basically are a shorthand notation for defining closures.  
-Update: [ColdFusion 2018 update 5 adds lambda expressions](https://helpx.adobe.com/coldfusion/developing-applications/the-cfml-programming-language/extending-coldfusion-pages-with-cfml-scripting/using-closures.html#lambda).
+Supported only in Lucee and Adobe 2018+.
 
 {% hint style="danger" %}
-Please note that they are not REAL lambdas or pure functions like in Java.  Pure functions are not supposed to interact with their environment and should have no side-effect on its surrounding.  However, in ColdFusion they are just implemented using the expression syntax not the semantic nature of pure functions.
+Please note that they are not REAL lambdas or pure functions. Pure functions are not supposed to interact with their environment and should have no side effects on their surroundings. However, in ColdFusion, they are just implemented using the expression syntax, not the semantic nature of pure functions.
 {% endhint %}
 
-Lambda expressions reduce much of the syntax around creating closures. In its simplest form, you can eliminate the `function` keyword, curly braces and `return` statement. Lambda expressions implicitly return the results of the expression body.
+Arrow functions reduce much of the syntax around creating closures. In its simplest form, you can eliminate the `function` keywords, curly braces, and `return` statements. Arrow expressions implicitly return the results of the expression body.
 
 ```java
 // Using a traditional closure
 makeSix = function(){ return 5 + 1; }
 
-// Using a lambda expression
+// Using an arrow expression
 makeSix = () => 5 + 1;
 
 // returns 6
 systemOutput( makeSix() );
 ```
 
-A simple lambda expression with multiple arguments:
+A simple arrow expression with multiple arguments:
 
 ```java
 // Takes two numeric values and adds them
@@ -151,7 +146,7 @@ add = ( numeric x, numeric y ) => x + y;
 systemOutput( add( 1, 3 ) );
 ```
 
-A complex lambda expression with an argument:
+A complex arrow expression with an argument:
 
 ```java
 // Takes a numeric value and returns a string
@@ -169,4 +164,3 @@ SystemOutput( isOdd( 1 ) );
 // returns 'even'
 SystemOutput( isOdd( 10 ) );
 ```
-

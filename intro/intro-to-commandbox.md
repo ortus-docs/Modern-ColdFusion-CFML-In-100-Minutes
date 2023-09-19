@@ -4,7 +4,7 @@ description: CommandBox is the de facto standard for CFML development and execut
 
 # CommandBox CLI
 
-![CommandBox CLI](../.gitbook/assets/commandboxlogo.png)
+![CommandBox CLI](../assets/CommandBoxLogo.png)
 
 CommandBox is an amalgamation of many different tools and borrows concepts from NPM, Grunt/Gulp, Maven, ANT, Node, and much more. Features include:
 

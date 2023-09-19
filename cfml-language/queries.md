@@ -33,7 +33,7 @@ A query is a request to a database representing the results' rows and columns. I
 
 {% hint style="info" %}
 In Lucee, a query is backed by the following class: `lucee.runtime.type.QueryImpl`\
-``In Adobe, a query is backed by the following class: `coldfusion.sql.QueryTable`
+In Adobe, a query is backed by the following class: `coldfusion.sql.QueryTable`
 {% endhint %}
 
 ```javascript

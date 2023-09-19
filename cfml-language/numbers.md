@@ -6,13 +6,9 @@ description: Integers and floats to rule the world!
 
 There are two basic kinds of numbers in CFML: **integers** (whole numbers) and **floats** (have a decimal point). Internally, each CFML engine treats them uniquely and backs up each numerical value as a Java class: `java.lang.Double` or `java.lang.Integer`.
 
-| Type      | Size (bits) | Min Value             | Max Value               |
-| --------- | ----------- | --------------------- | ----------------------- |
-| `Integer` | 32          | -2,147,483,648 (-231) | 2,147,483,647 (231 - 1) |
+<table><thead><tr><th width="149">Type</th><th width="119">Size (bits)</th><th width="207">Min Value</th><th>Max Value</th></tr></thead><tbody><tr><td><code>Integer</code></td><td>32</td><td>-2,147,483,648 (-231)</td><td>2,147,483,647 (231 - 1)</td></tr></tbody></table>
 
-| Type     | Size (bits) | Significant Bits | Exponent Bits | Decimal Digits |
-| -------- | ----------- | ---------------- | ------------- | -------------- |
-| `Double` | 64          | 53               | 11            | 15-16          |
+<table><thead><tr><th width="120">Type</th><th width="114">Size (bits)</th><th width="147">Significant Bits</th><th width="164">Exponent Bits</th><th>Decimal Digits</th></tr></thead><tbody><tr><td><code>Double</code></td><td>64</td><td>53</td><td>11</td><td>15-16</td></tr></tbody></table>
 
 {% hint style="danger" %}
 Lucee stores all numerical values as Doubles

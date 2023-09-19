@@ -20,7 +20,7 @@ Please note that assignments are evaluated from right to left instead of traditi
 
 Open up the CommandBox Shell and go into CommandBox **REPL** mode by typing `repl`. Every time you assign a value to a variable, the CommandBox REPL will output or echo the variable for you. Please note that in REPL mode, the termination for a line of code is omitted. A line terminator in ColdFusion is the `;`.
 
-![](<../.gitbook/assets/variables (1).png>)
+![](<../assets/variables (1).png>)
 
 As you can see, we can create [strings](strings.md), [numerics](numbers.md), [arrays](arrays.md), [structs](structures.md), and so much more. No need for types or special assignments.  The ColdFusion engine will determine or infer it and use it accordingly, thus a dynamic language.
 
@@ -64,53 +64,13 @@ As with any programming language, there are specific names you just can't use, a
 
 
 
-| Reserved Word                  | Lucee | Adobe |
-| ------------------------------ | :---: | :---: |
-| `abstract`                     |       |   √   |
-| `and`                          |       |   √   |
-| `break`                        |       |   √   |
-| `case`                         |       |   √   |
-| `catch`                        |       |   √   |
-| `continue`                     |       |   √   |
-| `contains`                     |       |   √   |
-| `default`                      |       |   √   |
-| `do`                           |       |   √   |
-| `else`                         |       |   √   |
-| `eq`                           |       |   √   |
-| `eqv`                          |       |   √   |
-| `false`                        |   √   |   √   |
-| `finally`                      |       |   √   |
-| `final`                        |       |   √   |
-| `for`                          |       |   √   |
-| `function`                     |       |   √   |
-| `gt`                           |       |   √   |
-| `gte`                          |       |   √   |
-| `import`                       |       |   √   |
-| `imp`                          |       |   √   |
-| `in`                           |       |   √   |
-| `is`                           |       |   √   |
-| `if`                           |       |   √   |
-| `interface`                    |       |   √   |
-| `lt`                           |       |   √   |
-| `lte`                          |       |   √   |
-| `local` (within a function)    |       |   √   |
-| `neq`                          |       |   √   |
-| `not`                          |       |   √   |
-| `null` (If null support is on) |   √   |   √   |
-| `pageenconding`                |       |   √   |
-| `or`                           |       |   √   |
-| `return`                       |       |   v   |
-| `switch`                       |       |   √   |
-| `true`                         |   √   |   √   |
-| `try`                          |       |   √   |
-| `while`                        |       |   √   |
-| `xor`                          |       |   √   |
+<table><thead><tr><th width="372">Reserved Word</th><th width="176.33333333333331" align="center">Lucee</th><th align="center">Adobe</th></tr></thead><tbody><tr><td><code>abstract</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>and</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>break</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>case</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>catch</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>continue</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>contains</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>default</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>do</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>else</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>eq</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>eqv</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>false</code></td><td align="center">√</td><td align="center">√</td></tr><tr><td><code>finally</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>final</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>for</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>function</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>gt</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>gte</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>import</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>imp</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>in</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>is</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>if</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>interface</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>lt</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>lte</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>local</code> (within a function)</td><td align="center"></td><td align="center">√</td></tr><tr><td><code>neq</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>not</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>null</code> (If null support is on)</td><td align="center">√</td><td align="center">√</td></tr><tr><td><code>pageenconding</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>or</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>return</code></td><td align="center"></td><td align="center">v</td></tr><tr><td><code>switch</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>true</code></td><td align="center">√</td><td align="center">√</td></tr><tr><td><code>try</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>while</code></td><td align="center"></td><td align="center">√</td></tr><tr><td><code>xor</code></td><td align="center"></td><td align="center">√</td></tr></tbody></table>
 
 ## Flexible Typing
 
 You can also create a variable with one type and then switch it to another dynamically:
 
-![](<../.gitbook/assets/flexible-typing (1).png>)
+![](<../assets/flexible-typing (1) (1).png>)
 
 As you can see, the last equality wins! In this case, `a` is now an array.
 

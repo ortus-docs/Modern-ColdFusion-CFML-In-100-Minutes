@@ -12,7 +12,7 @@ CFML is a **compiled** programming language that can’t run on your processor d
 
 ### Runtime Exceptions
 
-However, with much power comes greater responsibility. There is a lot more potential for runtime exceptions because these exceptions cannot be caught by a compiler at compilation time, as compilation occurs simultaneously with execution. Thus, unit and integration testing become a real asset when building applications under a dynamic language. Wouldn't you know it? We also have a great tool for test-driven and behavior-driven development for ColdFusion: [**TestBox**](https://testbox.ortusbooks.com/) **** ([https://testbox.ortusbooks.com/](https://testbox.ortusbooks.com/))
+However, with much power comes greater responsibility. There is a lot more potential for runtime exceptions because these exceptions cannot be caught by a compiler at compilation time, as compilation occurs simultaneously with execution. Thus, unit and integration testing become a real asset when building applications under a dynamic language. Wouldn't you know it? We also have a great tool for test-driven and behavior-driven development for ColdFusion: [**TestBox**](https://testbox.ortusbooks.com/) ([https://testbox.ortusbooks.com/](https://testbox.ortusbooks.com/))
 
 ![TestBox Testing Framework](../.gitbook/assets/testbox-logo.png)
 
@@ -77,7 +77,7 @@ CommandBox sports a CFML **R**ead **E**val **P**rint **L**oop interface or most 
 
 Once in the CommandBox prompt, type `repl` and you will be placed in REPL mode:
 
-![CommandBox](../.gitbook/assets/repl.png)
+![CommandBox](../assets/repl.png)
 
 Please note that the REPL in CommandBox opens in **script** mode, not **tag** mode. This means that we must type in instructions that adhere to the ColdFusion scripting or ECMA script-like syntax instead of the tag-based syntax. We will discover more about syntax in the next chapter.
 
@@ -87,7 +87,7 @@ For now, let's type the equivalent in Script syntax:
 writeOutput( "Hello from CFML Land!" )
 ```
 
-![CommandBox](../.gitbook/assets/repl-hello.png)
+![CommandBox](../assets/repl-hello.png)
 
 Boom! We get a magical hello from the CommandBox REPL.
 
@@ -107,11 +107,11 @@ echo( "hello" )
 
 In this book, we will primarily be using the REPL or CommandBox for execution.  We will use several functions to produce output during our exercises and code examples.  Here is a list of what we will use to produce output to either the console, the output stream, or a log file.
 
-<table><thead><tr><th>Function</th><th data-type="checkbox">Lucee</th><th data-type="checkbox">Adobe</th><th>Description</th></tr></thead><tbody><tr><td><code>echo()</code></td><td>true</td><td>false</td><td>While <a href="https://cfdocs.org/writeoutput">writeOutput</a> writes to the page-output stream, this function writes to the main response buffer.<br><a href="https://cfdocs.org/echo">https://cfdocs.org/echo</a></td></tr><tr><td><code>systemOutput()</code></td><td>true</td><td>false</td><td>Writes the given object to the output stream<br><a href="https://cfdocs.org/systemoutput">https://cfdocs.org/systemoutput</a></td></tr><tr><td><code>writeOutput()</code></td><td>true</td><td>true</td><td>Appends text to the page-output stream.<br><a href="https://cfdocs.org/writeoutput">https://cfdocs.org/writeoutput</a></td></tr><tr><td><code>writeDump()</code></td><td>true</td><td>true</td><td>Outputs the elements, variables, and values of most CFML objects. Useful for debugging. You can display the contents of simple and complex variables, objects, components, user-defined functions, and other elements.<br><a href="https://cfdocs.org/writedump">https://cfdocs.org/writedump</a></td></tr><tr><td><code>writeLog()</code></td><td>true</td><td>true</td><td>Writes a message to a <a href="https://cfdocs.org/log">log</a> file.<br><a href="https://cfdocs.org/writelog">https://cfdocs.org/writelog</a></td></tr></tbody></table>
+<table><thead><tr><th width="198">Function</th><th width="85.33333333333331" data-type="checkbox">Lucee</th><th width="93" data-type="checkbox">Adobe</th><th>Description</th></tr></thead><tbody><tr><td><code>echo()</code></td><td>true</td><td>false</td><td>While <a href="https://cfdocs.org/writeoutput">writeOutput</a> writes to the page-output stream, this function writes to the main response buffer.<br><a href="https://cfdocs.org/echo">https://cfdocs.org/echo</a></td></tr><tr><td><code>systemOutput()</code></td><td>true</td><td>false</td><td>Writes the given object to the output stream<br><a href="https://cfdocs.org/systemoutput">https://cfdocs.org/systemoutput</a></td></tr><tr><td><code>writeOutput()</code></td><td>true</td><td>true</td><td>Appends text to the page-output stream.<br><a href="https://cfdocs.org/writeoutput">https://cfdocs.org/writeoutput</a></td></tr><tr><td><code>writeDump()</code></td><td>true</td><td>true</td><td>Outputs the elements, variables, and values of most CFML objects. Useful for debugging. You can display the contents of simple and complex variables, objects, components, user-defined functions, and other elements.<br><a href="https://cfdocs.org/writedump">https://cfdocs.org/writedump</a></td></tr><tr><td><code>writeLog()</code></td><td>true</td><td>true</td><td>Writes a message to a <a href="https://cfdocs.org/log">log</a> file.<br><a href="https://cfdocs.org/writelog">https://cfdocs.org/writelog</a></td></tr></tbody></table>
 
 {% hint style="success" %}
 `writeDump()` is helpful in the console to visualize complex objects\
 `writedump( var=variable, output="console" )`\
-``\
+\
 `You can also pass complex objects to` systemOuput() `as well.`
 {% endhint %}

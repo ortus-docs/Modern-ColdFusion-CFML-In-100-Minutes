@@ -55,7 +55,7 @@ All CFML arrays in Adobe ColdFusion are passed by values, while in Lucee, they a
 
 Let's go ahead and model some code in CFML using our fancy REPL tool CommandBox:
 
-![](../.gitbook/assets/arrays\_in\_code.png)
+![](../assets/arrays\_in\_code.png)
 
 Check it out:
 

@@ -116,7 +116,7 @@ Here are our recommendations:
 
 ### ColdBox MVC
 
-![ColdBox MVC Platform](../.gitbook/assets/ColdBox.png)
+![ColdBox MVC Platform](../.gitbook/assets/coldbox.png)
 
 {% hint style="info" %}
 ColdBox has become the defacto platform for developing modern MVC ColdFusion applications and we are partial to it because we wrote it :)
