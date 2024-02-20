@@ -181,8 +181,4 @@ public class MyProgram {
 
 ## Coding Standards
 
-At [Ortus Solutions](https://www.ortussolutions.com), we have developed a set of development standards for many languages. You can find our ColdFusion standards here: [https://github.com/Ortus-Solutions/coding-standards](https://github.com/Ortus-Solutions/coding-standards).
-
-{% embed url="https://github.com/Ortus-Solutions/coding-standards" %}
-Coding Standards
-{% endembed %}
+At [Ortus Solutions](https://www.ortussolutions.com), we have developed a set of development standards for many languages. You can find our standards here: [https://github.com/Ortus-Solutions/coding-standards](https://github.com/Ortus-Solutions/coding-standards).

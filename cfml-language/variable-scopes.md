@@ -29,19 +29,19 @@ Can be used in any context, used for persisting variables for a period of time.
 
 ## Template Scopes (CFM)
 
-* `variables` - The default or implicit scope where all variables are assigned to.
+* `variables` - The default or implicit scope to which all variables are assigned.
 
 ## Component Scopes (CFC)
 
 * `variables` - Private scope, visible internally to the CFC only
 * `this` - Public scope, visible from the outside world
-* `static` - No need for a CFC instance, available as a CFC representation (Lucee only)
+* `static` - No need for a CFC instance; available as a CFC representation (Lucee only)
 
 ## Function Scopes
 
 * `variables` - Has access to private variables within a Component or Page
 * `this` - Has access to public variables within a Component or Page
-* `local` - Function scoped variables, only exist within the function execution. Referred to as `var` scoping
+* `local` - Function-scoped variables **only** exist within the function execution. Referred to as `var` scoping
 * `arguments` - Incoming variables to a function
 
 ## Tag Scopes
@@ -53,14 +53,14 @@ Can be used in any context, used for persisting variables for a period of time.
 ## Thread Scopes
 
 * `attributes` - Passed variables via a thread
-* `thread` - A thread specific scope that can be used for storage and retrieval
+* `thread` - A thread-specific scope that can be used for storage and retrieval
 * `local` - Variables local to the thread context
 
 ## **Evaluating Unscoped Variables**
 
 If you use a variable name **without** a scope prefix, ColdFusion checks the scopes in the following order to find the variable:
 
-1. Local (function-local, UDFs and CFCs only)
+1. Local (function-local, UDFs, and CFCs only)
 2. Arguments
 3. Thread local (inside threads only)
 4. Query (not a true scope; variables in query loops)
