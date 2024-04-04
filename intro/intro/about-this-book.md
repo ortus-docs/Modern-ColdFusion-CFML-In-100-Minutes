@@ -19,7 +19,7 @@ Flash, Flex, ColdFusion, and Adobe are registered trademarks and copyrights of A
 
 ## Shalom Children's Home
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Shalom Children's Party!</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt="" width="375"><figcaption><p>Shalom Children's Party!</p></figcaption></figure>
 
 The Shalom Children's Home ([https://www.harvesting.org/](https://www.harvesting.org/)) is one of the ministries that are dear to our hearts located in El Salvador. During the 12-year civil war that ended in 1990, many children were left orphaned or abandoned by parents who fled El Salvador. The Benners saw the need to help these children and received 13 children in 1982. Little by little, more children came on their own, churches and the government brought children to them for care, and the Shalom Children’s Home was founded.
 
