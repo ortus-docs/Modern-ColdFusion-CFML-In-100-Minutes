@@ -27,8 +27,8 @@ component MyFunkyCalculator{
     
     // Static Constructor
     static {
-        CACHE_KEY = "luis",
-        multiplier = 4
+        CACHE_KEY = "luis";
+        multiplier = 4;
     }
 
 }
@@ -43,8 +43,8 @@ component MyFunkyCalculator{
     
     // Static Constructor
     static {
-        CACHE_KEY = "luis",
-        multiplier = 4
+        CACHE_KEY = "luis";
+        multiplier = 4;
     }
     
     
@@ -65,5 +65,5 @@ We have seen how to declare the static constructor and static methods, but how i
 ```java
 // Refer to the CFC by path, then use the :: and call a function or variable
 MyFunkyCalculator::CACHE_KEY;
-MyFunkyCalculator::calculateValues( 1 );
+MyFunkyCalculator::calculate( 1 );
 ```
