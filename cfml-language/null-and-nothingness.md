@@ -19,7 +19,7 @@ Ok, back to activating full-null support.  You can do this in the admin or progr
 {% code title="Application.cfc" %}
 ```java
 component{
-    this.nullSupport = true;
+    this.enableNullSupport = true;
 }
 ```
 {% endcode %}
