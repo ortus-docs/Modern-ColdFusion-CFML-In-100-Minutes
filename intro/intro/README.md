@@ -12,7 +12,7 @@ This book is inspired by the original [Ruby in 100 minutes](http://tutorials.jum
 
 ## ColdFusion vs. CFML
 
-Let's get this ambiguity out of the way.  **ColdFusion** is the server product, and **CFML** is the language, short for **C**oldFusion **M**arkup **L**anguage.  In turn, ColdFusion is actually the platform or framework in which CFML scripts are executed. It is similar to the relationship between HTML and a web browser like IE, Firefox, or Safari.
+Let's get this ambiguity out of the way.  **ColdFusion** is the server product, and **CFML** is the language, short for **C**old**F**usion **M**arkup **L**anguage.  In turn, ColdFusion is actually the platform or framework in which CFML scripts are executed. It is similar to the relationship between HTML and a web browser like IE, Firefox, or Safari.
 
 More information at:
 
